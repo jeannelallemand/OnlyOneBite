@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map data</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <style>
+   
+ input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70%;
+    height: 6px;
+    background-color: #F0F4FF; 
+    border-radius: 3px; 
+    outline: none; 
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff; 
+    border: 4px solid #0052CC; 
+    border-radius: 50%; 
+    cursor: pointer;
+    z-index: 1; 
+  }
+
+.slider label {
+    display: block;
+}
+
+.slider .slider-values {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding: 10px 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #A3AED0;
+}
+
+#button {
+    background-color: #0052CC;
+    color: white;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 10%;
+}
+
+    </style>
+</head>
+
+<body>  
+
+    <input id="button" type="submit" value="Malaria">
+    <input id="button" type="submit" value="Dengue" style="background-color: rgb(0, 157, 255);">
+    <div>
+        <svg id="my_dataviz" width="1000" height="600"></svg>
+    <div class="slider">
+        <div class="slider-values">
+            <span id="minYear"> 1980</span>
+            <span id="maxYear"> 2022</span>
+        </div>
+    </div>
+    </div>
+    
+    <script>
+
+        // The svg
+        var svg = d3.select("svg"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height");
+
+        // Map and projection
+        var path = d3.geoPath();
+        var projection = d3.geoMercator()
+            .scale(150)
+            .center([0, 20])
+            .translate([width / 2, height / 2]);
+
+        // Data and color scale
+        var colorScale = d3.scaleThreshold()
+            .domain([10, 100, 1000, 10000, 10000])
+            .range(["#DCE2F5","#C0D2FE","#96B2F5", "#4C77E1","#001AFF"]);
+
+        // Load data and boot
+        var csvData;
+        
+        d3.queue()
+            .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
+            .defer(d3.csv, "./dengue_cases2.csv", function(d) {
+                if (!csvData) csvData = [];
+                csvData.push(d);
+            })
+            .await(ready);
+
+        function ready(error, topo) {
+            if (error) throw error;
+
+            // Draw the map
+            var map = svg.append("g")
+                .selectAll("path")
+                .data(topo.features)
+                .enter()
+                .append("path")
+                .attr("d", d3.geoPath().projection(projection))
+                .attr("fill", "#DCE2F5");
+
+            var min_year = "1980"
+            var max_year = "2022"
+
+            // Initialize slider
+            var years = d3.map(csvData, function(d) { return +d.Year; }).keys();
+            years.sort(d3.ascending);
+
+            var slider = d3.select(".slider")
+                .append("input")
+                .attr("type", "range")
+                .attr("min", min_year)
+                .attr("max", max_year)
+                .attr("step", 1)
+                .on("input", function() {
+                    updateMap(+this.value);
+                });
+
+            function updateMap(year) {
+                // Filter data for the selected year
+                var yearData = csvData.filter(function(d) { return +d.Year === year; });
+                
+                var yearMap = d3.map();
+                yearData.forEach(function(d) {
+                    console.log(d.Year)
+                    yearMap.set(d.code, +d.pop);
+                });
+
+                // Update the color of each country
+                map.attr("fill", function(d) {
+                    var pop = yearMap.get(d.id) || 0;
+                    return colorScale(pop);
+                });
+            }
+
+            // Initial map update
+            updateMap(d3.max(years));
+        }
+    </script>
+</body>
+
+</html>

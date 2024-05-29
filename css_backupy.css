@@ -1,0 +1,190 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #DCE2F5;
+}
+
+.big_title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-weight: 300;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-size: 13vh;
+    color: blue;
+    width: 80%;
+/*     background-color: red */
+}
+
+.title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: blue;
+}
+
+.small_title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-size: 20px;
+    color: blue;
+}
+
+.text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+}
+
+#description{
+    width:90%;
+}
+
+#step{
+    width:90%;
+    font-size: 20px;
+    margin-bottom: 200px;
+    
+}
+
+#name_project {
+    width: 10vw;
+    height: 5vh;
+    background-color: darkcyan;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+#menu {
+    width: 50px;
+    height: 30vw;
+    background-color: darkcyan;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+#stand {
+    width: 100vw - (40px);
+    height: 92vh;
+    padding: 40px;
+    padding-top: 3vh;
+    background-color: rgb(213, 213, 213);
+}
+
+#bottom {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(0, 0, 250);
+}
+
+#lane {
+    width: 100vw;
+    display: flex;
+}
+
+.column {
+    width: 20vw; 
+    margin-bottom: 20px; 
+    display: flex;   
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+#left_column{
+    width:50vw;
+    background-color: pink;
+    display: flex;
+    padding: 2vh;
+}
+
+#right_column{
+    width: 50vw;
+    background-color: green;
+    /* display:flex;
+    flex-direction: column; */
+    padding: 2vh;
+}
+
+#fixed{
+    position:absolute;
+    width:50%;
+    padding: 10px;
+}
+
+
+
+#sticky {
+    float: left;
+    width: 40vw;
+    height: 14vh;
+    background-color:white;
+    position: sticky;
+    top: 20px;
+    margin-bottom: 75vh;
+    padding: 10px;
+}
+
+
+#sticky_2 {
+    width: 32vw;
+    height: 50vw;
+    background-color: darkmagenta;
+    position: sticky;
+    top: 20%;
+    margin-right: 5vw;
+    margin-top: 20%;
+    margin-bottom: 20vh;
+    display: right; 
+}
+
+#sticky_3{
+    width: 15vw;
+    height: 20vh; 
+    background-color: red;
+    position: sticky;
+    top: 250px;
+    margin-top: 250px; 
+    margin-bottom: 170vh;
+
+}
+
+ #sticky_4 {
+    width: 15vw;
+    height: 20vh; 
+    background-color: purple;
+    position: sticky;
+    top: 250px;
+    margin-top: -350px; 
+    margin-bottom: 200px;
+   
+}
+
+#sticky_5{
+    width: 15vw;
+    height: 20vh; 
+    background-color: palevioletred;
+    position: sticky;
+    top: 250px;
+    margin-top: 400px; 
+    margin-bottom: 100vh;
+}
+
+.api-container {
+    margin: none;
+    display: flex;
+    justify-content:space-evenly;
+    text-anchor: middle;
+}
+

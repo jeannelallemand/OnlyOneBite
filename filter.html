@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Filter</title>
+    <style>
+        input {
+            position: fixed;
+            top: 5vh;
+            right: 5vw;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        d3.csv("./dengue_cases2.csv").then(function (data) {
+            var parsedData = data.map(function (row) {
+                row.Year = parseFloat(row.Year)
+                return row
+                /* print(row) */
+            })
+
+            var rangeYear = d3.extent(parsedData, function (d) {
+                return d.Year
+            })
+            var svg = d3.select("body")
+                .append("svg")
+                .attr("width", 800)
+                .attr("height", 2800)
+
+            function draw(dataset) {
+                // Filter the dataset to remove duplicate countries
+                const uniqueCountries = [];
+                const seenCountries = new Set();
+
+                dataset.forEach(d => {
+                    if (!seenCountries.has(d.Country)) {
+                        uniqueCountries.push(d);
+                        seenCountries.add(d.Country);
+                    }
+                });
+
+                svg.selectAll("text")
+                    .data(uniqueCountries, function (d) { return d.Country })
+                    .join(
+
+                        function (enter) {
+                            return enter.append("text")
+                                .text(function (d) {
+                                    return d.Country;
+                                })
+                                .attr("y", function (d, i) {
+                                    return i * 18 + 20;
+                                });
+                        },
+
+                        function (update) {
+                            return update
+                                .text(function (d) {
+                                    return d.Country;
+                                }).attr("fill", "black");
+                        },
+
+                        function (exit) {
+                            return exit.attr("fill", "lightgray");
+                        }
+                    );
+            }
+            draw(parsedData)
+            d3.select("body").append("input")
+                .attr("type", "range")
+                .attr("min", rangeYear[0])
+                .attr("max", rangeYear[1])
+                .on("mouseup", function (e, d) {
+                    console.log(e.target.value)
+                    var filterData = parsedData.filter(function (row) { return row.Year < e.target.value })
+                    draw(filterData) // show the filtered elements
+                })
+
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1151 @@
+code,name,Year,pop
+RWA,Rwanda,2021,1163670
+GTM,Guatemala,2021,1273
+ETH,Ethiopia,2021,1396315
+TCD,Chad,2021,1418539
+HND,Honduras,2021,1550
+SDN,Sudan,2021,1647745
+SLE,Sierra Leone,2021,1953902
+MOZ,Mozambique,2021,10095807
+COM,Comoros,2021,10537
+BFA,Burkina Faso,2021,11791638
+SOM,Somalia,2021,12967
+NAM,Namibia,2021,12979
+ZWE,Zimbabwe,2021,133137
+BRA,Brazil,2021,139021
+UGA,Uganda,2021,14336387
+IND,India,2021,161753
+VEN,Venezuela (Bolivarian Republic of),2021,174409
+PER,Peru,2021,18075
+MRT,Mauritania,2021,18660
+YEM,Yemen,2021,180339
+CRI,Costa Rica,2021,189
+COG,Congo,2021,189616
+CAF,Central African Republic,2021,2002149
+SSD,South Sudan,2021,2017227
+ECU,Ecuador,2021,2175
+PRK,Democratic People's Republic of Korea,2021,2357
+GIN,Guinea,2021,2422374
+THA,Thailand,2021,2426
+STP,Sao Tome and Principe,2021,2719
+BEN,Benin,2021,2876368
+ZAF,South Africa,2021,2958
+GUY,Guyana,2021,20850
+NGA,Nigeria,2021,21325186
+SUR,Suriname,2021,22
+COD,Democratic Republic of the Congo,2021,23249165
+NIC,Nicaragua,2021,23259
+MEX,Mexico,2021,242
+KOR,Republic of Korea,2021,274
+DOM,Dominican Republic,2021,284
+MLI,Mali,2021,3204130
+CMR,Cameroon,2021,3335174
+KEN,Kenya,2021,3828757
+LAO,Lao People's Democratic Republic,2021,3897
+IDN,Indonesia,2021,304579
+VUT,Vanuatu,2021,312
+NPL,Nepal,2021,32
+VNM,Viet Nam,2021,377
+PAK,Pakistan,2021,399097
+NER,Niger,2021,4044707
+PHL,Philippines,2021,4262
+PAN,Panama,2021,4354
+KHM,Cambodia,2021,4382
+TZA,United Republic of Tanzania,2021,4452499
+ERI,Eritrea,2021,43463
+GHA,Ghana,2021,5747585
+SWZ,Eswatini,2021,505
+SEN,Senegal,2021,536850
+DJI,Djibouti,2021,58916
+BDI,Burundi,2021,6615714
+ZMB,Zambia,2021,6769142
+MWI,Malawi,2021,6948500
+GAB,Gabon,2021,64957
+PNG,Papua New Guinea,2021,651963
+BGD,Bangladesh,2021,7288
+CIV,Côte d’Ivoire,2021,7295068
+BWA,Botswana,2021,703
+COL,Colombia,2021,73221
+GUF,French Guiana,2021,74
+GMB,Gambia,2021,77287
+MMR,Myanmar,2021,79000
+AGO,Angola,2021,8325921
+SLB,Solomon Islands,2021,84139
+AFG,Afghanistan,2021,86263
+BTN,Bhutan,2021,9
+HTI,Haiti,2021,9513
+BOL,Bolivia (Plurinational State of),2021,9959
+LBR,Liberia,2021,912436
+MDG,Madagascar,2021,970625
+TGO,Togo,2021,996364
+GTM,Guatemala,2020,1058
+VNM,Viet Nam,2020,1376
+TCD,Chad,2020,1544194
+SDN,Sudan,2020,1698394
+CAF,Central African Republic,2020,1740970
+ETH,Ethiopia,2020,1743755
+PRK,Democratic People's Republic of Korea,2020,1819
+STP,Sao Tome and Principe,2020,1933
+ECU,Ecuador,2020,1934
+PAN,Panama,2020,1946
+BFA,Burkina Faso,2020,10600340
+AFG,Afghanistan,2020,105295
+MOZ,Mozambique,2020,11318685
+BOL,Bolivia (Plurinational State of),2020,12180
+NAM,Namibia,2020,12331
+MRT,Mauritania,2020,12425
+GUF,French Guiana,2020,140
+BRA,Brazil,2020,143395
+PER,Peru,2020,15822
+SUR,Suriname,2020,156
+UGA,Uganda,2020,16329136
+YEM,Yemen,2020,164066
+GUY,Guyana,2020,17230
+NGA,Nigeria,2020,18325240
+IND,India,2020,186532
+VEN,Venezuela (Bolivarian Republic of),2020,190314
+GIN,Guinea,2020,2008976
+RWA,Rwanda,2020,2043392
+BEN,Benin,2020,2516465
+MLI,Mali,2020,2666266
+CMR,Cameroon,2020,2890193
+BTN,Bhutan,2020,22
+COD,Democratic Republic of the Congo,2020,22590647
+HTI,Haiti,2020,22996
+SWZ,Eswatini,2020,233
+NIC,Nicaragua,2020,25505
+IDN,Indonesia,2020,254001
+SOM,Somalia,2020,27333
+TLS,Timor-Leste,2020,3
+THA,Thailand,2020,3123
+LAO,Lao People's Democratic Republic,2020,3489
+KEN,Kenya,2020,3659170
+MEX,Mexico,2020,356
+KOR,Republic of Korea,2020,356
+PAK,Pakistan,2020,371828
+NER,Niger,2020,4377938
+ZAF,South Africa,2020,4463
+COM,Comoros,2020,4546
+BDI,Burundi,2020,4720103
+CIV,Côte d’Ivoire,2020,4980640
+SEN,Senegal,2020,445313
+ZWE,Zimbabwe,2020,447381
+VUT,Vanuatu,2020,493
+GHA,Ghana,2020,5172803
+TZA,United Republic of Tanzania,2020,5969953
+GAB,Gabon,2020,53659
+MMR,Myanmar,2020,58827
+PHL,Philippines,2020,6094
+BGD,Bangladesh,2020,6128
+AGO,Angola,2020,6599327
+SSD,South Sudan,2020,661922
+MWI,Malawi,2020,7139065
+SLE,Sierra Leone,2020,725006
+NPL,Nepal,2020,73
+DJI,Djibouti,2020,73535
+ERI,Eritrea,2020,74041
+COL,Colombia,2020,75779
+GMB,Gambia,2020,75801
+PNG,Papua New Guinea,2020,750254
+SLB,Solomon Islands,2020,77637
+ZMB,Zambia,2020,8121215
+HND,Honduras,2020,815
+DOM,Dominican Republic,2020,826
+SAU,Saudi Arabia,2020,83
+BWA,Botswana,2020,884
+KHM,Cambodia,2020,9962
+CRI,Costa Rica,2020,90
+COG,Congo,2020,91538
+MDG,Madagascar,2020,969096
+DOM,Dominican Republic,2019,1291
+TCD,Chad,2019,1632529
+SDN,Sudan,2019,1752011
+PAN,Panama,2019,1756
+ECU,Ecuador,2019,1803
+PRK,Democratic People's Republic of Korea,2019,1869
+SSD,South Sudan,2019,1903742
+HTI,Haiti,2019,10687
+SUR,Suriname,2019,104
+MOZ,Mozambique,2019,11734926
+COG,Congo,2019,117837
+NPL,Nepal,2019,127
+NIC,Nicaragua,2019,13200
+UGA,Uganda,2019,13982362
+MRT,Mauritania,2019,14869
+BRA,Brazil,2019,153294
+GNB,Guinea-Bissau,2019,160907
+YEM,Yemen,2019,165899
+BWA,Botswana,2019,169
+BGD,Bangladesh,2019,17219
+COM,Comoros,2019,17599
+AFG,Afghanistan,2019,173860
+GUY,Guyana,2019,18826
+NGA,Nigeria,2019,19806915
+BTN,Bhutan,2019,2
+GTM,Guatemala,2019,2069
+GIN,Guinea,2019,2143225
+NAM,Namibia,2019,2376
+TGO,Togo,2019,2406091
+SLE,Sierra Leone,2019,2407505
+CAF,Central African Republic,2019,2416960
+STP,Sao Tome and Principe,2019,2732
+CMR,Cameroon,2019,2819803
+BEN,Benin,2019,2895878
+COD,Democratic Republic of the Congo,2019,21608681
+GUF,French Guiana,2019,212
+SYR,Syrian Arab Republic,2019,23
+SWZ,Eswatini,2019,235
+PER,Peru,2019,24324
+GNQ,Equatorial Guinea,2019,25904
+IDN,Indonesia,2019,250553
+VNM,Viet Nam,2019,3200
+MLI,Mali,2019,3221535
+RWA,Rwanda,2019,3612822
+NER,Niger,2019,3771451
+ZWE,Zimbabwe,2019,308173
+KHM,Cambodia,2019,32196
+HND,Honduras,2019,330
+IND,India,2019,338494
+SEN,Senegal,2019,354663
+SAU,Saudi Arabia,2019,38
+SOM,Somalia,2019,39687
+VEN,Venezuela (Bolivarian Republic of),2019,398285
+THA,Thailand,2019,4065
+ZAF,South Africa,2019,4821
+PAK,Pakistan,2019,413533
+KOR,Republic of Korea,2019,485
+DJI,Djibouti,2019,49402
+KEN,Kenya,2019,5019389
+ZMB,Zambia,2019,5147350
+MWI,Malawi,2019,5184107
+PHL,Philippines,2019,5681
+BFA,Burkina Faso,2019,5877426
+TZA,United Republic of Tanzania,2019,5908168
+CIV,Côte d’Ivoire,2019,5935178
+GAB,Gabon,2019,53182
+GMB,Gambia,2019,53386
+MMR,Myanmar,2019,56410
+VUT,Vanuatu,2019,567
+GHA,Ghana,2019,6115267
+LAO,Lao People's Democratic Republic,2019,6691
+MEX,Mexico,2019,618
+MAR,Morocco,2019,628
+PNG,Papua New Guinea,2019,646648
+AGO,Angola,2019,7054978
+SLB,Solomon Islands,2019,72767
+COL,Colombia,2019,78109
+BOL,Bolivia (Plurinational State of),2019,9338
+BDI,Burundi,2019,9959533
+ETH,Ethiopia,2019,904495
+LBR,Liberia,2019,915845
+ERI,Eritrea,2019,93878
+CRI,Costa Rica,2019,95
+MDG,Madagascar,2019,963712
+GIN,Guinea,2018,1214996
+TCD,Chad,2018,1364706
+SDN,Sudan,2018,1648683
+ECU,Ecuador,2018,1653
+SLE,Sierra Leone,2018,1733831
+BEN,Benin,2018,1975812
+BFA,Burkina Faso,2018,10278970
+MOZ,Mozambique,2018,10304472
+BGD,Bangladesh,2018,10482
+GAB,Gabon,2018,111719
+COG,Congo,2018,116903
+NGA,Nigeria,2018,14548024
+COM,Comoros,2018,15613
+NIC,Nicaragua,2018,15917
+YEM,Yemen,2018,157900
+COD,Democratic Republic of the Congo,2018,16972207
+GUY,Guyana,2018,17038
+GNB,Guinea-Bissau,2018,171075
+BRA,Brazil,2018,187757
+CPV,Cabo Verde,2018,2
+TGO,Togo,2018,2002877
+CMR,Cameroon,2018,2257633
+KEN,Kenya,2018,2318090
+MLI,Mali,2018,2345475
+STP,Sao Tome and Principe,2018,2937
+IDN,Indonesia,2018,222125
+AFG,Afghanistan,2018,248689
+DJI,Djibouti,2018,25319
+ZWE,Zimbabwe,2018,263346
+BLZ,Belize,2018,3
+MYT,Mayotte,2018,3
+GTM,Guatemala,2018,3018
+NER,Niger,2018,3046450
+VNM,Viet Nam,2018,3132
+PRK,Democratic People's Republic of Korea,2018,3698
+NAM,Namibia,2018,30567
+MRT,Mauritania,2018,30609
+SOM,Somalia,2018,31021
+SUR,Suriname,2018,37
+PAK,Pakistan,2018,374510
+RWA,Rwanda,2018,4231883
+PHL,Philippines,2018,4559
+CIV,Côte d’Ivoire,2018,4766477
+GHA,Ghana,2018,4931454
+BDI,Burundi,2018,4966511
+VEN,Venezuela (Bolivarian Republic of),2018,404924
+IND,India,2018,429928
+DOM,Dominican Republic,2018,433
+MAR,Morocco,2018,445
+PER,Peru,2018,45443
+ERI,Eritrea,2018,46440
+NPL,Nepal,2018,493
+ZMB,Zambia,2018,5039679
+THA,Thailand,2018,5110
+AGO,Angola,2018,5150575
+BOL,Bolivia (Plurinational State of),2018,5342
+UGA,Uganda,2018,5759174
+MWI,Malawi,2018,5865476
+KOR,Republic of Korea,2018,501
+PNG,Papua New Guinea,2018,516249
+SEN,Senegal,2018,530652
+BWA,Botswana,2018,534
+GUF,French Guiana,2018,546
+SLB,Solomon Islands,2018,59191
+BTN,Bhutan,2018,6
+TZA,United Republic of Tanzania,2018,6051844
+SAU,Saudi Arabia,2018,61
+COL,Colombia,2018,61195
+KHM,Cambodia,2018,62582
+HND,Honduras,2018,632
+VUT,Vanuatu,2018,632
+PAN,Panama,2018,684
+SWZ,Eswatini,2018,686
+CRI,Costa Rica,2018,70
+MMR,Myanmar,2018,76518
+HTI,Haiti,2018,8828
+GNQ,Equatorial Guinea,2018,8962
+MEX,Mexico,2018,803
+GMB,Gambia,2018,87448
+LAO,Lao People's Democratic Republic,2018,9022
+ZAF,South Africa,2018,9562
+ETH,Ethiopia,2018,962087
+CAF,Central African Republic,2018,972119
+MDG,Madagascar,2018,972790
+SSD,South Sudan,2018,98843
+LBR,Liberia,2017,1093115
+VUT,Vanuatu,2017,1227
+HND,Honduras,2017,1273
+ECU,Ecuador,2017,1275
+GIN,Guinea,2017,1335323
+SSD,South Sudan,2017,1488005
+ETH,Ethiopia,2017,1530739
+SLE,Sierra Leone,2017,1651236
+TGO,Togo,2017,1756582
+BWA,Botswana,2017,1847
+BEN,Benin,2017,1933912
+TCD,Chad,2017,1962372
+BFA,Burkina Faso,2017,10557260
+NIC,Nicaragua,2017,10949
+BTN,Bhutan,2017,11
+UGA,Uganda,2017,11667831
+CRI,Costa Rica,2017,12
+COG,Congo,2017,127939
+NGA,Nigeria,2017,13087878
+GUY,Guyana,2017,13936
+SUR,Suriname,2017,137
+DJI,Djibouti,2017,14810
+YEM,Yemen,2017,143333
+GNQ,Equatorial Guinea,2017,15725
+GNB,Guinea-Bissau,2017,152619
+TLS,Timor-Leste,2017,16
+COD,Democratic Republic of the Congo,2017,16793002
+SAU,Saudi Arabia,2017,177
+BRA,Brazil,2017,189559
+HTI,Haiti,2017,19135
+STP,Sao Tome and Principe,2017,2239
+CMR,Cameroon,2017,2244788
+MLI,Mali,2017,2277218
+NER,Niger,2017,2761268
+MRT,Mauritania,2017,20105
+ZAF,South Africa,2017,23381
+IDN,Indonesia,2017,261557
+BGD,Bangladesh,2017,29228
+KEN,Kenya,2017,3607026
+AGO,Angola,2017,3874892
+COM,Comoros,2017,3896
+AFG,Afghanistan,2017,313086
+DOM,Dominican Republic,2017,341
+SOM,Somalia,2017,35138
+GAB,Gabon,2017,35244
+PAK,Pakistan,2017,369817
+SEN,Senegal,2017,395706
+CIV,Côte d’Ivoire,2017,4034781
+GTM,Guatemala,2017,4121
+VNM,Viet Nam,2017,4548
+BOL,Bolivia (Plurinational State of),2017,4572
+PRK,Democratic People's Republic of Korea,2017,4603
+MWI,Malawi,2017,4947443
+VEN,Venezuela (Bolivarian Republic of),2017,411586
+CAF,Central African Republic,2017,411913
+CPV,Cabo Verde,2017,423
+KOR,Republic of Korea,2017,436
+SWZ,Eswatini,2017,440
+ZWE,Zimbabwe,2017,471030
+PNG,Papua New Guinea,2017,488878
+ZMB,Zambia,2017,5505639
+TZA,United Republic of Tanzania,2017,5744907
+RWA,Rwanda,2017,5940533
+SLB,Solomon Islands,2017,52519
+COL,Colombia,2017,52805
+ERI,Eritrea,2017,54005
+NAM,Namibia,2017,54268
+PER,Peru,2017,55367
+GUF,French Guiana,2017,554
+IRN,Iran (Islamic Republic of),2017,57
+PHL,Philippines,2017,6737
+NPL,Nepal,2017,623
+PAN,Panama,2017,649
+BLZ,Belize,2017,7
+GHA,Ghana,2017,7003155
+THA,Thailand,2017,7416
+MEX,Mexico,2017,736
+KHM,Cambodia,2017,76804
+GMB,Gambia,2017,78040
+LAO,Lao People's Democratic Republic,2017,8435
+BDI,Burundi,2017,8795952
+SDN,Sudan,2017,800116
+IND,India,2017,844558
+MYS,Malaysia,2017,85
+MMR,Myanmar,2017,85019
+MYT,Mayotte,2017,9
+MOZ,Mozambique,2017,9892601
+MDG,Madagascar,2017,985852
+CHN,China,2016,1
+IND,India,2016,1087285
+ECU,Ecuador,2016,1191
+LBR,Liberia,2016,1191137
+CAF,Central African Republic,2016,1239317
+TCD,Chad,2016,1294768
+COM,Comoros,2016,1467
+BEN,Benin,2016,1610790
+ETH,Ethiopia,2016,1718504
+TGO,Togo,2016,1746334
+SLE,Sierra Leone,2016,1775306
+GUY,Guyana,2016,10697
+MMR,Myanmar,2016,110146
+SLV,El Salvador,2016,12
+THA,Thailand,2016,12076
+BRA,Brazil,2016,124177
+NGA,Nigeria,2016,13598282
+DJI,Djibouti,2016,13822
+GNQ,Equatorial Guinea,2016,147714
+BTN,Bhutan,2016,15
+LAO,Lao People's Democratic Republic,2016,15509
+GNB,Guinea-Bissau,2016,156471
+COD,Democratic Republic of the Congo,2016,16821130
+GMB,Gambia,2016,162739
+COG,Congo,2016,171847
+MYT,Mayotte,2016,18
+NAM,Namibia,2016,19510
+STP,Sao Tome and Principe,2016,2238
+VUT,Vanuatu,2016,2243
+MLI,Mali,2016,2311098
+CMR,Cameroon,2016,2476153
+HTI,Haiti,2016,21430
+GUF,French Guiana,2016,217
+IDN,Indonesia,2016,218449
+GAB,Gabon,2016,23915
+ERI,Eritrea,2016,24251
+VEN,Venezuela (Bolivarian Republic of),2016,240613
+AFG,Afghanistan,2016,241233
+SWZ,Eswatini,2016,250
+MYS,Malaysia,2016,266
+BGD,Bangladesh,2016,27628
+SAU,Saudi Arabia,2016,272
+MRT,Mauritania,2016,29156
+KEN,Kenya,2016,3064796
+RWA,Rwanda,2016,3380568
+CIV,Côte d’Ivoire,2016,3754504
+AGO,Angola,2016,3794253
+ZWE,Zimbabwe,2016,316631
+PAK,Pakistan,2016,329005
+SEN,Senegal,2016,349540
+SOM,Somalia,2016,35628
+BLZ,Belize,2016,4
+CRI,Costa Rica,2016,4
+HND,Honduras,2016,4094
+VNM,Viet Nam,2016,4161
+NER,Niger,2016,4258110
+ZAF,South Africa,2016,4323
+MWI,Malawi,2016,4827373
+ZMB,Zambia,2016,4851319
+KHM,Cambodia,2016,43380
+CPV,Cabo Verde,2016,49
+IRQ,Iraq,2016,5
+GTM,Guatemala,2016,5000
+PRK,Democratic People's Republic of Korea,2016,5033
+GHA,Ghana,2016,5428979
+BOL,Bolivia (Plurinational State of),2016,5542
+TZA,United Republic of Tanzania,2016,5762462
+NPL,Nepal,2016,507
+PNG,Papua New Guinea,2016,534819
+SLB,Solomon Islands,2016,54432
+MEX,Mexico,2016,551
+PER,Peru,2016,56623
+SDN,Sudan,2016,566015
+NIC,Nicaragua,2016,6272
+PHL,Philippines,2016,6625
+KOR,Republic of Korea,2016,602
+BWA,Botswana,2016,659
+MDG,Madagascar,2016,686024
+DOM,Dominican Republic,2016,690
+SSD,South Sudan,2016,7619
+PAN,Panama,2016,769
+SUR,Suriname,2016,78
+BDI,Burundi,2016,8793176
+IRN,Iran (Islamic Republic of),2016,81
+TLS,Timor-Leste,2016,81
+COL,Colombia,2016,82609
+MOZ,Mozambique,2016,9690873
+UGA,Uganda,2016,9735849
+BFA,Burkina Faso,2016,9779411
+YEM,Yemen,2016,99700
+GIN,Guinea,2016,992146
+MYT,Mayotte,2015,1
+IND,India,2015,1169261
+CMR,Cameroon,2015,1193281
+SLE,Sierra Leone,2015,1483376
+TGO,Togo,2015,1610711
+BEN,Benin,2015,1721626
+ETH,Ethiopia,2015,1867059
+COM,Comoros,2015,1884
+PHL,Philippines,2015,11325
+AFG,Afghanistan,2015,119859
+COD,Democratic Republic of the Congo,2015,12538805
+VEN,Venezuela (Bolivarian Republic of),2015,136402
+THA,Thailand,2015,14265
+BRA,Brazil,2015,141229
+GNQ,Equatorial Guinea,2015,15142
+GNB,Guinea-Bissau,2015,150085
+IRN,Iran (Islamic Republic of),2015,167
+HTI,Haiti,2015,17583
+MMR,Myanmar,2015,182465
+KEN,Kenya,2015,2041277
+STP,Sao Tome and Principe,2015,2056
+NIC,Nicaragua,2015,2279
+NER,Niger,2015,2392108
+MLI,Mali,2015,2454508
+RWA,Rwanda,2015,2505794
+AGO,Angola,2015,2769305
+SOM,Somalia,2015,20953
+PAK,Pakistan,2015,203859
+IDN,Indonesia,2015,217017
+MRT,Mauritania,2015,22631
+GAB,Gabon,2015,23867
+SLB,Solomon Islands,2015,23998
+SSD,South Sudan,2015,24371
+MYS,Malaysia,2015,242
+GMB,Gambia,2015,246348
+ERI,Eritrea,2015,28036
+BWA,Botswana,2015,284
+CIV,Côte d’Ivoire,2015,3375904
+HND,Honduras,2015,3555
+MWI,Malawi,2015,3661238
+SWZ,Eswatini,2015,318
+BTN,Bhutan,2015,34
+PNG,Papua New Guinea,2015,346431
+LAO,Lao People's Democratic Republic,2015,36078
+GUF,French Guiana,2015,374
+CHN,China,2015,39
+BGD,Bangladesh,2015,39590
+ZMB,Zambia,2015,4184661
+TZA,United Republic of Tanzania,2015,4900278
+ZAF,South Africa,2015,4959
+ZWE,Zimbabwe,2015,484614
+SEN,Senegal,2015,492253
+SLV,El Salvador,2015,5
+BDI,Burundi,2015,5428710
+GTM,Guatemala,2015,5538
+GHA,Ghana,2015,5657096
+COG,Congo,2015,51529
+MEX,Mexico,2015,517
+PAN,Panama,2015,546
+COL,Colombia,2015,55334
+VUT,Vanuatu,2015,571
+SDN,Sudan,2015,586827
+NPL,Nepal,2015,591
+CAF,Central African Republic,2015,598833
+BOL,Bolivia (Plurinational State of),2015,6874
+PER,Peru,2015,61865
+ECU,Ecuador,2015,618
+KOR,Republic of Korea,2015,627
+DOM,Dominican Republic,2015,631
+KHM,Cambodia,2015,68109
+CPV,Cabo Verde,2015,7
+BFA,Burkina Faso,2015,7015446
+PRK,Democratic People's Republic of Korea,2015,7022
+UGA,Uganda,2015,7412747
+YEM,Yemen,2015,76259
+TCD,Chad,2015,787046
+NGA,Nigeria,2015,8068583
+MOZ,Mozambique,2015,8222814
+TLS,Timor-Leste,2015,80
+SUR,Suriname,2015,81
+GIN,Guinea,2015,810979
+SAU,Saudi Arabia,2015,83
+BLZ,Belize,2015,9
+NAM,Namibia,2015,9162
+VNM,Viet Nam,2015,9331
+DJI,Djibouti,2015,9473
+GUY,Guyana,2015,9984
+MDG,Madagascar,2015,938490
+LBR,Liberia,2015,941711
+MYT,Mayotte,2014,1
+SDN,Sudan,2014,1068506
+IND,India,2014,1102205
+NIC,Nicaragua,2014,1142
+BEN,Benin,2014,1309238
+VUT,Vanuatu,2014,1314
+BWA,Botswana,2014,1346
+SLE,Sierra Leone,2014,1374476
+TGO,Togo,2014,1524339
+RWA,Rwanda,2014,1623176
+STP,Sao Tome and Principe,2014,1754
+COD,Democratic Republic of the Congo,2014,10288519
+PRK,Democratic People's Republic of Korea,2014,10535
+AFG,Afghanistan,2014,106478
+SOM,Somalia,2014,11246
+ZAF,South Africa,2014,11705
+GUY,Guyana,2014,12354
+BRA,Brazil,2014,137888
+NAM,Namibia,2014,15692
+VNM,Viet Nam,2014,15752
+MRT,Mauritania,2014,15835
+GMB,Gambia,2014,168256
+HTI,Haiti,2014,17696
+SLB,Solomon Islands,2014,18404
+BLZ,Belize,2014,19
+BTN,Bhutan,2014,19
+TJK,Tajikistan,2014,2
+MLI,Mali,2014,2039853
+ETH,Ethiopia,2014,2118815
+COM,Comoros,2014,2203
+AGO,Angola,2014,2298979
+KEN,Kenya,2014,2851555
+MWI,Malawi,2014,2905310
+GNQ,Equatorial Guinea,2014,20417
+MMR,Myanmar,2014,205658
+ECU,Ecuador,2014,242
+IDN,Indonesia,2014,252027
+CPV,Cabo Verde,2014,26
+PAK,Pakistan,2014,264867
+SEN,Senegal,2014,265624
+CAF,Central African Republic,2014,295088
+HND,Honduras,2014,3378
+GHA,Ghana,2014,3415912
+UGA,Uganda,2014,3631939
+CIV,Côte d’Ivoire,2014,3712831
+NER,Niger,2014,3963768
+SAU,Saudi Arabia,2014,30
+GAB,Gabon,2014,31900
+PNG,Papua New Guinea,2014,314036
+TLS,Timor-Leste,2014,342
+IRN,Iran (Islamic Republic of),2014,358
+SWZ,Eswatini,2014,389
+ZMB,Zambia,2014,4077547
+BDI,Burundi,2014,4726299
+GTM,Guatemala,2014,4929
+COL,Colombia,2014,40768
+SUR,Suriname,2014,401
+THA,Thailand,2014,41218
+GUF,French Guiana,2014,448
+DOM,Dominican Republic,2014,459
+MDG,Madagascar,2014,470212
+BFA,Burkina Faso,2014,5428655
+ERI,Eritrea,2014,50534
+LAO,Lao People's Democratic Republic,2014,50674
+CHN,China,2014,53
+ZWE,Zimbabwe,2014,550696
+KOR,Republic of Korea,2014,557
+BGD,Bangladesh,2014,57480
+MYS,Malaysia,2014,596
+SLV,El Salvador,2014,6
+PHL,Philippines,2014,6019
+PER,Peru,2014,65252
+MEX,Mexico,2014,656
+COG,Congo,2014,66323
+GIN,Guinea,2014,660207
+TZA,United Republic of Tanzania,2014,680442
+KHM,Cambodia,2014,69178
+BOL,Bolivia (Plurinational State of),2014,7401
+MOZ,Mozambique,2014,7407175
+SSD,South Sudan,2014,71377
+NGA,Nigeria,2014,8572322
+NPL,Nepal,2014,832
+YEM,Yemen,2014,86707
+PAN,Panama,2014,864
+LBR,Liberia,2014,881224
+DJI,Djibouti,2014,9439
+VEN,Venezuela (Bolivarian Republic of),2014,90708
+TCD,Chad,2014,914032
+GNB,Guinea-Bissau,2014,97424
+TLS,Timor-Leste,2013,1025
+MYS,Malaysia,2013,1028
+BEN,Benin,2013,1090602
+NIC,Nicaragua,2013,1162
+LBR,Liberia,2013,1244220
+MWI,Malawi,2013,1280892
+UGA,Uganda,2013,1502362
+MLI,Mali,2013,1506940
+TZA,United Republic of Tanzania,2013,1554117
+MRT,Mauritania,2013,1587
+GHA,Ghana,2013,1643642
+DJI,Djibouti,2013,1684
+SLE,Sierra Leone,2013,1701958
+NPL,Nepal,2013,1974
+AGO,Angola,2013,1999868
+YEM,Yemen,2013,102778
+MYT,Mayotte,2013,11
+PRK,Democratic People's Republic of Korea,2013,14407
+BTN,Bhutan,2013,15
+GNQ,Equatorial Guinea,2013,16405
+CAF,Central African Republic,2013,163701
+BRA,Brazil,2013,169623
+VNM,Viet Nam,2013,17128
+NER,Niger,2013,2373591
+KEN,Kenya,2013,2375129
+CIV,Côte d’Ivoire,2013,2524326
+ETH,Ethiopia,2013,2645454
+VUT,Vanuatu,2013,2883
+BLZ,Belize,2013,20
+ERI,Eritrea,2013,21317
+GIN,Guinea,2013,211257
+CPV,Cabo Verde,2013,22
+GMB,Gambia,2013,242513
+SLB,Solomon Islands,2013,25609
+HTI,Haiti,2013,26543
+BGD,Bangladesh,2013,26891
+SSD,South Sudan,2013,262520
+PAK,Pakistan,2013,274648
+GAB,Gabon,2013,28982
+MOZ,Mozambique,2013,3282172
+BFA,Burkina Faso,2013,3769051
+GUY,Guyana,2013,31479
+PNG,Papua New Guinea,2013,316125
+MMR,Myanmar,2013,333871
+SAU,Saudi Arabia,2013,34
+IDN,Indonesia,2013,343527
+SEN,Senegal,2013,366687
+ECU,Ecuador,2013,368
+KOR,Republic of Korea,2013,383
+LAO,Lao People's Democratic Republic,2013,39589
+TJK,Tajikistan,2013,4
+BDI,Burundi,2013,4178338
+NAM,Namibia,2013,4775
+THA,Thailand,2013,41602
+CMR,Cameroon,2013,42581
+ZWE,Zimbabwe,2013,423702
+COG,Congo,2013,43232
+MDG,Madagascar,2013,433450
+KHM,Cambodia,2013,44069
+BWA,Botswana,2013,456
+DOM,Dominican Republic,2013,473
+PER,Peru,2013,48719
+IRN,Iran (Islamic Republic of),2013,480
+MEX,Mexico,2013,495
+HND,Honduras,2013,5364
+COL,Colombia,2013,51722
+AFG,Afghanistan,2013,52965
+SUR,Suriname,2013,525
+COM,Comoros,2013,53156
+GNB,Guinea-Bissau,2013,54584
+SDN,Sudan,2013,592383
+SLV,El Salvador,2013,6
+GTM,Guatemala,2013,6214
+COD,Democratic Republic of the Congo,2013,6719887
+PAN,Panama,2013,696
+BOL,Bolivia (Plurinational State of),2013,7342
+SOM,Somalia,2013,7407
+PHL,Philippines,2013,7720
+SWZ,Eswatini,2013,728
+TCD,Chad,2013,754565
+VEN,Venezuela (Bolivarian Republic of),2013,78643
+DZA,Algeria,2013,8
+ZAF,South Africa,2013,8645
+CHN,China,2013,83
+GUF,French Guiana,2013,875
+IND,India,2013,881730
+STP,Sao Tome and Principe,2013,9243
+RWA,Rwanda,2013,962618
+TGO,Togo,2013,965832
+CPV,Cabo Verde,2012,1
+IND,India,2012,1067824
+CIV,Côte d’Ivoire,2012,1140627
+NIC,Nicaragua,2012,1235
+LBR,Liberia,2012,1412629
+KEN,Kenya,2012,1453471
+AGO,Angola,2012,1496834
+SLE,Sierra Leone,2012,1537322
+MWI,Malawi,2012,1564984
+ETH,Ethiopia,2012,1692578
+MOZ,Mozambique,2012,1853276
+MRT,Mauritania,2012,1888
+TZA,United Republic of Tanzania,2012,1987629
+YEM,Yemen,2012,112359
+STP,Sao Tome and Principe,2012,12550
+COG,Congo,2012,120319
+SLV,El Salvador,2012,13
+GNQ,Equatorial Guinea,2012,15169
+PNG,Papua New Guinea,2012,150195
+VNM,Viet Nam,2012,19638
+GAB,Gabon,2012,19753
+BWA,Botswana,2012,193
+NAM,Namibia,2012,194
+BDI,Burundi,2012,2166690
+NPL,Nepal,2012,2204
+NER,Niger,2012,2329260
+UGA,Uganda,2012,2662258
+ERI,Eritrea,2012,21815
+PRK,Democratic People's Republic of Korea,2012,21850
+SSD,South Sudan,2012,225371
+LKA,Sri Lanka,2012,23
+SLB,Solomon Islands,2012,24383
+BRA,Brazil,2012,242758
+CHN,China,2012,244
+DJI,Djibouti,2012,25
+HTI,Haiti,2012,27866
+ZWE,Zimbabwe,2012,277736
+TJK,Tajikistan,2012,28
+MYT,Mayotte,2012,29
+BGD,Bangladesh,2012,29518
+PAK,Pakistan,2012,290781
+SEN,Senegal,2012,294385
+AZE,Azerbaijan,2012,3
+MYS,Malaysia,2012,3662
+GHA,Ghana,2012,3755166
+BFA,Burkina Faso,2012,3858046
+PER,Peru,2012,31436
+GUY,Guyana,2012,31601
+GMB,Gambia,2012,313469
+BLZ,Belize,2012,33
+GIN,Guinea,2012,340258
+KOR,Republic of Korea,2012,394
+VUT,Vanuatu,2012,4532
+COD,Democratic Republic of the Congo,2012,4791598
+MDG,Madagascar,2012,402900
+SWZ,Eswatini,2012,409
+IDN,Indonesia,2012,417819
+LAO,Lao People's Democratic Republic,2012,46153
+THA,Thailand,2012,46895
+MMR,Myanmar,2012,481204
+RWA,Rwanda,2012,483470
+COM,Comoros,2012,49840
+TLS,Timor-Leste,2012,5208
+GTM,Guatemala,2012,5346
+GNB,Guinea-Bissau,2012,50381
+VEN,Venezuela (Bolivarian Republic of),2012,52803
+SDN,Sudan,2012,526931
+AFG,Afghanistan,2012,54840
+ECU,Ecuador,2012,544
+DZA,Algeria,2012,55
+SUR,Suriname,2012,569
+CRI,Costa Rica,2012,6
+HND,Honduras,2012,6439
+ZAF,South Africa,2012,6621
+SOM,Somalia,2012,6817
+COL,Colombia,2012,60179
+CMR,Cameroon,2012,66656
+KHM,Cambodia,2012,69551
+BOL,Bolivia (Plurinational State of),2012,7415
+TCD,Chad,2012,7710
+BEN,Benin,2012,705839
+IRN,Iran (Islamic Republic of),2012,756
+PHL,Philippines,2012,8086
+BTN,Bhutan,2012,82
+SAU,Saudi Arabia,2012,82
+MEX,Mexico,2012,833
+PAN,Panama,2012,844
+CAF,Central African Republic,2012,87566
+MLI,Mali,2012,886482
+GUF,French Guiana,2012,900
+TGO,Togo,2012,909129
+DOM,Dominican Republic,2012,952
+DZA,Algeria,2011,1
+PRY,Paraguay,2011,1
+KEN,Kenya,2011,1002805
+GHA,Ghana,2011,1041260
+MEX,Mexico,2011,1124
+GUF,French Guiana,2011,1209
+ECU,Ecuador,2011,1219
+CHN,China,2011,1308
+IND,India,2011,1310656
+ETH,Ethiopia,2011,1480360
+NAM,Namibia,2011,1525
+BDI,Burundi,2011,1575237
+DOM,Dominican Republic,2011,1616
+IRN,Iran (Islamic Republic of),2011,1632
+AGO,Angola,2011,1632282
+MOZ,Mozambique,2011,1756874
+LBR,Liberia,2011,1921159
+CRI,Costa Rica,2011,10
+KHM,Cambodia,2011,106905
+SSD,South Sudan,2011,112024
+LKA,Sri Lanka,2011,124
+VNM,Viet Nam,2011,16612
+PRK,Democratic People's Republic of Korea,2011,16760
+LAO,Lao People's Democratic Republic,2011,17532
+CMR,Cameroon,2011,17874
+TCD,Chad,2011,181126
+TLS,Timor-Leste,2011,19735
+BTN,Bhutan,2011,194
+TZA,United Republic of Tanzania,2011,2151236
+NPL,Nepal,2011,2335
+MRT,Mauritania,2011,2926
+GNQ,Equatorial Guinea,2011,22466
+MDG,Madagascar,2011,224498
+COM,Comoros,2011,24856
+THA,Thailand,2011,24897
+PER,Peru,2011,25005
+SLB,Solomon Islands,2011,26657
+BRA,Brazil,2011,267146
+GMB,Gambia,2011,268020
+RWA,Rwanda,2011,273293
+SEN,Senegal,2011,274119
+GUY,Guyana,2011,29471
+CIV,Côte d’Ivoire,2011,29976
+SOM,Somalia,2011,3351
+MYS,Malaysia,2011,3954
+MWI,Malawi,2011,304499
+MLI,Mali,2011,307035
+MAR,Morocco,2011,312
+UGA,Uganda,2011,316241
+ZWE,Zimbabwe,2011,321901
+PAK,Pakistan,2011,334589
+HTI,Haiti,2011,34350
+ERI,Eritrea,2011,34848
+PAN,Panama,2011,354
+COG,Congo,2011,37744
+SWZ,Eswatini,2011,379
+AZE,Azerbaijan,2011,4
+COD,Democratic Republic of the Congo,2011,4561981
+IDN,Indonesia,2011,422447
+BEN,Benin,2011,422968
+BFA,Burkina Faso,2011,428113
+BWA,Botswana,2011,432
+VEN,Venezuela (Bolivarian Republic of),2011,45824
+MMR,Myanmar,2011,465294
+SYR,Syrian Arab Republic,2011,48
+MYT,Mayotte,2011,50
+KOR,Republic of Korea,2011,505
+TGO,Togo,2011,506764
+SDN,Sudan,2011,506806
+BGD,Bangladesh,2011,51773
+VUT,Vanuatu,2011,6179
+GTM,Guatemala,2011,6817
+COL,Colombia,2011,64436
+SLE,Sierra Leone,2011,644018
+SAU,Saudi Arabia,2011,69
+CPV,Cabo Verde,2011,7
+SLV,El Salvador,2011,7
+BOL,Bolivia (Plurinational State of),2011,7143
+HND,Honduras,2011,7618
+GNB,Guinea-Bissau,2011,71982
+BLZ,Belize,2011,72
+AFG,Afghanistan,2011,77549
+TJK,Tajikistan,2011,78
+SUR,Suriname,2011,795
+STP,Sao Tome and Principe,2011,8442
+NER,Niger,2011,838585
+PNG,Papua New Guinea,2011,84060
+PHL,Philippines,2011,9583
+ZAF,South Africa,2011,9866
+YEM,Yemen,2011,90954
+NIC,Nicaragua,2011,925
+GIN,Guinea,2011,95574
+DZA,Algeria,2010,1
+DJI,Djibouti,2010,1010
+TGO,Togo,2010,1019029
+BWA,Botswana,2010,1046
+GHA,Ghana,2010,1071637
+OMN,Oman,2010,1193
+ETH,Ethiopia,2010,1196829
+MEX,Mexico,2010,1226
+KOR,Republic of Korea,2010,1267
+TZA,United Republic of Tanzania,2010,1279362
+MOZ,Mozambique,2010,1522577
+IND,India,2010,1599986
+GUF,French Guiana,2010,1632
+UGA,Uganda,2010,1666582
+AGO,Angola,2010,1682870
+BDI,Burundi,2010,1763447
+SUR,Suriname,2010,1771
+IRN,Iran (Islamic Republic of),2010,1847
+ECU,Ecuador,2010,1888
+MRT,Mauritania,2010,1994
+YEM,Yemen,2010,106697
+CRI,Costa Rica,2010,110
+TJK,Tajikistan,2010,112
+GMB,Gambia,2010,116353
+COL,Colombia,2010,117650
+PRK,Democratic People's Republic of Korea,2010,13520
+BOL,Bolivia (Plurinational State of),2010,13769
+GAB,Gabon,2010,13936
+BLZ,Belize,2010,150
+SLV,El Salvador,2010,17
+VNM,Viet Nam,2010,17515
+PHL,Philippines,2010,19102
+COD,Democratic Republic of the Congo,2010,2417780
+DOM,Dominican Republic,2010,2482
+PRY,Paraguay,2010,20
+GIN,Guinea,2010,20936
+TCD,Chad,2010,200448
+MDG,Madagascar,2010,202450
+MAR,Morocco,2010,218
+LAO,Lao People's Democratic Republic,2010,22879
+GUY,Guyana,2010,22935
+SYR,Syrian Arab Republic,2010,23
+MYT,Mayotte,2010,237
+MLI,Mali,2010,239787
+SOM,Somalia,2010,24833
+PAK,Pakistan,2010,240591
+ZWE,Zimbabwe,2010,249379
+SWZ,Eswatini,2010,268
+SAU,Saudi Arabia,2010,29
+KGZ,Kyrgyzstan,2010,3
+UZB,Uzbekistan,2010,3
+STP,Sao Tome and Principe,2010,3146
+NPL,Nepal,2010,3894
+PER,Peru,2010,31545
+THA,Thailand,2010,32480
+SEN,Senegal,2010,330331
+BRA,Brazil,2010,334668
+ERI,Eritrea,2010,35982
+COM,Comoros,2010,36538
+SLB,Solomon Islands,2010,39704
+CHN,China,2010,4990
+PAN,Panama,2010,418
+MMR,Myanmar,2010,420808
+BTN,Bhutan,2010,436
+VEN,Venezuela (Bolivarian Republic of),2010,45155
+IDN,Indonesia,2010,465764
+CPV,Cabo Verde,2010,47
+TLS,Timor-Leste,2010,48139
+MYS,Malaysia,2010,5194
+AZE,Azerbaijan,2010,50
+GNB,Guinea-Bissau,2010,50391
+GNQ,Equatorial Guinea,2010,53813
+ARG,Argentina,2010,54
+BGD,Bangladesh,2010,55873
+NGA,Nigeria,2010,551187
+NAM,Namibia,2010,556
+CIV,Côte d’Ivoire,2010,62726
+NER,Niger,2010,642774
+RWA,Rwanda,2010,669322
+LKA,Sri Lanka,2010,684
+AFG,Afghanistan,2010,69798
+NIC,Nicaragua,2010,692
+GTM,Guatemala,2010,7384
+SDN,Sudan,2010,720557
+ZAF,South Africa,2010,8060
+BFA,Burkina Faso,2010,804539
+HTI,Haiti,2010,84153
+KEN,Kenya,2010,898531
+HND,Honduras,2010,9745
+VUT,Vanuatu,2010,9817
+SSD,South Sudan,2010,900283
+LBR,Liberia,2010,922173
+PNG,Papua New Guinea,2010,93956
+SLE,Sierra Leone,2010,934028
+KHM,Cambodia,2010,96464
+GEO,Georgia,2009,1
+KGZ,Kyrgyzstan,2009,1
+PRK,Democratic People's Republic of Korea,2009,14632
+TJK,Tajikistan,2009,164
+ARG,Argentina,2009,22
+TUR,Türkiye,2009,38
+IRN,Iran (Islamic Republic of),2009,4345
+MYS,Malaysia,2009,5955
+LKA,Sri Lanka,2009,531
+SAU,Saudi Arabia,2009,58
+AZE,Azerbaijan,2009,78
+PRY,Paraguay,2009,80
+KOR,Republic of Korea,2009,898
+PRK,Democratic People's Republic of Korea,2008,16611
+TUR,Türkiye,2008,166
+KGZ,Kyrgyzstan,2008,18
+IRQ,Iraq,2008,2
+DZA,Algeria,2008,3
+TJK,Tajikistan,2008,318
+PRY,Paraguay,2008,331
+GEO,Georgia,2008,6
+MYS,Malaysia,2008,6071
+SAU,Saudi Arabia,2008,61
+LKA,Sri Lanka,2008,649
+UZB,Uzbekistan,2008,7
+AZE,Azerbaijan,2008,72
+ARG,Argentina,2008,74
+IRN,Iran (Islamic Republic of),2008,8349
+PRY,Paraguay,2007,1337
+AZE,Azerbaijan,2007,108
+IRQ,Iraq,2007,2
+GEO,Georgia,2007,24
+DZA,Algeria,2007,26
+ARG,Argentina,2007,295
+UZB,Uzbekistan,2007,30
+TUR,Türkiye,2007,313
+OMN,Oman,2007,4
+MYS,Malaysia,2007,4048
+PRK,Democratic People's Republic of Korea,2007,4345
+SAU,Saudi Arabia,2007,467
+TJK,Tajikistan,2007,635
+KGZ,Kyrgyzstan,2007,96
+DZA,Algeria,2006,1
+ARG,Argentina,2006,106
+AZE,Azerbaijan,2006,141
+KGZ,Kyrgyzstan,2006,318
+GEO,Georgia,2006,59
+TUR,Türkiye,2006,796
+PRY,Paraguay,2006,820
+ARG,Argentina,2005,124
+GEO,Georgia,2005,155
+TUR,Türkiye,2005,2084
+KGZ,Kyrgyzstan,2005,225
+AZE,Azerbaijan,2005,242
+PRY,Paraguay,2005,376
+MAR,Morocco,2004,1
+SYR,Syrian Arab Republic,2004,1
+DZA,Algeria,2004,2
+GEO,Georgia,2004,257
+AZE,Azerbaijan,2004,386
+TUR,Türkiye,2004,5302
+PRY,Paraguay,2004,692
+KGZ,Kyrgyzstan,2004,91
+PRY,Paraguay,2003,1388
+SYR,Syrian Arab Republic,2003,2
+GEO,Georgia,2003,316
+MAR,Morocco,2003,4
+KGZ,Kyrgyzstan,2003,461
+AZE,Azerbaijan,2003,480
+DZA,Algeria,2003,5
+OMN,Oman,2003,6
+TUR,Türkiye,2003,9222
+DZA,Algeria,2002,10
+TUR,Türkiye,2002,10224
+SYR,Syrian Arab Republic,2002,15
+MAR,Morocco,2002,19
+KGZ,Kyrgyzstan,2002,2725
+PRY,Paraguay,2002,2775
+GEO,Georgia,2002,474
+AZE,Azerbaijan,2002,505
+OMN,Oman,2002,6
+AZE,Azerbaijan,2001,1054
+TUR,Türkiye,2001,10812
+KGZ,Kyrgyzstan,2001,15
+OMN,Oman,2001,2
+PRY,Paraguay,2001,2706
+GEO,Georgia,2001,438
+DZA,Algeria,2001,6
+SYR,Syrian Arab Republic,2001,63
+AZE,Azerbaijan,2000,1526
+TUR,Türkiye,2000,11432
+GEO,Georgia,2000,245
+MAR,Morocco,2000,3
+DZA,Algeria,2000,34
+OMN,Oman,2000,6
+SYR,Syrian Arab Republic,2000,6
+PRY,Paraguay,2000,6853
+KGZ,Kyrgyzstan,2000,7

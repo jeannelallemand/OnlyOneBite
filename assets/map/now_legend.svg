@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="texte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1329.43 263.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #199850;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #f08257;
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-10 {
+        font-family: Inter-Italic, Inter;
+        font-style: italic;
+        font-variation-settings: 'wght' 400, 'slnt' -10;
+      }
+
+      .cls-10, .cls-11 {
+        font-size: 41.22px;
+      }
+
+      .cls-10, .cls-11, .cls-3 {
+        fill: #1d1d1b;
+      }
+
+      .cls-11 {
+        font-family: Inter-Regular, Inter;
+        font-variation-settings: 'wght' 400, 'slnt' 0;
+      }
+
+      .cls-4 {
+        fill: #fecd5e;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #94c461;
+      }
+
+      .cls-13 {
+        letter-spacing: .03em;
+      }
+
+      .cls-6 {
+        fill: #d8e28d;
+      }
+
+      .cls-14 {
+        letter-spacing: .01em;
+      }
+
+      .cls-15 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        fill: #d82f27;
+      }
+
+      .cls-8 {
+        fill: #faf4c0;
+      }
+    </style>
+  </defs>
+  <rect class="cls-7" x="840.38" y="78.12" width="129.65" height="76.67"/>
+  <rect class="cls-2" x="705.09" y="78.12" width="129.65" height="76.67"/>
+  <rect class="cls-4" x="569.79" y="78.12" width="129.65" height="76.67"/>
+  <rect class="cls-8" x="434.49" y="78.12" width="129.65" height="76.67"/>
+  <rect class="cls-6" x="299.19" y="78.12" width="129.65" height="76.67"/>
+  <rect class="cls-5" x="163.89" y="78.12" width="129.65" height="76.67"/>
+  <rect class="cls-1" x="28.59" y="78.12" width="129.65" height="76.67"/>
+  <text class="cls-11" transform="translate(218.9 131.2)"><tspan x="0" y="0">1</tspan></text>
+  <text class="cls-11" transform="translate(78.38 131.2)"><tspan x="0" y="0">0</tspan></text>
+  <text class="cls-11" transform="translate(29.94 231.32)"><tspan x="0" y="0">Unsuitable</tspan></text>
+  <text class="cls-10" transform="translate(30.2 38.15)"><tspan x="0" y="0">Number of models wi</tspan><tspan class="cls-14" x="414.76" y="0">t</tspan><tspan x="430.21" y="0">h p</tspan><tspan class="cls-15" x="491.3" y="0">r</tspan><tspan x="506" y="0">edic</tspan><tspan class="cls-12" x="588.46" y="0">t</tspan><tspan x="603.21" y="0">ed suitability </tspan><tspan class="cls-12" x="862.42" y="0">t</tspan><tspan x="877.17" y="0">o Aedes albopictus</tspan></text>
+  <text class="cls-11" transform="translate(408.83 231.84)"><tspan x="0" y="0">Unce</tspan><tspan class="cls-13" x="101.69" y="0">r</tspan><tspan x="118.43" y="0">tain</tspan></text>
+  <text class="cls-11" transform="translate(806.14 231.32)"><tspan x="0" y="0">Suitable</tspan></text>
+  <text class="cls-11" transform="translate(351.59 131.2)"><tspan x="0" y="0">2</tspan></text>
+  <text class="cls-11" transform="translate(466.57 132.02)"><tspan x="0" y="0">3/4</tspan></text>
+  <text class="cls-11" transform="translate(761.52 131.2)"><tspan x="0" y="0">6</tspan></text>
+  <text class="cls-11" transform="translate(622.49 131.61)"><tspan x="0" y="0">5</tspan></text>
+  <text class="cls-11" transform="translate(895.8 131.2)"><tspan x="0" y="0">7</tspan></text>
+  <g>
+    <line class="cls-9" x1="260.88" y1="215.23" x2="373.61" y2="215.23"/>
+    <polygon class="cls-3" points="264.2 219.32 264.88 218.58 261.27 215.23 264.88 211.87 264.2 211.14 259.8 215.23 264.2 219.32"/>
+  </g>
+  <g>
+    <line class="cls-9" x1="747.33" y1="215.23" x2="634.61" y2="215.23"/>
+    <polygon class="cls-3" points="744.02 211.14 743.34 211.87 746.95 215.23 743.34 218.58 744.02 219.32 748.42 215.23 744.02 211.14"/>
+  </g>
+</svg>

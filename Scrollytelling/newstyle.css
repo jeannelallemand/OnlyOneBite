@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    
+}
+#root,
+#aroma,
+#text{
+    transition: opacity .3s ease-out;
+}
+
+#intro, #conclu{
+    width:100vw;
+    height: 15vh;
+
+}
+
+.subsection{
+    margin: 25vw 70vw;
+    width: 20vw;
+    height: 30vw;
+    z-index: 999;
+}
+
+.section{
+    padding-bottom: 25vh;
+}
+
+#chart{
+    z-index:-1;
+}
+
+.sticky{
+    position: sticky;
+    top:0;
+}

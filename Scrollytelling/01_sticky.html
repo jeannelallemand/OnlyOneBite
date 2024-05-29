@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cover,#footer{
+            width:100vw;
+            height:100vh;
+            background-color: rgb(38, 242, 96);
+        }
+        #bottom{
+            width:100vw;
+            height:80vh;
+            background-color: blue;
+        }
+        #lane{
+            width:20vw;
+            height:120vh; /* lenght of the scrolling */
+            background-color: rgb(255, 234, 0);
+            padding: 10vw;
+        }
+        #sticky{
+            width:100%;
+            height:10vw;
+            background-color: rgb(206, 3, 74);
+            position: sticky;/* the element that sticks */
+            top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cover"></div>
+    <div id="lane">
+        <div id="sticky"></div>
+        <div id="sticky"> 
+        </div>
+    </div>
+    <div id="lane">
+        <div id="sticky"></div>
+    </div>
+    <div id="bottom"></div>
+</body>
+</html>
