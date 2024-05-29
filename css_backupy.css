@@ -1,190 +1,412 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+text-decoration: none;
+}
+
 body {
+    overflow-x: hidden;
     margin: 0px;
     padding: 0px;
-    background-color: #DCE2F5;
+    background-color: white;
+    background-image: url('assets/blur_circle2.png'), url('assets/blur_circle.png'), url('assets/blur_circle.png'), url('assets/blur_circle.png'),  url('assets/blur_circle.png'), url('assets/blur_circle.png'), url('assets/blur_circle2.png'),  url('assets/blur_circle.png'), url('assets/blur_circle.png'), url('assets/blur_circle2.png'), url('assets/blur_circle.png');
+    background-size: 100vh, 120vh, 140vh, 120vh, 70vw, 170vh, 100vh, 120vh, 140vh;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: -40vh -40vh , 80vh 20vh, -20vh 100vh, 80vh 200vh, 20vw 300vh, 20vh 815vh, -40vh 1028vh, 120vh 1028vh, 18vh 920vh, -40vh 1120vh, 120vh 1150vh ;
+
+}
+
+#spreading{
+    background-image: url('assets/blur_circle.png');
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 80vh 0vh;
 }
 
 .big_title {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-weight: 300;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    font-size: 13vh;
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 1vh;
+    margin-bottom: 7vh;
+    font-size: 15vh;
     color: blue;
-    width: 80%;
-/*     background-color: red */
-}
-
-.title {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-weight: 400;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    color: blue;
-}
-
-.small_title {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-weight: 400;
-    margin-bottom: 15px;
-    margin-top: 0px;
-    font-size: 20px;
-    color: blue;
-}
-
-.text {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    font-weight: 400;
-    font-size: 12px;
-    color: black;
-}
-
-#description{
-    width:90%;
-}
-
-#step{
-    width:90%;
-    font-size: 20px;
-    margin-bottom: 200px;
+    width: 90%;
+    line-height: 90%;
     
 }
 
-#name_project {
-    width: 10vw;
-    height: 5vh;
-    background-color: darkcyan;
-    position: fixed;
-    right: 20px;
-    top: 20px;
+
+.title {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
+    line-height: 90%;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 8vh;
+    color: blue;
+
+}
+
+.small_title {
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    line-height: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 3vh;
+    color: blue;
+}
+
+.indication {
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    line-height: 90%;
+    margin: 0px 20px;
+    font-size: 3vh;
+    color: blue;
+}
+
+.indication.active {
+    border-bottom: solid blue;
+    
+}
+
+.text {
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+    font-size: 1.5vh;
+    color: black;
+}
+
+
+#container {
+    position: relative; 
+    height: auto; 
 }
 
 #menu {
     width: 50px;
     height: 30vw;
-    background-color: darkcyan;
     position: fixed;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%); 
+    top: 10vh;
+    margin-top: 10vh;
 }
 
-#stand {
-    width: 100vw - (40px);
+
+
+.transform_horizontal {
+    display: flex;
+    justify-content: left;
+    width: 40vh;
+    border-bottom: solid blue;
+    transform-origin: top left;
+}
+
+.description {
+    width: 90%;
+}
+
+#step1, #step2, #step3, #step4, #step5, #step6 {
+    width: 50%;
+    font-size: 3vh;
+    margin-bottom: 55vh;
+    color: #001AFF;
+
+}
+
+.stand {
+    width: 94vw;
     height: 92vh;
-    padding: 40px;
+    padding: 3vw;
     padding-top: 3vh;
-    background-color: rgb(213, 213, 213);
+
 }
 
 #bottom {
-    width: 100vw;
-    height: 50vh;
+    width: 94vw;
     background-color: rgb(0, 0, 250);
 }
 
-#lane {
-    width: 100vw;
+.lane {
+    width: 94vw;
     display: flex;
+    padding: 3vw;
+    padding-top: 3vh;
 }
 
 .column {
-    width: 20vw; 
-    margin-bottom: 20px; 
-    display: flex;   
-    flex-direction: column;
-    align-items: flex-start; 
-}
-
-#left_column{
-    width:50vw;
-    background-color: pink;
+    width: 20vw;
     display: flex;
-    padding: 2vh;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: none;
 }
 
-#right_column{
-    width: 50vw;
-    background-color: green;
-    /* display:flex;
-    flex-direction: column; */
-    padding: 2vh;
-}
-
-#fixed{
-    position:absolute;
-    width:50%;
+#fixed {
+    position: absolute;
+    width: 90%;
     padding: 10px;
 }
-
 
 
 #sticky {
+    width: auto;
+    height: 8vh;
+    float: left;
+    position: sticky;
+    top: 2vh;
+    margin-top: 0vh;
+    margin-bottom: 75vh;
+    padding-top: 0px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.blurry_background{
+    position: sticky;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.sticky_fixed {
     float: left;
     width: 40vw;
-    height: 14vh;
-    background-color:white;
-    position: sticky;
-    top: 20px;
-    margin-bottom: 75vh;
+    height: auto;
+    position: absolute;
     padding: 10px;
 }
 
-
 #sticky_2 {
-    width: 32vw;
-    height: 50vw;
-    background-color: darkmagenta;
+    width: 20vw;
+    height: 60vw;
+    background-color: none;
     position: sticky;
-    top: 20%;
-    margin-right: 5vw;
-    margin-top: 20%;
-    margin-bottom: 20vh;
-    display: right; 
+    top: 17vh;
+    margin-left: auto; 
+    margin-right: 10vw;
+    margin-top: 17vh;
+    margin-bottom: 85vh;
 }
 
-#sticky_3{
+#grid{
+    align-self: initial;
+    display: grid; /* Use grid layout */
+}
+#grid > * {
+    grid-area: 1 / 1; /* Place all elements in the same grid cell */
+}
+
+#sticky_3 {
     width: 15vw;
-    height: 20vh; 
-    background-color: red;
+    height: 20vh;
+    position: sticky;
+    top: 17vh;
+    margin-top: 17vh;
+    margin-bottom: 260vh;
+
+}
+
+#sticky_4 {
+    width: 15vw;
+    height: 20vh;
+    position: sticky;
+    top: 17vh;
+    margin-top: -45vh;
+    margin-bottom: 30vh;
+
+}
+
+#sticky_5 {
+    width: 15vw;
+    height: 20vh;
     position: sticky;
     top: 250px;
-    margin-top: 250px; 
-    margin-bottom: 170vh;
+    margin-top: 100vh;
+    margin-bottom: 120vh;
+}
+
+.overlap {
+    position: absolute; 
+    top: 0; 
+    left:0; 
+    width: 12vw; 
+    height: 12vw; 
+    transition: opacity 1.5s linear; 
 
 }
 
- #sticky_4 {
-    width: 15vw;
-    height: 20vh; 
-    background-color: purple;
-    position: sticky;
-    top: 250px;
-    margin-top: -350px; 
-    margin-bottom: 200px;
-   
+#sticky_5 .overlap.active {
+    opacity: 1; 
+}
+#name_menu{
+    position: fixed; 
+    top:0; 
+    display: flex; 
+    float: right;
+    right: 1vw;
 }
 
-#sticky_5{
-    width: 15vw;
-    height: 20vh; 
-    background-color: palevioletred;
-    position: sticky;
-    top: 250px;
-    margin-top: 400px; 
-    margin-bottom: 100vh;
-}
-
-.api-container {
+.float_horizontal {
     margin: none;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-between;
     text-anchor: middle;
 }
 
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.6vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.4vh;
+    outline: none;
+    margin-top: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.5vh;
+    height: 2.5vh;
+    background-color: #ffffff;
+    border: 0.6vh solid #001AFF;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider label {
+    display: block;
+}
+
+.slider .slider-values {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 2vh;
+    margin-top: 10px;
+}
+
+#dengueButton {
+    background-color: #6B46E1;
+    
+}
+#dengueButton:hover {
+    background-color: #886aec;
+}
+
+
+#malariaButton {
+    background-color: #001AFF;
+}
+
+#malariaButton:hover {
+    background-color: #4154ff;
+}
+
+.button {
+    color: white;
+    border: none;
+    padding: 1vh;
+
+    cursor: pointer;
+    width: 100%;
+    margin: 0.5vh 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+      font-size: 1.5vh;
+}
+
+.dengue{
+    background-color: #6B46E1;
+    border: 3px solid #6B46E1;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.malaria{
+    background-color: #001AFF;
+    border: 3px solid #001AFF;
+    padding: 5px;
+    border-radius: 20px;
+}
+.otherDisease{
+    background-color: #A3AED0;
+    border: 3px solid #A3AED0;
+    padding: 5px;
+    border-radius: 20px;
+}
+.categories{
+    background-color: white;
+    border: 3px solid white;
+    padding: 5px;
+    border-radius: 20px;
+    font-style: italic;
+}
+
+.change{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18vw;
+    margin:20px;
+}
+
+#malaria_death {
+    transition: transform 0.1s linear; 
+}
+
+#dengue_death {
+    transition: transform 0.1s linear;
+}
+
+#sick, #changing, #healthy, #health2, #sick2 {
+    transition: opacity 2s linear; 
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

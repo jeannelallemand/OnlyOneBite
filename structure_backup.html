@@ -9,1063 +9,1512 @@
     <link rel="stylesheet" href="css_structure.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
-<script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 
 <body>
 
-    <!--  LANDING PAGE -->
-    <div id="stand">
-        <div class="float_horizontal" style=" width:380px;  border-bottom: solid blue;">
-            <p class="indication">Diseases</p>
-            <p class="indication">Spread</p>
-            <p class="indication">Future</p>
-            <p class="indication">Protection</p>
-        </div>
 
-        <p class="title" style="font-size: 8vh; font-weight: 100; font-style: italic;">Bzzzzzz... scratch-scratch...
+    <!--  LANDING PAGE -->
+    <div class="stand" id="landing_page">
+
+
+        <p class="title" style="margin-top: 7vh; font-size: 8vh; font-weight: 200; font-style: italic;">Bzzzzzz...
+            scratch-scratch...
             slap ! </p>
-        <p class="big_title">No one likes mosquitoes,specially when they can transmit diseases </p>
+        <p class="big_title">No one likes mosquitoes, specially when they can transmit diseases </p>
 
         <div style=" display: flex; justify-content: flex-end; margin-right: 8vw;">
             <div>
-                <p class="small_title" style="text-align: center;"> How does it happen ?</p>
-                <p class="small_title" style="text-align: center;"> Follow the mosquito to know</p>
-                <svg height="60" width="100%" xmlns="http://www.w3.org/2000/svg">
-                    <circle r="20" cx="50%" cy="30" fill="blue" style="align-self: center;" />
-                </svg>
+                <p class="small_title" style="text-align: center; color: #FFFFFF;font-weight: 600;"> How does it
+                    happen
+                    ?</p>
+                <p class="small_title" style="text-align: center; color: #FFFFFF; font-weight: 600"> Follow the
+                    mosquito
+                    to know</p>
+                <a style="display: flex; justify-content: center;" href="#vector_born">
+                    <img class="pulse" src="assets/mosquito.svg" alt="none" width="100px" height="100px"
+                        id="scrollImage">
+                </a>
+
             </div>
 
         </div>
     </div>
 
-    <!-- VECTOR_BORN DISEASES -->
-    <div id="lane" style="height:275vh">
-        <div id="fixed" style="margin-top: 70px; width: 60%;">
-            <p class="text" id="description" style="margin-bottom: 10vh; width: 60%;"> Mosquitoes can transmit illnesses
-                to humans and other animals, known as
-                vector-borne diseases [1]. They are part of a group of vectors, including ticks and fleas, which carry
-                pathogens like viruses, bacteria, and parasites.</p>
-            <img src="assets/mosquito_species.svg" alt="none" width="60%" height="20%">
-            <p class="text" style="margin-bottom: 10vh;"> Among 3,578 mosquito species, 331 species are identified as
-                implicated in human
-                transmission [2]</p>
-            <img src="assets/map_half.svg" alt="none" width="90%" height="40%">
-            <p class="text"> Half of the world's population lives in a region at risk of a disease transmited by
-                mosquitoes [1]</p>
-            <p class="text" id="description" style="margin-top: 15vh; width: 60%;"> Among them, mosquitoes can transmit
-                several diseases. The main one are malaria, dengue, Zika virus, chikungunya, West Nile virus, yellow
-                fever, and Japanese encephalitis.</p>
-        </div>
-        <div id="fixed" class="float_horizontal" style="margin-top: 160vh">
-            <div class="text">
-                <p>Diseases</p>
-                <p>Pathogen</p>
-                <p>Vector</p>
-            </div>
-            <div class="text" style="text-align: center;">
-                <p>Malaria</p>
-                <p>Parasite</p>
-                <p>Mosquito Anopheles</p>
-            </div>
-            <div class="text" style="text-align: center;">
-                <p>Dengue</p>
-                <p>Virus</p>
-                <p>Mosquito Aedes</p>
-            </div>
-            <div class="text" style="text-align: center;">
-                <p>Other diseases</p>
-                <p>Virus, parasite, bacteria</p>
-                <p>Other vectors</p>
-            </div>
-        </div>
+    <section id="vector_born">
+        <!-- VECTOR_BORN DISEASES -->
+        <div class="lane" style="height:300vh" id="vector_born">
+            <div id="fixed" style="margin-top: 8vh; width: 50%;">
+                <p class="text" class="description" style="margin-bottom: 5vh; width: 60%;" id="world_exp"> Mosquitoes
+                    can
+                    transmit illnesses
+                    to humans and other animals, known as
+                    vector-borne diseases [1]. They are part of a group of vectors, including ticks and fleas, which
+                    carry
+                    pathogens like viruses, bacteria, and parasites.</p>
+                <img src="assets/mosquito_species.svg" alt="none" width="60%" height="20%">
+                <p class="text" style="margin-bottom: 5vh;"> Among 3,578 mosquito species, 331 species are identified as
+                    implicated in human
+                    transmission [2]</p>
+                <img src="assets/map_half.svg" alt="none" width="90%" height="40%">
+                <p class="text" id="diseases_exp1"> Half of the world's population lives in a region at risk of a
+                    disease
+                    transmited by
+                    mosquitoes [1]</p>
+                <p class="text" class="description" style="margin-top: 20vh; width: 60%;"> Among them,
+                    mosquitoes can transmit
+                    several diseases. The main one are malaria, dengue, Zika virus, chikungunya, West Nile virus, yellow
+                    fever, and Japanese encephalitis.</p>
 
-        <div id="fixed" style="margin-top: 170vh; width: 60%;">
-            <p class="text" id="description" style="margin-top: 15vh; width: 60%;">Malaria and dengue are the most
-                important ones. In 2022, malaria accounted for 249 million cases and caused 608,000 deaths. As of 2023,
-                more than 129 countries are at risk of dengue, with over 6 million cases and more than 6,000 deaths
-                attributed to the disease.</p>
-        </div>
-
-        <div id="fixed" class="float_horizontal" style="margin-top: 200vh">
-            <div class="text" style="margin-right: 10px;">
-                <p>Diseases</p>
-                <p>Pathogen</p>
-                <p>Vector</p>
-                <p style=" height: 20vh">Symptoms</p>
-                <p>Risk zone</p>
             </div>
-            <div class="text" style="text-align: center; width: 40vw">
-                <p>Malaria</p>
-                <p>Parasite</p>
-                <p>Mosquito Anopheles</p>
-                <div class="float_horizontal" style="text-align: left;  height: 20vh">
-                    <p>Most common symptoms :
-                        high fever (40°C/104°F)
-                        severe headache
-                        chills
-                        Usually starts 10-15 days after infection.
-                    </p>
-                    <p> Severe symptoms :
-                        extreme tiredness
-                        impaired consciousness
-                        multiple convulsions
-                        difficulty breathing
-                        dark or bloody urine
-                        jaundice
-                        abnormal bleeding</p>
+
+            <div id="fixed" class="float_horizontal" style="margin-top: 165vh; padding-right: 10vw;">
+                <div class="text" style=" width: 8vw;">
+                    <p class="categories">Diseases</p>
+                    <p class="categories">Pathogen</p>
+                    <p class="categories">Vector</p>
                 </div>
-                <p>Africa, Asia, South America</p>
-            </div>
-            <div class="text" style="text-align: center; width: 40vw">
-                <p>Dengue</p>
-                <p>Virus</p>
-                <p>Mosquito Aedes</p>
-                <div class="float_horizontal" style="text-align: left; margin-left: 10px; height: 20vh;">
-                    <p> Most common symptoms :
-                        high fever (40°C/104°F)
-                        severe headache
-                        pain behind the eyes
-                        muscle and joint pains
-                        nausea
-                        vomiting
-                        swollen glands
-                        rash
-                    </p>
-                    <p> Usually starts 4-10 days after infection.
-                        Individuals who are infected for the second time are at greater risk of severe dengue.</p>
+                <div class="text" style="text-align: center; width: 25vw; ">
+                    <p class="malaria" style="color: #FFFFFF;">Malaria</p>
+                    <p class="malaria" style="background-color:transparent">Parasite</p>
+                    <p class="malaria" style="color: #FFFFFF;">Mosquito Anopheles</p>
                 </div>
-                <p>South Europe, Africa, America, Asia, Oceania</p>
+                <div class="text" style="text-align: center;width: 25vw; ">
+                    <p class="dengue" style="color: #FFFFFF;">Dengue</p>
+                    <p class="dengue" style="background-color: transparent;">Virus</p>
+                    <p class="dengue" style="color: #FFFFFF;">Mosquito Aedes</p>
+                </div>
+                <div class="text" style="text-align: center;  width: 25vw">
+                    <p class="otherDisease" style="color: #FFFFFF;">Other diseases</p>
+                    <p class="otherDisease" style="background-color: transparent;">Virus, parasite, bacteria</p>
+                    <p class="otherDisease" style="color: #FFFFFF;">Other vectors</p>
+                </div>
             </div>
-        </div>
-        <div id="sticky">
-            <p class="title"> You said diseases ?</p>
-        </div>
-        <div id="sticky_2">
-            <p class="text">More than 700 000 deaths annually [1]</p>
-            <div id="grid" style="margin-bottom: 5vh;">
-                <svg id="malaria_death" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" viewBox="0 0 536 744.9" xml:space="preserve">
-                    <style type="text/css">
-                        .st0 {
-                            fill-rule: evenodd;
-                            clip-rule: evenodd;
-                            fill: #1752E2;
-                        }
 
-                        .st1 {
-                            opacity: 0;
-                            fill-rule: evenodd;
-                            clip-rule: evenodd;
-                            fill: #6981BB;
-                        }
-                    </style>
-                    <g id="malaria">
-                        <path class="st0" d="M12.4,97.1H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6V55
+            <div id="fixed" style="margin-top: 200vh; width: 60%;">
+                <p class="text" class="description" style="margin-top: 15vh; width: 60%;">Malaria and dengue are the
+                    most
+                    important ones. In 2022, malaria accounted for 249 million cases and caused 608,000 deaths. As of
+                    2023,
+                    more than 129 countries are at risk of dengue, with over 6 million cases and more than 6,000 deaths
+                    attributed to the disease.</p>
+            </div>
+
+            <div id="fixed" class="float_horizontal" style="margin-top: 230vh">
+                <div class="text" style="margin-right: 10px;">
+                    <p class="categories">Diseases</p>
+                    <p class="categories">Pathogen</p>
+                    <p class="categories">Vector</p>
+                    <p class="categories" style=" height: 150px">Symptoms</p>
+                    <p class="categories">Risk zone</p>
+                </div>
+                <div class="text" style="text-align: center; width: 40vw">
+                    <p class="malaria" style="color: #FFFFFF;">Malaria</p>
+                    <p class="malaria" style="background-color:transparent">Parasite</p>
+                    <p class="malaria" style="color: #FFFFFF;">Mosquito Anopheles</p>
+                    <div class="float_horizontal" style="text-align: left; height: 170px;">
+                        <p style="width:50%; padding: 0px 10px;" class="blurry_background">Most common symptoms :
+                            high fever (40°C/104°F)
+                            severe headache
+                            chills
+                            Usually starts 10-15 days after infection.
+                        </p>
+                        <p style="width:50%; padding: 0px 10px;" class="blurry_background"> Severe symptoms :
+                            extreme tiredness
+                            impaired consciousness
+                            multiple convulsions
+                            difficulty breathing
+                            dark or bloody urine
+                            jaundice
+                            abnormal bleeding</p>
+                    </div>
+                    <p class="malaria" style="color: #FFFFFF;">Africa, Asia, South America</p>
+                </div>
+                <div class="text" style="text-align: center; width: 40vw">
+                    <p class="dengue" style="color: #FFFFFF;">Dengue</p>
+                    <p class="dengue" style="background-color: transparent;">Virus</p>
+                    <p class="dengue" style="color: #FFFFFF;">Mosquito Aedes</p>
+                    <div class="float_horizontal" style="text-align: left; margin-left: 10px; height: 170px;">
+                        <p style="width:50%; padding: 0px 10px;" class="blurry_background"> Most common symptoms :
+                            high fever (40°C/104°F)
+                            severe headache
+                            pain behind the eyes
+                            muscle and joint pains
+                            nausea
+                            vomiting
+                            swollen glands
+                            rash
+                        </p>
+                        <p style="width:50%; padding: 0px 10px;" class="blurry_background"> Usually starts 4-10 days
+                            after
+                            infection.
+                            Individuals who are infected for the second time are at greater risk of severe dengue.</p>
+                    </div>
+                    <p class="dengue" style="color: #FFFFFF;">South Europe, Africa, America, Asia, Oceania</p>
+                </div>
+            </div>
+            <div id="sticky">
+                <p class="title"> You said diseases ?</p>
+            </div>
+            <div id="sticky_2">
+                <p class="text">More than 700 000 deaths annually [1]</p>
+                <div id="grid" style="margin-bottom: 5vh;">
+                    <svg id="malaria_death" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 536 744.9"
+                        xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #001AFF;
+                            }
+
+                            .st1 {
+                                opacity: 0;
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #6981BB;
+                            }
+                        </style>
+                        <g id="malaria">
+                            <path class="st0" d="M12.4,97.1H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6V55
 		c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8C0,25.8,5.1,20,11.3,20h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C17.2,95,15.1,97.1,12.4,97.1z M17.8,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1C9.8,3.6,13.3,0,17.8,0z" />
-                        <path class="st0" d="M12.4,421H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6v20.3
+                            <path class="st0" d="M12.4,421H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6v20.3
 		c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C17.2,418.8,15.1,421,12.4,421z M17.8,323.8c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1s-8-3.6-8-8.1S13.3,323.8,17.8,323.8z" />
-                        <path class="st0" d="M12.4,205.1H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M12.4,205.1H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V163c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C17.2,202.9,15.1,205.1,12.4,205.1z M17.8,107.9c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C9.8,111.6,13.3,107.9,17.8,107.9z" />
-                        <path class="st0" d="M12.4,528.9H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M12.4,528.9H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C17.2,526.8,15.1,528.9,12.4,528.9z M17.8,431.8c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C9.8,435.4,13.3,431.8,17.8,431.8z" />
-                        <path class="st0" d="M12.4,313H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6v20.3
+                            <path class="st0" d="M12.4,313H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6v20.3
 		c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C17.2,310.9,15.1,313,12.4,313z M17.8,215.9c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1s-8-3.6-8-8.1S13.3,215.9,17.8,215.9z" />
-                        <path class="st0" d="M12.4,636.9H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M12.4,636.9H12c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C17.2,634.7,15.1,636.9,12.4,636.9z M17.8,539.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C9.8,543.3,13.3,539.7,17.8,539.7z" />
-                        <path class="st0" d="M232.5,97.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M232.5,97.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		V55c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4V32.8c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3V34.7c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C237.6,95,235.3,97.1,232.5,97.1z M238.2,0c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1s-8.5-3.6-8.5-8.1
 		C229.7,3.6,233.5,0,238.2,0z" />
-                        <path class="st0" d="M232.5,421h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M232.5,421h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C237.6,418.8,235.3,421,232.5,421z M238.2,323.8c4.7,0,8.5,3.6,8.5,8.1s-3.8,8.1-8.5,8.1s-8.5-3.6-8.5-8.1
 		S233.5,323.8,238.2,323.8z" />
-                        <path class="st0" d="M232.5,205.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M232.5,205.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		V163c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C237.6,202.9,235.3,205.1,232.5,205.1z M238.2,107.9c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		s-8.5-3.6-8.5-8.1C229.7,111.6,233.5,107.9,238.2,107.9z" />
-                        <path class="st0" d="M232.5,528.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M232.5,528.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C237.6,526.8,235.3,528.9,232.5,528.9z M238.2,431.8c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		s-8.5-3.6-8.5-8.1C229.7,435.4,233.5,431.8,238.2,431.8z" />
-                        <path class="st0" d="M232.5,636.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M232.5,636.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C237.6,634.7,235.3,636.9,232.5,636.9z M238.2,539.7c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		s-8.5-3.6-8.5-8.1C229.7,543.3,233.5,539.7,238.2,539.7z" />
-                        <path class="st0" d="M232.5,313h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M232.5,313h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C237.6,310.9,235.3,313,232.5,313z M238.2,215.9c4.7,0,8.5,3.6,8.5,8.1s-3.8,8.1-8.5,8.1s-8.5-3.6-8.5-8.1
 		S233.5,215.9,238.2,215.9z" />
-                        <path class="st0"
-                            d="M67.2,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0"
+                                d="M67.2,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V55c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8H79c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C72,95,69.9,97.1,67.2,97.1z M72.6,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1C64.6,3.6,68.2,0,72.6,0z" />
-                        <path class="st0"
-                            d="M67.2,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0"
+                                d="M67.2,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8H79c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C72,418.8,69.9,421,67.2,421z M72.6,323.8c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1S68.2,323.8,72.6,323.8z" />
-                        <path class="st0" d="M67.2,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M67.2,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V163c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8H79c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C72,202.9,69.9,205.1,67.2,205.1z M72.6,107.9c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
 		C64.6,111.6,68.2,107.9,72.6,107.9z" />
-                        <path class="st0" d="M67.2,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M67.2,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8H79c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C72,634.7,69.9,636.9,67.2,636.9z M72.6,539.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
 		C64.6,543.3,68.2,539.7,72.6,539.7z" />
-                        <path class="st0" d="M67.2,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M67.2,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8H79c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C72,526.8,69.9,528.9,67.2,528.9z M72.6,431.8c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
 		C64.6,435.4,68.2,431.8,72.6,431.8z" />
-                        <path class="st0"
-                            d="M67.2,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0"
+                                d="M67.2,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8H79c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C72,310.9,69.9,313,67.2,313z M72.6,215.9c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1S68.2,215.9,72.6,215.9z" />
-                        <path class="st0"
-                            d="M288.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0"
+                                d="M288.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V55c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C293.7,95,291.5,97.1,288.9,97.1z M294.2,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1C286.2,3.6,289.8,0,294.2,0z" />
-                        <path class="st0" d="M288.9,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M288.9,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C293.7,418.8,291.5,421,288.9,421z M294.2,323.8c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		S289.8,323.8,294.2,323.8z" />
-                        <path class="st0" d="M288.9,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M288.9,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C293.7,634.7,291.5,636.9,288.9,636.9z M294.2,539.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C286.2,543.3,289.8,539.7,294.2,539.7z" />
-                        <path class="st0" d="M288.9,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M288.9,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V163c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C293.7,202.9,291.5,205.1,288.9,205.1z M294.2,107.9c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C286.2,111.6,289.8,107.9,294.2,107.9z" />
-                        <path class="st0" d="M288.9,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M288.9,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C293.7,526.8,291.5,528.9,288.9,528.9z M294.2,431.8c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C286.2,435.4,289.8,431.8,294.2,431.8z" />
-                        <path class="st0" d="M288.9,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M288.9,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C293.7,310.9,291.5,313,288.9,313z M294.2,215.9c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		S289.8,215.9,294.2,215.9z" />
-                        <path class="st0"
-                            d="M122.1,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0"
+                                d="M122.1,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V55c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C126.9,95,124.7,97.1,122.1,97.1z M127.4,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1C119.4,3.6,123,0,127.4,0z" />
-                        <path class="st0" d="M122.1,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M122.1,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C126.9,634.7,124.7,636.9,122.1,636.9z M127.4,539.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1
 		c-4.4,0-8-3.6-8-8.1C119.4,543.3,123,539.7,127.4,539.7z" />
-                        <path class="st0" d="M122.1,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M122.1,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C126.9,418.8,124.7,421,122.1,421z M127.4,323.8c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
 		S123,323.8,127.4,323.8z" />
-                        <path class="st0" d="M122.1,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M122.1,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V163c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C126.9,202.9,124.7,205.1,122.1,205.1z M127.4,107.9c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1
 		c-4.4,0-8-3.6-8-8.1C119.4,111.6,123,107.9,127.4,107.9z" />
-                        <path class="st0" d="M122.1,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M122.1,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C126.9,526.8,124.7,528.9,122.1,528.9z M127.4,431.8c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1
 		c-4.4,0-8-3.6-8-8.1C119.4,435.4,123,431.8,127.4,431.8z" />
-                        <path class="st0" d="M122.1,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M122.1,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C126.9,310.9,124.7,313,122.1,313z M127.4,215.9c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
 		S123,215.9,127.4,215.9z" />
-                        <path class="st0" d="M344.5,636.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M344.5,636.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C349.6,634.7,347.3,636.9,344.5,636.9z M350.2,539.7c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1C341.7,543.3,345.5,539.7,350.2,539.7z" />
-                        <path class="st0" d="M344.5,97.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M344.5,97.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		V55c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4V32.8c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3V34.7c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C349.6,95,347.3,97.1,344.5,97.1z M350.2,0c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1C341.7,3.6,345.5,0,350.2,0z" />
-                        <path class="st0" d="M344.5,421h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M344.5,421h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C349.6,418.8,347.3,421,344.5,421z M350.2,323.8c4.7,0,8.5,3.6,8.5,8.1s-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1S345.5,323.8,350.2,323.8z" />
-                        <path class="st0" d="M344.5,205.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M344.5,205.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		V163c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C349.6,202.9,347.3,205.1,344.5,205.1z M350.2,107.9c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1C341.7,111.6,345.5,107.9,350.2,107.9z" />
-                        <path class="st0" d="M344.5,528.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M344.5,528.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C349.6,526.8,347.3,528.9,344.5,528.9z M350.2,431.8c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1C341.7,435.4,345.5,431.8,350.2,431.8z" />
-                        <path class="st0" d="M344.5,313h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M344.5,313h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C349.6,310.9,347.3,313,344.5,313z M350.2,215.9c4.7,0,8.5,3.6,8.5,8.1s-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1S345.5,215.9,350.2,215.9z" />
-                        <path class="st0" d="M456.5,636.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M456.5,636.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C461.6,634.7,459.3,636.9,456.5,636.9z M462.2,539.7c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1C453.7,543.3,457.5,539.7,462.2,539.7z" />
-                        <path class="st0" d="M456.5,97.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M456.5,97.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		V55c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4V32.8c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3V34.7c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C461.6,95,459.3,97.1,456.5,97.1z M462.2,0c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1C453.7,3.6,457.5,0,462.2,0z" />
-                        <path class="st0" d="M456.5,421h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M456.5,421h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C461.6,418.8,459.3,421,456.5,421z M462.2,323.8c4.7,0,8.5,3.6,8.5,8.1s-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1S457.5,323.8,462.2,323.8z" />
-                        <path class="st0" d="M456.5,205.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M456.5,205.1h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		V163c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C461.6,202.9,459.3,205.1,456.5,205.1z M462.2,107.9c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1C453.7,111.6,457.5,107.9,462.2,107.9z" />
-                        <path class="st0" d="M456.5,528.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M456.5,528.9h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C461.6,526.8,459.3,528.9,456.5,528.9z M462.2,431.8c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1C453.7,435.4,457.5,431.8,462.2,431.8z" />
-                        <path class="st0" d="M176.9,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M176.9,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C181.7,634.7,179.5,636.9,176.9,636.9z M182.2,539.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1
 		c-4.4,0-8-3.6-8-8.1C174.2,543.3,177.8,539.7,182.2,539.7z" />
-                        <path class="st0" d="M456.5,313h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+                            <path class="st0" d="M456.5,313h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8v20.5
 		c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
 		c0,10.2,0,20.5,0,30.7C461.6,310.9,459.3,313,456.5,313z M462.2,215.9c4.7,0,8.5,3.6,8.5,8.1s-3.8,8.1-8.5,8.1
 		c-4.7,0-8.5-3.6-8.5-8.1S457.5,215.9,462.2,215.9z" />
-                        <path class="st0"
-                            d="M176.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0"
+                                d="M176.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V55c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C181.7,95,179.5,97.1,176.9,97.1z M182.2,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1C174.2,3.6,177.8,0,182.2,0z" />
-                        <path class="st0" d="M176.9,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M176.9,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C181.7,418.8,179.5,421,176.9,421z M182.2,323.8c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
 		S177.8,323.8,182.2,323.8z" />
-                        <path class="st0" d="M176.9,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M176.9,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V163c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C181.7,202.9,179.5,205.1,176.9,205.1z M182.2,107.9c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1
 		c-4.4,0-8-3.6-8-8.1C174.2,111.6,177.8,107.9,182.2,107.9z" />
-                        <path class="st0" d="M400.9,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M400.9,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C405.7,634.7,403.5,636.9,400.9,636.9z M406.2,539.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C398.2,543.3,401.8,539.7,406.2,539.7z" />
-                        <path class="st0" d="M176.9,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M176.9,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C181.7,526.8,179.5,528.9,176.9,528.9z M182.2,431.8c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1
 		c-4.4,0-8-3.6-8-8.1C174.2,435.4,177.8,431.8,182.2,431.8z" />
-                        <path class="st0" d="M176.9,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M176.9,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C181.7,310.9,179.5,313,176.9,313z M182.2,215.9c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
 		S177.8,215.9,182.2,215.9z" />
-                        <path class="st0"
-                            d="M400.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0"
+                                d="M400.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V55c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C405.7,95,403.5,97.1,400.9,97.1z M406.2,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1C398.2,3.6,401.8,0,406.2,0z" />
-                        <path class="st0" d="M400.9,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M400.9,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C405.7,418.8,403.5,421,400.9,421z M406.2,323.8c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		S401.8,323.8,406.2,323.8z" />
-                        <path class="st0" d="M400.9,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M400.9,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V163c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C405.7,202.9,403.5,205.1,400.9,205.1z M406.2,107.9c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C398.2,111.6,401.8,107.9,406.2,107.9z" />
-                        <path class="st0" d="M400.9,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M400.9,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C405.7,526.8,403.5,528.9,400.9,528.9z M406.2,431.8c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C398.2,435.4,401.8,431.8,406.2,431.8z" />
-                        <path class="st0" d="M400.9,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M400.9,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C405.7,310.9,403.5,313,400.9,313z M406.2,215.9c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		S401.8,215.9,406.2,215.9z" />
-                        <path class="st0" d="M512.9,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M512.9,636.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C517.7,634.7,515.5,636.9,512.9,636.9z M518.2,539.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C510.2,543.3,513.8,539.7,518.2,539.7z" />
-                        <path class="st0"
-                            d="M512.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0"
+                                d="M512.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V55c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
 		c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
 		c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
 		C517.7,95,515.5,97.1,512.9,97.1z M518.2,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1C510.2,3.6,513.8,0,518.2,0z" />
-                        <path class="st0" d="M512.9,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M512.9,421h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C517.7,418.8,515.5,421,512.9,421z M518.2,323.8c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		S513.8,323.8,518.2,323.8z" />
-                        <path class="st0" d="M512.9,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M512.9,205.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		V163c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C517.7,202.9,515.5,205.1,512.9,205.1z M518.2,107.9c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C510.2,111.6,513.8,107.9,518.2,107.9z" />
-                        <path class="st0" d="M512.9,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M512.9,528.9h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C517.7,526.8,515.5,528.9,512.9,528.9z M518.2,431.8c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		C510.2,435.4,513.8,431.8,518.2,431.8z" />
-                        <path class="st0" d="M512.9,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st0" d="M512.9,313h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C517.7,310.9,515.5,313,512.9,313z M518.2,215.9c4.4,0,8,3.6,8,8.1s-3.6,8.1-8,8.1s-8-3.6-8-8.1
 		S513.8,215.9,518.2,215.9z" />
-                        <path class="st1" d="M512.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+                            <path class="st1" d="M512.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701
 		c0,2.2-1.6,4-3.8,4c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6
 		c0,2.7-2,4.8-4.5,4.8H523c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
 		c0,10.2,0,20.5,0,30.7C517.1,742.6,515,744.8,512.3,744.8z M517.7,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
 		C509.7,651.3,513.3,647.7,517.7,647.7z" />
 
-                </svg>
-                <svg id="dengue_death" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" viewBox="0 0 536 744.9" xml:space="preserve">
-                    <style type="text/css">
-                        .st2 {
-                            opacity: 0;
-                            fill-rule: evenodd;
-                            clip-rule: evenodd;
-                            fill: #1752E2;
-                        }
+                    </svg>
+                    <svg id="dengue_death" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 536 744.9" xml:space="preserve">
+                        <style type="text/css">
+                            .st2 {
+                                opacity: 0;
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #1752E2;
+                            }
 
-                        .st3 {
-                            fill-rule: evenodd;
-                            clip-rule: evenodd;
-                            fill: #00B3FF;
-                        }
-                    </style>
-                    <path class="st2"
-                        d="M512.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
-	V55c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
-	c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
-	c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
-	C517.7,95,515.5,97.1,512.9,97.1z M518.2,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1C510.2,3.6,513.8,0,518.2,0z" />
-                    <path class="st3" d="M11.9,744.8h-0.4C9,744.8,7,742.6,7,740c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
-	v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
-	c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
-	c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
-	C16.7,742.6,14.5,744.8,11.9,744.8z M17.2,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
-	C9.2,651.3,12.8,647.7,17.2,647.7z" />
-                </svg>
-                <svg id="other_death" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" viewBox="0 0 536 744.9" xml:space="preserve">
-                    <style type="text/css">
-                        .st4 {
-                            fill-rule: evenodd;
-                            clip-rule: evenodd;
-                            fill: #6981BB;
-                        }
+                            .st3 {
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #00B3FF;
+                            }
+                        </style>
+                        <path class="st2"
+                            d="M512.9,97.1h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+	    V55c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8v20.5c0,2.2-1.6,4-3.8,4
+	    c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
+	    c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
+	    C517.7,95,515.5,97.1,512.9,97.1z M518.2,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1C510.2,3.6,513.8,0,518.2,0z" />
+                        <path class="st3" d="M11.9,744.8h-0.4C9,744.8,7,742.6,7,740c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+	    v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
+	    c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
+	    c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
+	    C16.7,742.6,14.5,744.8,11.9,744.8z M17.2,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
+	    C9.2,651.3,12.8,647.7,17.2,647.7z" />
+                    </svg>
+                    <svg id="other_death" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 536 744.9" xml:space="preserve">
+                        <style type="text/css">
+                            .st4 {
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #6981BB;
+                            }
 
-                        .st5 {
-                            opacity: 0;
-                            fill-rule: evenodd;
-                            clip-rule: evenodd;
-                            fill: #FFFFFF;
-                        }
-                    </style>
-                    <path class="st4" d="M232,744.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
-	v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8V701
-	c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
-	c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
-	c0,10.2,0,20.5,0,30.7C237.1,742.6,234.8,744.8,232,744.8z M237.7,647.7c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
-	s-8.5-3.6-8.5-8.1C229.1,651.3,232.9,647.7,237.7,647.7z" />
-                    <path class="st4" d="M66.7,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
-	v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
-	c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
-	c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
-	C71.5,742.6,69.3,744.8,66.7,744.8z M72,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
-	C64,651.3,67.6,647.7,72,647.7z" />
-                    <path class="st4" d="M288.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
-	v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
-	c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8H299
-	c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
-	C293.1,742.6,291,744.8,288.3,744.8z M293.7,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
-	C285.7,651.3,289.2,647.7,293.7,647.7z" />
-                    <path class="st4" d="M121.5,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6v20.3
-	c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
-	c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
-	c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
-	C126.3,742.6,124.1,744.8,121.5,744.8z M126.9,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
-	C118.8,651.3,122.4,647.7,126.9,647.7z" />
-                    <path class="st4" d="M344,744.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
-	v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8V701
-	c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
-	c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
-	c0,10.2,0,20.5,0,30.7C349.1,742.6,346.8,744.8,344,744.8z M349.7,647.7c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
-	c-4.7,0-8.5-3.6-8.5-8.1C341.1,651.3,345,647.7,349.7,647.7z" />
-                    <path class="st4" d="M456,744.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
-	v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8V701
-	c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
-	c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
-	c0,10.2,0,20.5,0,30.7C461.1,742.6,458.8,744.8,456,744.8z M461.7,647.7c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
-	c-4.7,0-8.5-3.6-8.5-8.1C453.1,651.3,457,647.7,461.7,647.7z" />
-                    <path class="st4" d="M176.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
-	v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
-	c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8H187
-	c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
-	C181.1,742.6,179,744.8,176.3,744.8z M181.7,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
-	C173.7,651.3,177.2,647.7,181.7,647.7z" />
-                    <path class="st4" d="M400.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
-	v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
-	c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8H411
-	c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
-	C405.1,742.6,403,744.8,400.3,744.8z M405.7,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
-	C397.7,651.3,401.2,647.7,405.7,647.7z" />
-                    <path class="st4" d="M512.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
-	v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
-	c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8H523
-	c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
-	C517.1,742.6,515,744.8,512.3,744.8z M517.7,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
-	C509.7,651.3,513.3,647.7,517.7,647.7z" />
-                    <path class="st5" d="M12.9,97.1h-0.4C10,97.1,8,95,8,92.3c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6V55
-	c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8h12.8C30.9,20,36,25.8,36,32.8v20.5c0,2.2-1.6,4-3.8,4
-	c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
-	c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
-	C17.7,95,15.5,97.1,12.9,97.1z M18.2,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1C10.2,3.6,13.8,0,18.2,0z" />
-                </svg>
-            </div>
-        </div>
-
-
-    </div>
-
-    <!-- HOW IT SPREADS -->
-    <div id="lane" class="float_horizontal" style="height:300vh">
-        <div style="width:60vw">
-            <div id="fixed" style="margin-top: 30vh">
-                <p class="text" id="step"> 1. A healthy human gets bitten by a mosquito carrying a disease.</p>
-                <p class="text" id="step"> 2. The pathogens reproduce and multiply inside the human, and symptoms
-                    appear.</p>
-                <p class="text" id="step"> 3. A healthy mosquito bites the sick human and carries the disease.</p>
-                <p class="text" id="step"> 4. The pathogens reproduce inside the mosquito.</p>
-                <p class="text" id="step"> 5. The sick mosquito bites another human and continues the transmission to
-                    multiple humans.</p>
-                <p class="title" style=" width: 60%;"> What if a sick human go in a zone with different species of
-                    mosquitoes ?</p>
-                <p class="text" id="step" style="margin-top: 250px;"> 6. The species of mosquitoes in this new zone is
-                    different. The mosquito reproduces the pathogen but cannot spread it.</p>
-            </div>
-            <div id="sticky" style="margin-bottom: 100vh; height: 15vh;">
-                <p class="title"> How does it spread? </p>
-                <p class="text" id="description"> A disease can spread from one person to another through a mosquito
-                    bite, as the mosquito transfers pathogens into the person's blood. These pathogens multiply in both
-                    the human and the mosquito, but not directly between humans.</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="fixed" style="margin:none; margin-top:30vh;padding: none">
-                <img src="assets/no_image.svg" alt="none" width="96%" height="200px">
-            </div>
-            <div id="sticky_5"></div>
-            <div class="fixed" style="margin:none; margin-top:150px;padding: none">
-                <img src="assets/no_image.svg" alt="none" width="96%" height="200px">
-            </div>
-        </div>
-
-        <div class="column" style="margin-right: 7vw;">
-            <div id="sticky_3">
-                <img src="assets/man1.svg" alt="none" width="96%" height="200px">
-            </div>
-            <div id="sticky_4">
-                <img src="assets/man2.svg" alt="none" width="96%" height="200px">
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Spread over time -->
-    <div id="stand">
-        <div id="sticky_fixed">
-            <p class="title"> How was it in the past? </p>
-            <p class="text" id="description"> Malaria and dengue are among the most significant vector-borne diseases,
-                transmitted by Anopheles and Aedes mosquitoes, respectively. Over time, these diseases have spread
-                across various countries while also disappearing from certain regions.</p>
-        </div>
-        <div class="float_horizontal" style="margin-top: 15vh;">
-            <div style="align-content: end;">
-                <input id="malariaButton" class="button" type="submit" value="Malaria">
-                <input id="dengueButton" class="button" type="submit" value="Dengue">
-            </div>
-            <div style="align-content: end;">
-                <svg id="my_dataviz" width="1000" height="70vh"></svg>
-                <div class="slider">
-                    <div class="slider-values">
-                        <span id="minYear">2000</span>
-                        <span id="maxYear">2021</span>
-                    </div>
-                    <input id="yearSlider" type="range" min="2000" max="2021" step="1">
+                            .st5 {
+                                opacity: 0;
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #FFFFFF;
+                            }
+                        </style>
+                        <path class="st4" d="M232,744.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+	    v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8V701
+	    c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
+	        c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+	    c0,10.2,0,20.5,0,30.7C237.1,742.6,234.8,744.8,232,744.8z M237.7,647.7c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
+	    s-8.5-3.6-8.5-8.1C229.1,651.3,232.9,647.7,237.7,647.7z" />
+                        <path class="st4" d="M66.7,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+	    v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
+	    c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
+	    c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
+	    C71.5,742.6,69.3,744.8,66.7,744.8z M72,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
+	    C64,651.3,67.6,647.7,72,647.7z" />
+                        <path class="st4" d="M288.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+	    v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
+	        c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8H299
+	    c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
+	    C293.1,742.6,291,744.8,288.3,744.8z M293.7,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
+	    C285.7,651.3,289.2,647.7,293.7,647.7z" />
+                        <path class="st4" d="M121.5,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6v20.3
+	    c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
+	    c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
+	    c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
+	    C126.3,742.6,124.1,744.8,121.5,744.8z M126.9,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
+	    C118.8,651.3,122.4,647.7,126.9,647.7z" />
+                        <path class="st4" d="M344,744.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+	    v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8V701
+	    c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
+	    c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+	    c0,10.2,0,20.5,0,30.7C349.1,742.6,346.8,744.8,344,744.8z M349.7,647.7c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
+	    c-4.7,0-8.5-3.6-8.5-8.1C341.1,651.3,345,647.7,349.7,647.7z" />
+                        <path class="st4" d="M456,744.8h-0.4c-2.6,0-4.8-2.2-4.8-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+        v20.3c0,1.6-1.4,2.3-2.9,2.3c-2.2,0-3.9-1.8-3.9-4v-20.5c0-7,5.4-12.8,12.1-12.8h13.7c6.7,0,12.1,5.7,12.1,12.8V701
+        c0,2.2-1.7,4-4.1,4c-1.5,0-2.8-0.7-2.8-2.3v-20.3c0-0.4-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6c0,19.2,0,38.4,0,57.6
+        c0,2.7-2.2,4.8-4.8,4.8h-0.4c-2.8,0-5.1-2.2-5.1-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6
+        c0,10.2,0,20.5,0,30.7C461.1,742.6,458.8,744.8,456,744.8z M461.7,647.7c4.7,0,8.5,3.6,8.5,8.1c0,4.5-3.8,8.1-8.5,8.1
+        c-4.7,0-8.5-3.6-8.5-8.1C453.1,651.3,457,647.7,461.7,647.7z" />
+                        <path class="st4" d="M176.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+        v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
+        c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8H187
+        c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
+        C181.1,742.6,179,744.8,176.3,744.8z M181.7,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
+        C173.7,651.3,177.2,647.7,181.7,647.7z" />
+                        <path class="st4" d="M400.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+        v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
+        c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8H411
+        c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6s-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
+        C405.1,742.6,403,744.8,400.3,744.8z M405.7,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1
+        C397.7,651.3,401.2,647.7,405.7,647.7z" />
+                        <path class="st4" d="M512.3,744.8h-0.4c-2.5,0-4.5-2.2-4.5-4.8c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6
+        v20.3c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4v-20.5c0-7,5.1-12.8,11.3-12.8h12.8c6.2,0,11.3,5.7,11.3,12.8V701c0,2.2-1.6,4-3.8,4
+        c-1.4,0-2.6-0.7-2.6-2.3v-20.3c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8H523
+        c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
+        C517.1,742.6,515,744.8,512.3,744.8z M517.7,647.7c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1c-4.4,0-8-3.6-8-8.1
+        C509.7,651.3,513.3,647.7,517.7,647.7z" />
+                        <path class="st5"
+                            d="M12.9,97.1h-0.4C10,97.1,8,95,8,92.3c0-19.2,0-38.4,0-57.6c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6V55
+        c0,1.6-1.4,2.3-2.7,2.3c-2,0-3.7-1.8-3.7-4V32.8c0-7,5.1-12.8,11.3-12.8h12.8C30.9,20,36,25.8,36,32.8v20.5c0,2.2-1.6,4-3.8,4
+        c-1.4,0-2.6-0.7-2.6-2.3V34.7c0-0.4-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,19.2,0,38.4,0,57.6c0,2.7-2,4.8-4.5,4.8h-0.4
+        c-2.6,0-4.8-2.2-4.8-4.8c0-10.2,0-20.5,0-30.7c0-0.3-0.2-0.6-0.5-0.6c-0.3,0-0.5,0.3-0.5,0.6c0,10.2,0,20.5,0,30.7
+        C17.7,95,15.5,97.1,12.9,97.1z M18.2,0c4.4,0,8,3.6,8,8.1c0,4.5-3.6,8.1-8,8.1s-8-3.6-8-8.1C10.2,3.6,13.8,0,18.2,0z" />
+                    </svg>
                 </div>
             </div>
-        </div>
 
 
-    </div>
+        </div>
+    </section>
 
-    <!-- WHY IT SPREADS -->
-    <div id="stand">
-        <div id="sticky_fixed">
-            <p class="title"> What influences the spread? </p>
-            <p class="text" id="description"> Numerous studies (2), motivated by public health concerns, have examined
-                potential scenarios for the future spread of diseases. These studies have focused on the environmental
-                conditions favorable to the reproduction of the mosquito species Aedes Albopictus, which was introduced
-                to Europe in the 1970s and is capable of transmitting diseases such as dengue.</p>
-        </div>
-        <div class="float_horizontal" style="margin-top: 30vh">
-            <div class="change">
-                <img src="assets/climate_change.svg" alt="climate change" width="150px" height="150px">
-                <p class="small_title">Climate change</p>
-                <p class="text">As global temperatures rise, previously too cold regions may become suitable for
-                    mosquito habitation. Additionally, increased rainfall can create more stagnant water pools for
-                    mosquito breeding.</p>
+    <section id="spreading">
+        <!-- HOW IT SPREADS -->
+        <div class="lane" class="float_horizontal" style="height:420vh; margin-bottom: 10vh;">
+            <div style="width:60vw">
+                <div id="fixed" style="margin-top: 45vh">
+                    <p class="text" id="step1"> 1. A healthy human gets bitten by a mosquito carrying a disease.</p>
+                    <p class="text" id="step2"> 2. The pathogens reproduce and multiply inside the human, and symptoms
+                        appear.</p>
+                    <p class="text" id="step3"> 3. A healthy mosquito bites the sick human and carries the disease.</p>
+                    <p class="text" id="step4"> 4. The pathogens reproduce inside the mosquito.</p>
+                    <p class="text" id="step5"> 5. The sick mosquito bites another human and continues the transmission
+                        to
+                        multiple humans.</p>
+                    <p class="title" style=" width: 60%;" id="question1"> What if a sick human goes in a zone with
+                        different
+                        species of
+                        mosquitoes ?</p>
+                    <p class="text" id="step6" style="margin-top: 250px;"> 6. The species of mosquitoes in this new zone
+                        is
+                        different. The mosquito reproduces the pathogen but cannot spread it.</p>
+                </div>
+                <div id="sticky" style="margin-bottom: 100vh; height: 15vh;">
+                    <p class="title"> How does it spread? </p>
+                    <p class="text" class="description"> A disease can spread from one person to another through a
+                        mosquito
+                        bite, as the mosquito transfers pathogens into the person's blood. These pathogens multiply in
+                        both
+                        the human and the mosquito, but not directly between humans.</p>
+                </div>
             </div>
-            <div class="change">
-                <img src="assets/globalisation.svg" alt="globalisation" width="150px" height="150px">
-                <p class="small_title">Globalization</p>
-                <p class="text">Global travel and trade make it easier for mosquitoes to spread. They can travel in
-                    cargo, vehicles, and aircraft, reaching new places. Increased trade also means mosquito eggs or
-                    larvae can be transported in goods, helping them colonize new areas. </p>
-            </div>
-            <div class="change">
-                <img src="assets/urban.svg" alt="urban" width="150px" height="150px">
-                <p class="small_title">Urban area</p>
-                <p class="text"> Urban areas are ideal for mosquitoes due to higher temperatures, abundant water
-                    containers and irrigation systems, and a high density of human hosts. </p>
-            </div>
-        </div>
-    </div>
 
-    <!-- THE FUTURE -->
-    <div id="stand">
-        <div id="sticky_fixed" style=" height: 15vw;">
-            <p class="title"> What’s the future of Europe? </p>
-            <p class="text" id="description"> Multiple studies, driven by public health concerns, have predicted its
-                future distribution across the region, with varying results.The accompanying maps synthesize these
-                findings, identifying areas of consensus suitability and forecasting substantial expansion into northern
-                and eastern Europe. The first map illustrates habitat suitability according to consensus predictions,
-                while the second map forecasts potential changes by 2050, depicting different suitability trajectories.
-            </p>
-        </div>
-        <div class="float_horizontal" style="margin-top: 28vh;">
-            <div>
-                <p class="small_title">Now</p>
-                <img src="assets/no_image.svg" alt="no image" width="250px" height="250px">
-            </div>
-            <div>
-                <p class="small_title">2050</p>
-                <img src="assets/no_image.svg" alt="no image" width="250px" height="250px">
-            </div>
-        </div>
-    </div>
+            <div class="column">
+                <div class="fixed" style="margin:none; margin-top:30vh;padding: none">
+                    <img src="assets/mosquito1.svg" alt="none" style=" width: 12vw; height: 12vw ">
+                </div>
+                <div id="sticky_5">
+                    <img src="assets/mosquito2_v1.svg" class="overlap" id="mosquito2_v1" alt="none">
+                    <img src="assets/mosquito2_v2.svg" class="overlap" id="mosquito2_v2" alt="none">
+                    <img src="assets/mosquito2_v3.svg" class="overlap" id="mosquito2_v3" alt="none">
+                </div>
 
-    <!-- PROTECTION -->
-    <div id="stand">
-        <div id="sticky_fixed">
-            <p class="title"> How to protect ourselves?</p>
-            <p class="text" id="description"> Protecting ourselves from mosquitoes will become more and more important.
-                Adopting new behaviors will help to reduce the spread of the disease by diminishing the population of
-                mosquitoes. This will also have an impact on our community and will be the responsibility of everyone.
-            </p>
+                <div class="fixed" style="margin:none; margin-top:100vh ;padding: none">
+                    <img src="assets/mossquito3.svg" alt="mosquito3" width="96%">
+                    <img src="assets/mosquito4.svg" alt="mosquito" width="96%">
+                </div>
+            </div>
+
+            <div class="column" style="margin-right: 7vw;">
+                <div id="sticky_3" style="width: 12vw;">
+                    <svg id="man1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                        y="0px" viewBox="0 0 158 423">
+                        <style type="text/css">
+                            .st7 {
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #001AFF;
+                                stroke: #FFFFFF;
+                                stroke-width: 3;
+                            }
+
+                            .st8 {
+                                fill: none;
+                                stroke: #FFFFFF;
+                                stroke-width: 3;
+                                stroke-linejoin: round;
+                            }
+
+                            .st9 {
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #97BAFF;
+                                stroke: #001AFF;
+                                stroke-width: 3;
+                            }
+
+                            .st10 {
+                                fill: none;
+                                stroke: hsl(223, 82%, 49%);
+                                stroke-width: 3;
+                                stroke-linejoin: round;
+                            }
+
+                            .st11 {
+                                filter: url(#Adobe_OpacityMaskFilter);
+                            }
+
+                            .st12 {
+                                mask: url(#SVGID_1_);
+                            }
+
+                            .st13 {
+                                opacity: 0.9;
+                                fill: #FFFFFF;
+                            }
+
+                            .st14 {
+                                fill: #001AFF;
+                            }
+
+                            .st15 {
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #FFFFFF;
+                                stroke: #001AFF;
+                                stroke-width: 3;
+                            }
+                        </style>
+                        <g id="sick">
+                            <path class="st7" d="M55.8,421h-1.7c-10.7,0-19.5-9.4-19.5-20.9c0-82.8,0-165.6,0-248.4c0-1.5-1.1-2.8-2.4-2.8
+		c-1.3,0-2.4,1.2-2.4,2.8v87.5c0,6.9-5.9,9.8-11.9,9.8C9.2,249.1,2,241.4,2,232v-88.6c0-30.3,22.1-55.1,49.2-55.1h55.7
+		c27,0,49.2,24.8,49.2,55.1V232c0,9.4-6.9,17.1-16.5,17.1c-5.9,0-11.4-3.2-11.4-9.8v-87.6c0-1.5-1.1-2.8-2.4-2.8
+		c-1.3,0-2.4,1.2-2.4,2.8c0,82.8,0,165.6,0,248.4c0,11.5-8.8,20.9-19.5,20.9h-1.7c-11.5,0-20.8-9.4-20.8-20.9c0-44.2,0-88.3,0-132.5
+		c0-1.4-1-2.5-2.3-2.5c-1.3,0-2.3,1.1-2.3,2.5c0,44.2,0,88.3,0,132.5C76.6,411.6,67.3,421,55.8,421z M79,2
+		c19.2,0,34.7,15.6,34.7,34.8c0,19.2-15.5,34.8-34.7,34.8c-19.2,0-34.7-15.6-34.7-34.8C44.3,17.6,59.8,2,79,2z" />
+                            <path class="st8" d="M35.5,229c-0.5,3,6.5,9.3,38.5,10.5c32,1.2,46.3-4.2,49.5-7" />
+                            <path class="st8"
+                                d="M93,12c-2.7,4.3-10.1,12.9-18.5,12.5S60.7,21.3,59,20c5.8,0,17.6-2.2,18-11" />
+                            <path class="st8" d="M2.1,153c-0.9,3.4,3.1,10,26.9,8.9" />
+                            <path class="st8" d="M155.9,153c0.9,3.4-3.1,10-26.9,8.9" />
+                            <path class="st8" d="M53.5,88.5c0,8.8,5.6,26.5,28,26.5s27-17.7,26.5-26.5" />
+                        </g>
+                        <g id="changing">
+                            <path class="st9" d="M55.8,421h-1.7c-10.7,0-19.5-9.4-19.5-20.9c0-82.8,0-165.6,0-248.4c0-1.5-1.1-2.8-2.4-2.8
+		c-1.3,0-2.4,1.2-2.4,2.8v87.5c0,6.9-5.9,9.8-11.9,9.8C9.2,249.1,2,241.4,2,232v-88.6c0-30.3,22.1-55.1,49.2-55.1h55.7
+		c27,0,49.2,24.8,49.2,55.1V232c0,9.4-6.9,17.1-16.5,17.1c-5.9,0-11.4-3.2-11.4-9.8v-87.6c0-1.5-1.1-2.8-2.4-2.8
+		c-1.3,0-2.4,1.2-2.4,2.8c0,82.8,0,165.6,0,248.4c0,11.5-8.8,20.9-19.5,20.9h-1.7c-11.5,0-20.8-9.4-20.8-20.9c0-44.2,0-88.3,0-132.5
+		c0-1.4-1-2.5-2.3-2.5c-1.3,0-2.3,1.1-2.3,2.5c0,44.2,0,88.3,0,132.5C76.6,411.6,67.3,421,55.8,421z M79,2
+		c19.2,0,34.7,15.6,34.7,34.8c0,19.2-15.5,34.8-34.7,34.8c-19.2,0-34.7-15.6-34.7-34.8C44.3,17.6,59.8,2,79,2z" />
+                            <path class="st10" d="M35.5,229c-0.5,3,6.5,9.3,38.5,10.5c32,1.2,46.3-4.2,49.5-7" />
+                            <path class="st10"
+                                d="M93,12c-2.7,4.3-10.1,12.9-18.5,12.5S60.7,21.3,59,20c5.8,0,17.6-2.2,18-11" />
+                            <path class="st10" d="M2.1,153c-0.9,3.4,3.1,10,26.9,8.9" />
+                            <path class="st10" d="M155.9,153c0.9,3.4-3.1,10-26.9,8.9" />
+                            <path class="st10" d="M53.5,88.5c0,8.8,5.6,26.5,28,26.5s27-17.7,26.5-26.5" />
+                            <g>
+                                <defs>
+                                    <filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="29.8" y="114.4"
+                                        width="102" height="102">
+                                        <feFlood style="flood-color:white;flood-opacity:1" result="back" />
+                                        <feBlend in="SourceGraphic" in2="back" mode="normal" />
+                                    </filter>
+                                </defs>
+                                <mask maskUnits="userSpaceOnUse" x="29.8" y="114.4" width="102" height="102"
+                                    id="SVGID_1_">
+                                    <g class="st11">
+
+                                        <image style="overflow:visible;" width="107" height="107"
+                                            xlink:href="BB689F6F21FC3424.jpg" transform="matrix(1 0 0 1 27 112)">
+                                        </image>
+                                    </g>
+                                </mask>
+                                <g class="st12">
+                                    <g>
+                                        <g>
+                                            <circle class="st13" cx="80.8" cy="165.4" r="51" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <path class="st14" d="M79.9,183.2c11,0,20-8.8,20-19.6c0-10.8-9-19.6-20-19.6s-20,8.8-20,19.6C59.9,174.4,68.8,183.2,79.9,183.2z
+		 M79.9,145.3c10.3,0,18.7,8.2,18.7,18.3s-8.4,18.3-18.7,18.3s-18.7-8.2-18.7-18.3S69.6,145.3,79.9,145.3z" />
+                            <path class="st14" d="M79.8,178.2c0.4,0.2,0.8,0.4,1.2,0.4c0.1,0,0.3,0,0.4,0c0.6-0.1,1.1-0.4,1.5-1c0.7-1,0.4-2.4-0.6-3.2
+		c-0.1,0-0.1-0.1-0.2-0.1c-6-1.8-11.4-5.7-15.2-10.9c0-0.1-0.1-0.1-0.1-0.2c-0.5-0.4-1.1-0.5-1.7-0.4c-0.6,0.1-1.1,0.4-1.5,1
+		c-0.7,1-0.5,2.3,0.5,3.1C68,172.3,73.5,176.3,79.8,178.2L79.8,178.2z M66.5,166.8c-0.2-0.3-0.6-0.3-0.9-0.1l-0.1,0
+		c-0.2-0.2-0.3-0.4-0.5-0.6c0-0.1-0.1-0.1-0.2-0.2c-0.4-0.3-0.5-0.9-0.2-1.4c0.1-0.2,0.4-0.3,0.6-0.4c0,0,0.1,0,0.1,0
+		c0.1,0,0.3,0,0.4,0.1c0.1,0.1,0.2,0.2,0.2,0.3c-0.3,0.2-0.4,0.6-0.2,0.9c0.2,0.3,0.6,0.4,0.9,0.2l0.1-0.1c0.4,0.5,0.9,1,1.3,1.5
+		l-0.1,0.1c-0.3,0.2-0.4,0.6-0.2,0.9c0.2,0.3,0.6,0.4,0.9,0.2l0.4-0.2c0.5,0.5,1.1,1,1.6,1.5l-0.2,0.2c-0.3,0.3-0.3,0.7,0,0.9
+		c0.3,0.3,0.7,0.3,0.9,0l0.3-0.3c0.8,0.6,1.6,1.2,2.4,1.7l-0.3,0.3c-0.3,0.3-0.3,0.7,0,0.9c0.3,0.3,0.7,0.3,0.9,0l0.5-0.5
+		c0.7,0.4,1.4,0.8,2.1,1.1l-0.4,0.4c-0.2,0.3-0.2,0.7,0.1,0.9c0.3,0.2,0.7,0.2,0.9-0.1l0.6-0.7c0.9,0.4,1.9,0.7,2.8,1
+		c0.4,0.3,0.4,0.9,0.2,1.3c-0.1,0.2-0.4,0.3-0.6,0.4c-0.2,0-0.5,0-0.7-0.2c-0.1,0-0.1-0.1-0.2-0.1c0,0-0.1,0-0.1,0l0.3-0.8l-1.2-0.5
+		l-0.3,0.8c-1.1-0.4-2.1-0.8-3.1-1.3l0.2-0.3c0.2-0.3,0.2-0.7-0.1-0.9c-0.3-0.2-0.7-0.2-0.9,0.1l-0.3,0.5c-0.8-0.4-1.5-0.9-2.3-1.4
+		l0.2-0.2c0.3-0.3,0.3-0.7,0-0.9c-0.3-0.3-0.7-0.3-0.9,0l-0.4,0.3c-0.8-0.6-1.5-1.2-2.2-1.8l0.2-0.2c0.3-0.3,0.3-0.7,0-0.9
+		c-0.3-0.3-0.7-0.3-0.9,0l-0.2,0.2c-0.6-0.6-1.2-1.2-1.7-1.9l0,0C66.7,167.6,66.7,167.1,66.5,166.8L66.5,166.8z" />
+                            <path class="st14" d="M70.1,157.9c0.2,0,0.3,0.1,0.5,0.1c0.5,0,1-0.2,1.4-0.5c3.2-2.6,6.8-4.4,10.7-5.5c0.6-0.2,1.1-0.6,1.4-1.2
+		c0.3-0.6,0.3-1.4,0-2c-0.5-1-1.5-1.5-2.6-1.2c-4.5,1.2-8.6,3.3-12.3,6.3c-0.8,0.7-1.1,1.8-0.7,2.8
+		C68.9,157.3,69.5,157.8,70.1,157.9L70.1,157.9z M70.1,154.9c0.2-0.1,0.3-0.2,0.5-0.4l0.3,0.4c0.2,0.3,0.6,0.3,0.9,0.1
+		c0.3-0.2,0.4-0.6,0.1-0.9l-0.3-0.5c0.7-0.5,1.5-1,2.2-1.5l0.4,0.6c0.2,0.3,0.6,0.4,0.9,0.2c0.3-0.2,0.4-0.6,0.2-0.9l-0.4-0.6
+		c0.8-0.4,1.6-0.8,2.4-1.2l0.2,0.4c0.2,0.3,0.6,0.5,0.9,0.3c0.3-0.2,0.5-0.6,0.3-0.9l-0.2-0.3c0.7-0.3,1.4-0.5,2.1-0.7l0.2,0.4
+		c0.2,0.3,0.6,0.5,0.9,0.3c0.3-0.2,0.5-0.6,0.3-0.9l-0.1-0.1c0.4,0,0.7,0.2,0.9,0.5c0.1,0.3,0.1,0.6,0,0.9c-0.1,0.3-0.3,0.4-0.6,0.5
+		c-0.5,0.1-0.9,0.3-1.4,0.4l-0.2-0.4c-0.2-0.3-0.6-0.5-0.9-0.3c-0.3,0.2-0.5,0.6-0.3,0.9l0.1,0.3c-0.6,0.2-1.3,0.5-1.9,0.8l-0.4-0.5
+		c-0.2-0.3-0.6-0.3-0.9-0.1c-0.3,0.2-0.4,0.6-0.1,0.9l0.2,0.3c-0.8,0.4-1.5,0.8-2.2,1.2l-0.3-0.3c-0.2-0.3-0.6-0.3-0.9-0.1
+		c-0.3,0.2-0.4,0.6-0.1,0.9l0.2,0.3c-0.7,0.5-1.4,1-2.1,1.5c-0.2,0.2-0.5,0.2-0.7,0.2c-0.3-0.1-0.5-0.3-0.6-0.5
+		C69.6,155.7,69.7,155.2,70.1,154.9L70.1,154.9z" />
+                            <path class="st14" d="M86.2,169.8c-0.3,0.5-0.4,1.2-0.2,1.8c0.2,0.7,0.7,1.2,1.4,1.5c0.3,0.1,0.6,0.2,0.9,0.2c0.7,0,1.4-0.3,1.8-1
+		c2.5-3.8,4.2-8.1,4.9-12.7c0.2-1-0.4-2.1-1.4-2.5c-0.7-0.3-1.4-0.3-2,0.1c-0.6,0.3-1,0.9-1.1,1.5C89.9,162.8,88.4,166.5,86.2,169.8
+		L86.2,169.8z M91.4,162.8c0.4,0.1,0.7-0.2,0.8-0.5c0.1-0.4-0.2-0.7-0.5-0.8l-0.3-0.1c0.2-0.8,0.4-1.7,0.5-2.5
+		c0-0.3,0.2-0.5,0.4-0.6c0.1-0.1,0.3-0.1,0.4-0.1c0.1,0,0.3,0,0.4,0.1c0.4,0.2,0.7,0.7,0.6,1.1c0,0.2-0.1,0.4-0.1,0.6L93,160
+		c-0.4-0.1-0.7,0.2-0.8,0.5c-0.1,0.4,0.2,0.7,0.5,0.8l0.6,0.1c-0.2,0.9-0.4,1.7-0.7,2.5l-0.7-0.2c-0.4-0.1-0.7,0.1-0.8,0.4
+		c-0.1,0.3,0.1,0.7,0.4,0.8l0.7,0.2c-0.3,0.8-0.6,1.6-1,2.4l-0.4-0.2c-0.3-0.1-0.7,0-0.9,0.4c-0.1,0.3,0,0.7,0.4,0.8l0.4,0.1
+		c-0.3,0.7-0.7,1.3-1.1,1.9l-0.4-0.1c-0.3-0.1-0.7,0-0.9,0.4c-0.1,0.3,0,0.7,0.4,0.8l0.1,0.1c-0.2,0.3-0.6,0.3-1,0.2
+		c-0.3-0.1-0.5-0.4-0.6-0.7c-0.1-0.3,0-0.5,0.1-0.8c0.3-0.4,0.5-0.8,0.8-1.2l0.4,0.2c0.3,0.1,0.7,0,0.9-0.4c0.1-0.3,0-0.7-0.4-0.8
+		l-0.3-0.1c0.3-0.6,0.6-1.2,0.9-1.8l0.6,0.1c0.4,0.1,0.7-0.2,0.8-0.5c0.1-0.4-0.2-0.7-0.5-0.8l-0.3-0.1c0.3-0.8,0.6-1.6,0.8-2.4
+		L91.4,162.8L91.4,162.8z" />
+                            <path class="st14" d="M83.6,155.9c-1.8,2.7-4,5.1-6.7,6.9c-0.5,0.3-0.8,0.8-0.8,1.4c-0.1,0.6,0.2,1.2,0.6,1.6
+		c0.4,0.4,0.9,0.6,1.4,0.6c0.4,0,0.8-0.1,1.1-0.3c3.1-2.1,5.8-4.8,7.8-8c0.5-0.8,0.4-1.8-0.3-2.4c-0.4-0.4-1-0.6-1.6-0.5
+		C84.4,155.2,83.9,155.5,83.6,155.9L83.6,155.9z M85.1,156.4C85.1,156.4,85.2,156.4,85.1,156.4c0.2,0,0.4,0.1,0.5,0.2
+		c0.2,0.2,0.3,0.6,0.1,0.8c-0.1,0.1-0.1,0.2-0.2,0.3l-0.2-0.1c-0.3-0.2-0.7-0.1-0.9,0.2c-0.2,0.3-0.1,0.7,0.2,0.9l0.1,0.1
+		c-0.4,0.5-0.8,1-1.2,1.5l-0.3-0.2c-0.3-0.2-0.7-0.2-0.9,0.1c-0.2,0.3-0.2,0.7,0.1,0.9l0.2,0.2c-0.4,0.5-0.9,0.9-1.3,1.3l-0.1-0.1
+		c-0.3-0.2-0.7-0.2-0.9,0.1c-0.2,0.3-0.2,0.7,0.1,0.9c-0.4,0.3-0.8,0.7-1.2,1l-0.1-0.1c-0.3-0.2-0.7-0.2-0.9,0.1
+		c-0.2,0.2-0.2,0.5-0.1,0.7c-0.2,0-0.4,0-0.5-0.2s-0.2-0.3-0.2-0.5c0-0.1,0.1-0.3,0.2-0.4c0.3-0.2,0.6-0.4,0.9-0.6l0.1,0.1
+		c0.3,0.2,0.7,0.2,0.9-0.1c0.2-0.3,0.2-0.6,0-0.9c0.4-0.3,0.7-0.6,1.1-0.9l0.2,0.1c0.3,0.2,0.7,0.1,0.9-0.2c0.2-0.3,0.1-0.7-0.2-0.9
+		c0.4-0.4,0.8-0.9,1.2-1.3l0.1,0.1c0.3,0.2,0.7,0.1,0.9-0.2c0.2-0.3,0.1-0.7-0.2-0.9c0.4-0.5,0.8-1,1.1-1.6
+		C84.8,156.4,85,156.4,85.1,156.4L85.1,156.4z" />
+                            <path class="st14" d="M65.9,161.6c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2c-1.1,0-2,0.9-2,2C63.9,160.7,64.8,161.6,65.9,161.6z M65.9,159
+		c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7c-0.4,0-0.7-0.3-0.7-0.7C65.2,159.3,65.5,159,65.9,159z" />
+                            <path class="st14" d="M88.5,154.4c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2c-1.1,0-2,0.9-2,2C86.5,153.5,87.4,154.4,88.5,154.4z M88.5,151.8
+		c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7C87.9,152.1,88.2,151.8,88.5,151.8z" />
+                            <path class="st14" d="M87.9,177.3c0.4,0,0.7-0.3,0.7-0.7c0-0.4-0.3-0.7-0.7-0.7c-0.4,0-0.7,0.3-0.7,0.7
+		C87.2,177,87.5,177.3,87.9,177.3z" />
+                            <path class="st14" d="M82.3,167.5l-0.4,0.4c-0.3,0.3-0.3,0.7,0,0.9c0.3,0.3,0.7,0.3,0.9,0l0.4-0.4c0.3-0.3,0.3-0.7,0-0.9
+		C82.9,167.2,82.5,167.2,82.3,167.5z" />
+                            <path class="st14" d="M72.3,161l-0.4,0.4c-0.3,0.3-0.3,0.7,0,0.9c0.3,0.3,0.7,0.3,0.9,0l0.4-0.4c0.3-0.3,0.3-0.7,0-0.9
+		C72.9,160.7,72.5,160.7,72.3,161z" />
+                            <path class="st14" d="M69.5,174.7c-0.3-0.3-0.7-0.3-0.9,0c-0.3,0.3-0.3,0.7,0,0.9l0.4,0.4c0.3,0.3,0.7,0.3,0.9,0
+		c0.3-0.3,0.3-0.7,0-0.9L69.5,174.7z" />
+                            <path class="st14" d="M96.8,166.2l0.4-0.4c0.3-0.3,0.3-0.7,0-0.9c-0.3-0.3-0.7-0.3-0.9,0l-0.4,0.4c-0.3,0.3-0.3,0.7,0,0.9
+		C96.1,166.4,96.5,166.4,96.8,166.2z" />
+                            <path class="st14" d="M71.9,149.8c0.4,0,0.7-0.3,0.7-0.7c0-0.4-0.3-0.7-0.7-0.7c-0.4,0-0.7,0.3-0.7,0.7
+		C71.2,149.6,71.5,149.8,71.9,149.8z" />
+                            <path class="st14" d="M79.9,156.4c0.4,0,0.7-0.3,0.7-0.7c0-0.4-0.3-0.7-0.7-0.7c-0.4,0-0.7,0.3-0.7,0.7
+		C79.2,156.1,79.5,156.4,79.9,156.4z" />
+                            <path class="st14" d="M112.7,164c0.6,0.6,1.5,0.6,2.1,0l9.5-9.5c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-8.5,8.5l-8.5-8.5
+		c-0.6-0.6-1.5-0.6-2.1,0s-0.6,1.5,0,2.1L112.7,164z M107.2,142.9l1.2-0.9L107.2,142.9z M90,130.8l-0.4,1.4L90,130.8z M69,131.3
+		l-0.5-1.4l0,0L69,131.3z M52.4,144.3l-1.2-0.8L52.4,144.3z M46.8,164.5l1.5-0.1L46.8,164.5z M72.1,195.4l-0.4,1.5L72.1,195.4z
+		 M93.6,195.3c0.8-0.3,1.1-1.2,0.8-2c-0.3-0.8-1.2-1.1-2-0.8L93.6,195.3z M115.3,162.9c0-7.5-2.4-14.8-6.9-20.8l-2.4,1.8
+		c4.1,5.5,6.3,12.2,6.3,19.1H115.3z M108.4,142.1c-4.5-6-10.8-10.5-17.9-12.6l-0.9,2.9c6.6,2,12.3,6,16.4,11.6L108.4,142.1z
+		 M90.4,129.4c-7.2-2.2-14.9-2-21.9,0.5l1,2.8c6.5-2.3,13.5-2.5,20.1-0.5L90.4,129.4z M68.5,129.9c-7.1,2.5-13.1,7.3-17.3,13.5
+		l2.5,1.7c3.8-5.7,9.4-10,15.8-12.3L68.5,129.9z M51.2,143.4c-4.2,6.2-6.2,13.7-5.9,21.1l3-0.1c-0.3-6.9,1.6-13.6,5.4-19.3
+		L51.2,143.4z M45.3,164.6c0.4,7.5,3.1,14.7,7.9,20.5l2.3-1.9c-4.3-5.3-6.9-11.9-7.2-18.7L45.3,164.6z M53.2,185.1
+		c4.8,5.8,11.2,9.9,18.5,11.8l0.7-2.9c-6.7-1.7-12.6-5.5-16.9-10.8L53.2,185.1z M71.7,196.8c7.3,1.8,15,1.3,21.9-1.6l-1.1-2.8
+		c-6.3,2.6-13.4,3.1-20,1.4L71.7,196.8z" />
+                        </g>
+                        <g id="healthy">
+                            <path class="st15" d="M55.8,421h-1.7c-10.7,0-19.5-9.4-19.5-20.9c0-82.8,0-165.6,0-248.4c0-1.5-1.1-2.8-2.4-2.8
+		c-1.3,0-2.4,1.2-2.4,2.8v87.5c0,6.9-5.9,9.8-11.9,9.8C9.2,249.1,2,241.4,2,232v-88.6c0-30.3,22.1-55.1,49.2-55.1h55.7
+		c27,0,49.2,24.8,49.2,55.1V232c0,9.4-6.9,17.1-16.5,17.1c-5.9,0-11.4-3.2-11.4-9.8v-87.6c0-1.5-1.1-2.8-2.4-2.8
+		c-1.3,0-2.4,1.2-2.4,2.8c0,82.8,0,165.6,0,248.4c0,11.5-8.8,20.9-19.5,20.9h-1.7c-11.5,0-20.8-9.4-20.8-20.9c0-44.2,0-88.3,0-132.5
+		c0-1.4-1-2.5-2.3-2.5c-1.3,0-2.3,1.1-2.3,2.5c0,44.2,0,88.3,0,132.5C76.6,411.6,67.3,421,55.8,421z M79,2
+		c19.2,0,34.7,15.6,34.7,34.8c0,19.2-15.5,34.8-34.7,34.8c-19.2,0-34.7-15.6-34.7-34.8C44.3,17.6,59.8,2,79,2z" />
+                            <path class="st10" d="M35.5,229c-0.5,3,6.5,9.3,38.5,10.5c32,1.2,46.3-4.2,49.5-7" />
+                            <path class="st10"
+                                d="M93,12c-2.7,4.3-10.1,12.9-18.5,12.5S60.7,21.3,59,20c5.8,0,17.6-2.2,18-11" />
+                            <path class="st10" d="M2.1,153c-0.9,3.4,3.1,10,26.9,8.9" />
+                            <path class="st10" d="M155.9,153c0.9,3.4-3.1,10-26.9,8.9" />
+                            <path class="st10" d="M53.5,88.5c0,8.8,5.6,26.5,28,26.5s27-17.7,26.5-26.5" />
+                        </g>
+                    </svg>
+                </div>
+                <div id="sticky_4" style="width: 13vw;">
+                    <svg id="man2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                        y="0px" viewBox="0 0 180 431" style="enable-background:new 0 0 180 431;" xml:space="preserve">
+                        <style type="text/css">
+                            .st16 {
+                                fill: #FFFFFF;
+                                stroke: #001AFF;
+                                stroke-width: 3;
+                            }
+
+                            .st17 {
+                                fill: #FFFFFF;
+                                stroke: #001AFF;
+                                stroke-width: 2;
+                            }
+
+                            .st18 {
+                                fill: #FFFFFF;
+                                stroke: #001AFF;
+                                stroke-width: 3;
+                                stroke-linejoin: round;
+                            }
+
+                            .st19 {
+                                fill: #001AFF;
+                                stroke: #FFFFFF;
+                                stroke-width: 3;
+                            }
+
+                            .st20 {
+                                fill: #001AFF;
+                                stroke: #FFFFFF;
+                                stroke-width: 2;
+                            }
+
+                            .st21 {
+                                fill: #001AFF;
+                                stroke: #FFFFFF;
+                                stroke-width: 3;
+                                stroke-linejoin: round;
+                            }
+                        </style>
+                        <g id="sick2">
+                            <path class="st19" d="M98.3,398.1L98.3,398.1c0,10.7-8.7,19.4-19.3,19.4h-1.7c-9.8,0-18-8.6-18-19.4v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5
+                        v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5V388v-0.5V387v-0.5V386v-0.5V385v-0.5V384v-0.5V383v-0.5
+                        V382v-0.5V381v-0.5V380v-0.5V379v-0.5V378v-0.5V377v-0.5V376v-0.5V375v-0.5V374v-0.5V373v-0.5V372v-0.5V371l0,0v-0.5V370v-0.5V369
+                        v-0.5V368v-0.5V367v-0.5V366v-0.5V365v-0.5V364v-0.5V363v-0.5V362v-0.5V361v-0.5V360v-0.5V359v-0.5V358v-0.5V357v-0.5V356v-0.5V355
+                        l0,0v-0.5V354v-0.5V353v-0.5V352v-0.5V351v-0.5V350v-0.5V349v-0.5V348v-0.5V347v-0.5V346v-0.5V345v-0.5V344v-0.5V343v-0.5V342v-0.5
+                        V341v-0.5V340v-0.5V339l0,0v-0.5V338v-0.5V337v-0.5V336v-0.5V335v-0.5V334v-0.5V333v-0.5V332v-0.5V331v-0.5V330v-0.5V329v-0.5V328
+                        v-0.5V327v-0.5V326v-0.5V325v-0.5V324v-0.5V323v-0.5V322l0,0v-0.5V321v-0.5V320v-0.5V319v-0.5V318v-0.5V317v-0.5V316v-0.5V315v-0.5
+                        V314v-0.5V313v-0.5V312v-0.5V311v-0.5V310v-0.5V309v-0.5V308v-0.5V307v-0.5V306l0,0v-0.5V305v-0.5V304v-0.5V303v-0.5V302v-0.5V301
+                        v-0.5V300v-0.5V299v-0.5V298v-0.5V297v-0.5V296v-0.5V295v-0.5V294v-0.5V293v-0.5V292v-0.5V291v-0.5V290l0,0v-0.5V289v-0.5V288v-0.5
+                        V287v-0.5V286v-0.5V285v-0.5V284v-0.5V283v-0.5V282v-0.5V281v-0.5V280v-0.5V279v-0.5V278v-0.5V277v-0.5V276v-0.5V275v-0.5V274l0,0
+                        v-0.5V273v-0.5V272v-0.5V271v-0.5V270v-0.5V269v-0.5V268v-0.5V267v-0.5V266v-0.5V265v-0.5V264v-0.5V263v-0.5V262v-0.5V261v-0.5V260
+                        v-0.5V259v-0.5V258v-0.5V257l0,0v-0.5V256v-0.5V255v-0.5V254v-0.5V253v-0.5V252v-0.5V251v-0.5V250v-0.5V249v-0.5V248v-0.5V247v-0.5
+                        V246v-0.5V245v-0.5V244v-0.5V243v-0.5V242v-0.5V241l0,0v-0.5V240v-0.5V239v-0.5V238v-0.5V237v-0.5V236v-0.5V235v-0.5V234v-0.5V233
+                        v-0.5V232v-0.5V231v-0.5V230v-0.5V229v-0.5V228v-0.5V227v-0.5V226v-0.5V225l0,0v-0.5V224v-0.5V223v-0.5V222v-0.5V221v-0.5V220v-0.5
+                        V219v-0.5V218v-0.5V217v-0.5V216v-0.5V215v-0.5V214v-0.5V213v-0.5V212v-0.5V211v-0.5V210v-0.5V209v-0.5V208l0,0v-0.5V207v-0.5V206
+                        v-0.5V205v-0.5V204v-0.5V203v-0.5V202v-0.5V201v-0.5V200v-0.5V199v-0.5V198v-0.5V197v-0.5V196v-0.5V195v-0.5V194v-0.5V193v-0.5V192
+                        l0,0v-0.5V191v-0.5V190v-0.5V189v-0.5V188v-0.5V187v-0.5V186v-0.5V185v-0.5V184v-0.5V183v-0.5V182v-0.5V181v-0.5V180v-0.5V179v-0.5
+                        V178v-0.5V177v-0.5V176l0,0v-0.5V175v-0.5V174v-0.5V173v-0.5V172v-0.5V171v-0.5V170v-0.5V169v-0.5V168v-0.5V167v-0.5V166v-0.5V165
+                        v-0.5V164v-0.5V163v-0.5V162v-0.5V161v-0.5V160l0,0v-0.5V159v-0.5V158v-0.5V157v-0.5V156v-0.5V155v-0.5V154v-0.5V153v-0.5V152v-0.5
+                        V151v-0.5V150v-0.5c0-2.1-1.5-4.3-3.9-4.3c-2.3,0-3.7,2-3.9,4l-25.3,74c-1.5,4.1-4.8,6.1-8.4,6.7c-3.7,0.6-7.8-0.2-10.5-1.6
+                        c-3.2-1.6-4.7-3.6-5.4-6.1s-0.5-5.6,0.2-9.2l6-19.4l20-51.9c1.6-3.7,3.1-7.2,4.4-10.5c2.2-5.3,4.2-10,6.1-14.3
+                        c3.1-7,6-12.5,9.1-16.9c3.1-4.3,6.5-7.4,10.7-9.5c4.2-2,9.3-3.1,15.9-3.1H130c26.1,0,47.7,23.9,47.7,53.6v89
+                        c0,8.7-6.3,15.6-15,15.6c-2.7,0-5.2-0.7-7-2.1c-1.7-1.3-2.9-3.3-2.9-6.2v-87.6c0-2.1-1.5-4.3-3.9-4.3s-3.9,2.2-3.9,4.3v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5c0,10.8-8.2,19.4-18,19.4h-1.7c-10.6,0-19.3-8.7-19.3-19.4
+                        c0-22.1,0-44.2,0-66.3v-0.1c0-22.1,0-44.1,0-66.2c0-2.1-1.6-4-3.8-4c-2.2,0-3.8,1.9-3.8,4c0,22.1,0,44.1,0,66.2l0,0
+                        C98.3,354,98.3,376.1,98.3,398.1z M102.2,1.5c18.3,0,33.2,14.9,33.2,33.3s-14.9,33.3-33.2,33.3C83.8,68,69,53.2,69,34.8
+                        S83.8,1.5,102.2,1.5z" />
+                            <circle class="st19" cx="86.2" cy="32" r="11.5" />
+                            <path class="st20" d="M96.7,27c1.8-1.5,6.3-3.6,9.5,0" />
+                            <circle class="st19" cx="116.2" cy="32" r="11.5" />
+                            <path class="st21" d="M76.7,72l26.5,46.5l-23-24l-19,12L76.7,72z" />
+                            <path class="st21" d="M130.2,72l-26.5,46.5l23-24l19,12L130.2,72z" />
+                        </g>
+                        <g id="healthy2">
+                            <path class="st16" d="M98.3,398.1L98.3,398.1c0,10.7-8.7,19.4-19.3,19.4h-1.7c-9.8,0-18-8.6-18-19.4v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5
+                        v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5v-0.5V388v-0.5V387v-0.5V386v-0.5V385v-0.5V384v-0.5V383v-0.5
+                        V382v-0.5V381v-0.5V380v-0.5V379v-0.5V378v-0.5V377v-0.5V376v-0.5V375v-0.5V374v-0.5V373v-0.5V372v-0.5V371l0,0v-0.5V370v-0.5V369
+                        v-0.5V368v-0.5V367v-0.5V366v-0.5V365v-0.5V364v-0.5V363v-0.5V362v-0.5V361v-0.5V360v-0.5V359v-0.5V358v-0.5V357v-0.5V356v-0.5V355
+                        l0,0v-0.5V354v-0.5V353v-0.5V352v-0.5V351v-0.5V350v-0.5V349v-0.5V348v-0.5V347v-0.5V346v-0.5V345v-0.5V344v-0.5V343v-0.5V342v-0.5
+                        V341v-0.5V340v-0.5V339l0,0v-0.5V338v-0.5V337v-0.5V336v-0.5V335v-0.5V334v-0.5V333v-0.5V332v-0.5V331v-0.5V330v-0.5V329v-0.5V328
+                        v-0.5V327v-0.5V326v-0.5V325v-0.5V324v-0.5V323v-0.5V322l0,0v-0.5V321v-0.5V320v-0.5V319v-0.5V318v-0.5V317v-0.5V316v-0.5V315v-0.5
+                        V314v-0.5V313v-0.5V312v-0.5V311v-0.5V310v-0.5V309v-0.5V308v-0.5V307v-0.5V306l0,0v-0.5V305v-0.5V304v-0.5V303v-0.5V302v-0.5V301
+                        v-0.5V300v-0.5V299v-0.5V298v-0.5V297v-0.5V296v-0.5V295v-0.5V294v-0.5V293v-0.5V292v-0.5V291v-0.5V290l0,0v-0.5V289v-0.5V288v-0.5
+                        V287v-0.5V286v-0.5V285v-0.5V284v-0.5V283v-0.5V282v-0.5V281v-0.5V280v-0.5V279v-0.5V278v-0.5V277v-0.5V276v-0.5V275v-0.5V274l0,0
+                        v-0.5V273v-0.5V272v-0.5V271v-0.5V270v-0.5V269v-0.5V268v-0.5V267v-0.5V266v-0.5V265v-0.5V264v-0.5V263v-0.5V262v-0.5V261v-0.5V260
+                        v-0.5V259v-0.5V258v-0.5V257l0,0v-0.5V256v-0.5V255v-0.5V254v-0.5V253v-0.5V252v-0.5V251v-0.5V250v-0.5V249v-0.5V248v-0.5V247v-0.5
+                        V246v-0.5V245v-0.5V244v-0.5V243v-0.5V242v-0.5V241l0,0v-0.5V240v-0.5V239v-0.5V238v-0.5V237v-0.5V236v-0.5V235v-0.5V234v-0.5V233
+                        v-0.5V232v-0.5V231v-0.5V230v-0.5V229v-0.5V228v-0.5V227v-0.5V226v-0.5V225l0,0v-0.5V224v-0.5V223v-0.5V222v-0.5V221v-0.5V220v-0.5
+                        V219v-0.5V218v-0.5V217v-0.5V216v-0.5V215v-0.5V214v-0.5V213v-0.5V212v-0.5V211v-0.5V210v-0.5V209v-0.5V208l0,0v-0.5V207v-0.5V206
+                        v-0.5V205v-0.5V204v-0.5V203v-0.5V202v-0.5V201v-0.5V200v-0.5V199v-0.5V198v-0.5V197v-0.5V196v-0.5V195v-0.5V194v-0.5V193v-0.5V192
+                        l0,0v-0.5V191v-0.5V190v-0.5V189v-0.5V188v-0.5V187v-0.5V186v-0.5V185v-0.5V184v-0.5V183v-0.5V182v-0.5V181v-0.5V180v-0.5V179v-0.5
+                        V178v-0.5V177v-0.5V176l0,0v-0.5V175v-0.5V174v-0.5V173v-0.5V172v-0.5V171v-0.5V170v-0.5V169v-0.5V168v-0.5V167v-0.5V166v-0.5V165
+                        v-0.5V164v-0.5V163v-0.5V162v-0.5V161v-0.5V160l0,0v-0.5V159v-0.5V158v-0.5V157v-0.5V156v-0.5V155v-0.5V154v-0.5V153v-0.5V152v-0.5
+                        V151v-0.5V150v-0.5c0-2.1-1.5-4.3-3.9-4.3c-2.3,0-3.7,2-3.9,4l-25.3,74c-1.5,4.1-4.8,6.1-8.4,6.7c-3.7,0.6-7.8-0.2-10.5-1.6
+                        c-3.2-1.6-4.7-3.6-5.4-6.1s-0.5-5.6,0.2-9.2l6-19.4l20-51.9c1.6-3.7,3.1-7.2,4.4-10.5c2.2-5.3,4.2-10,6.1-14.3
+                        c3.1-7,6-12.5,9.1-16.9c3.1-4.3,6.5-7.4,10.7-9.5c4.2-2,9.3-3.1,15.9-3.1H130c26.1,0,47.7,23.9,47.7,53.6v89
+                        c0,8.7-6.3,15.6-15,15.6c-2.7,0-5.2-0.7-7-2.1c-1.7-1.3-2.9-3.3-2.9-6.2v-87.6c0-2.1-1.5-4.3-3.9-4.3s-3.9,2.2-3.9,4.3v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5
+                        v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5v0.5c0,10.8-8.2,19.4-18,19.4h-1.7c-10.6,0-19.3-8.7-19.3-19.4
+                        c0-22.1,0-44.2,0-66.3v-0.1c0-22.1,0-44.1,0-66.2c0-2.1-1.6-4-3.8-4c-2.2,0-3.8,1.9-3.8,4c0,22.1,0,44.1,0,66.2l0,0
+                        C98.3,354,98.3,376.1,98.3,398.1z M102.2,1.5c18.3,0,33.2,14.9,33.2,33.3s-14.9,33.3-33.2,33.3C83.8,68,69,53.2,69,34.8
+                        S83.8,1.5,102.2,1.5z" />
+                            <circle class="st16" cx="86.2" cy="32" r="11.5" />
+                            <path class="st17" d="M96.7,27c1.8-1.5,6.3-3.6,9.5,0" />
+                            <circle class="st16" cx="116.2" cy="32" r="11.5" />
+                            <path class="st18" d="M76.7,72l26.5,46.5l-23-24l-19,12L76.7,72z" />
+                            <path class="st18" d="M130.2,72l-26.5,46.5l23-24l19,12L130.2,72z" />
+                        </g>
+
+                    </svg>
+
+
+                </div>
+            </div>
+
         </div>
-        <div class="float_horizontal" style="margin-top: 23vh; width: 88vw">
-            <div style="width:40vw">
-                <div class="float_horizontal">
-                    <img src="assets/no_image.svg" alt="no image" width="150px" height="150px">
+    </section>
+
+    <section id="over_time">
+        <!-- Spread over time -->
+        <div class="stand">
+            <div class="sticky_fixed">
+                <p class="title"> How was it in the past? </p>
+                <p class="text" class="description"> Malaria and dengue are among the most significant vector-borne
+                    diseases,
+                    transmitted by Anopheles and Aedes mosquitoes, respectively. Over time, these diseases have spread
+                    across various countries while also disappearing from certain regions.</p>
+            </div>
+            <div class="float_horizontal">
+                <div style="align-content: end; margin-top: 20vh; width: 15vw;">
+                    <p class="text"> Select the disease :</p>
+                    <input id="malariaButton" class="button" type="submit" value="Malaria">
+                    <input id="dengueButton" class="button" type="submit" value="Dengue">
+                </div>
+
+                <div
+                    style="margin-top: 20vh; width: 80vw; display: flex; flex-direction: column; align-items: center; ">
+                    <div style="background: rgba(255, 255, 255);
+               border-radius: 10px; width: 60vw ">
+                        <div id="my_dataviz" style="height: 62vh;"></div>
+                    </div>
+
                     <div>
-                        <p class="small_title">Use repellents</p>
-                        <p class="text">Apply insect repellent containing DEET, picaridin to exposed skin and clothing.
-                        </p>
+                        <div class="slider" style="width: 60vw;">
+                            <div class="slider-values"
+                                style="width: 100%; float: left; justify-content: space-between;">
+                                <span id="minYear">2000</span>
+                                <span id="maxYear">2020</span>
+                            </div>
+
+                            <input id="yearSlider" type="range" min="2000" max="2020" step="1" value="2020">
+
+                            <div class="slider-values"
+                                style="width: 100%; float: left; justify-content: left; color: #001AFF;"> <span
+                                    style="margin-right: 0.5vw;"> Selected year :</span>
+                                <div id="selectedYear"> 2020 </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="float_horizontal">
-                    <img src="assets/no_image.svg" alt="no image" width="150px" height="150px">
-                    <div>
-                        <p class="small_title">Wear protective clothing</p>
-                        <p class="text">Wear long sleeves, long pants, and socks to protect your skin.</p>
+
+
+            </div>
+        </div>
+        <!-- THE FUTURE -->
+        <div class="stand">
+            <div class="sticky_fixed" style=" height: 13vw; width: 50vw;">
+                <p class="title"> What’s the future of Europe? </p>
+                <p class="text" class="description"> Multiple studies, driven by public health concerns, have predicted
+                    its
+                    future distribution across the region, with varying results.The accompanying maps synthesize these
+                    findings, identifying areas of consensus suitability and forecasting substantial expansion into
+                    northern
+                    and eastern Europe. The first map illustrates habitat suitability according to consensus
+                    predictions,
+                    while the second map forecasts potential changes by 2050, depicting different suitability
+                    trajectories.
+                </p>
+            </div>
+            <div class="float_horizontal" style="margin-top: 23vh;  justify-content: center;">
+                <div style="margin-right: 4vw;">
+                    <p class="small_title" style="padding-bottom: 1vh;font-weight: 500;">Now</p>
+                    <img src="assets/map/now3.svg" alt="map now" width="1050px">
+                </div>
+                <div>
+                    <p class="small_title" style="padding-bottom: 1vh;font-weight: 500;">2050</p>
+                    <img src="assets/map/future3.svg" alt="map futur" width="1050px">
+                </div>
+            </div>
+        </div>
+        <!-- WHY IT SPREADS -->
+        <div class="stand">
+            <div class="sticky_fixed">
+                <p class="title"> What influences the spread? </p>
+                <p class="text" class="description"> Numerous studies (2), motivated by public health concerns, have
+                    examined
+                    potential scenarios for the future spread of diseases. These studies have focused on the
+                    environmental
+                    conditions favorable to the reproduction of the mosquito species Aedes Albopictus, which was
+                    introduced
+                    to Europe in the 1970s and is capable of transmitting diseases such as dengue.</p>
+            </div>
+            <div class="float_horizontal" style="margin-top: 35vh; padding: 3vw; text-align: center;">
+                <div class="change">
+                    <img src="assets/climate_change.svg" alt="climate change" width="150px" height="150px">
+                    <p class="small_title">Climate change</p>
+                    <p class="text">As global temperatures rise, previously too cold regions may become suitable for
+                        mosquito habitation. Additionally, increased rainfall can create more stagnant water pools for
+                        mosquito breeding.</p>
+                </div>
+                <div class="change">
+                    <img src="assets/globalisation.svg" alt="climate change" width="150px" height="150px">
+                    <p class="small_title">Globalization</p>
+                    <p class="text">Global travel and trade make it easier for mosquitoes to spread. They can travel in
+                        cargo, vehicles, and aircraft, reaching new places. Increased trade also means mosquito eggs or
+                        larvae can be transported in goods, helping them colonize new areas.</p>
+                </div>
+                <div class="change">
+                    <img src="assets/urban_area.svg" alt="climate change" width="150px" height="150px">
+                    <p class="small_title">Urban area</p>
+                    <p class="text">Urban areas are ideal for mosquitoes due to higher temperatures, abundant water
+                        containers and irrigation systems, and a high density of human hosts.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="protection">
+        <!-- PROTECTION -->
+        <div class="stand">
+            <div style="width: 50vw;">
+                <p class="title"> How to protect ourselves?</p>
+                <p class="text" class="description"> Protecting ourselves from mosquitoes will become more and more
+                    important.
+                    Adopting new behaviors will help to reduce the spread of the disease by diminishing the population
+                    of
+                    mosquitoes. This will also have an impact on our community and will be the responsibility of
+                    everyone.
+                </p>
+            </div>
+            <div class="float_horizontal" style="margin-top: 8vh; width: 88vw;">
+                <div style="width:40vw">
+                    <div class="float_horizontal">
+                        <img src="assets/repelent.svg" alt="Repelent" width="120px" height="120px"
+                            style="margin:10px ;">
+                        <div>
+                            <p class="small_title">Use repellents</p>
+                            <p class="text">Apply insect repellent containing DEET, picaridin to exposed skin and
+                                clothing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="float_horizontal">
+                        <img src="assets/cloth.svg" alt="cloth" width="120px" height="120px" style="margin:10px ;">
+                        <div>
+                            <p class="small_title">Wear protective clothing</p>
+                            <p class="text">Wear long sleeves, long pants, and socks to protect your skin.</p>
+                        </div>
+                    </div>
+                    <div class="float_horizontal">
+                        <img src="assets/mosquitonet.svg" alt="mosquitonet" width="120px" height="120px"
+                            style="margin:10px ;">
+                        <div>
+                            <p class="small_title">Use mosquito nets</p>
+                            <p class="text">Sleep under mosquito and install panels on your windows and doors
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="float_horizontal">
-                    <img src="assets/no_image.svg" alt="no image" width="150px" height="150px">
-                    <div>
-                        <p class="small_title">Use mosquito nets</p>
-                        <p class="text">Sleep under mosquito and install panels on your windows and doors
-                        </p>
+
+                <div style="width:40vw">
+                    <div class="float_horizontal">
+                        <img src="assets/standing.svg" alt="standing water" width="120px" height="120px"
+                            style="margin:10px ;">
+                        <div>
+                            <p class="small_title">Eliminate standing water</p>
+                            <p class="text">Regularly empty or cover containers such as buckets, plant pots, and old
+                                tires.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="float_horizontal">
+                        <img src="assets/water.svg" alt="standing water" width="120px" height="120px"
+                            style="margin:10px ;">
+                        <div>
+                            <p class="small_title">Treat water source</p>
+                            <p class="text">Use larvicides in standing water that can't be eliminated, like ponds and
+                                rain
+                                barrels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="float_horizontal">
+                        <img src="assets/programs.svg" alt="program" width="120px" height="120px" style="margin:10px ;">
+                        <div>
+                            <p class="small_title">Support control programs</p>
+                            <p class="text">Participate in local mosquito control programs and spread awareness about
+                                prevention measures.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div style="width:40vw">
-                <div class="float_horizontal">
-                    <img src="assets/no_image.svg" alt="no image" width="150px" height="150px">
-                    <div>
-                        <p class="small_title">Eliminate standing water</p>
-                        <p class="text">Regularly empty or cover containers such as buckets, plant pots, and old tires.
-                        </p>
-                    </div>
-                </div>
-                <div class="float_horizontal">
-                    <img src="assets/no_image.svg" alt="no image" width="150px" height="150px">
-                    <div>
-                        <p class="small_title">Treat water source</p>
-                        <p class="text">Use larvicides in standing water that can't be eliminated, like ponds and rain
-                            barrels.
-                        </p>
-                    </div>
-                </div>
-                <div class="float_horizontal">
-                    <img src="assets/no_image.svg" alt="no image" width="150px" height="150px">
-                    <div>
-                        <p class="small_title">Support control programs</p>
-                        <p class="text">Participate in local mosquito control programs and spread awareness about
-                            prevention measures.</p>
-                    </div>
-                </div>
-            </div>
         </div>
+
+    </section>
+
+
     </div>
 
     <!-- FOOTER -->
     <div id="bottom" style="padding: 3vw;">
         <p class="small_title" style="color: #FFFFFF;">Sources</p>
-        <p class="text" style="color: #FFFFFF;"> [1] <a
+        <p class="text" style="color: #FFFFFF;"> [1] <a target="_blank"
                 href="https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases" class="text"
                 style="color: #FFFFFF;">Vector-born disease(2020), WHO</a></p>
-        <p class="text" style="color: #FFFFFF;"> [2] <a
+        <p class="text" style="color: #FFFFFF;"> [2] <a target="_blank"
                 href="https://www.usm.edu/news/2022/release/mosquito-research.php" class="text"
                 style="color: #FFFFFF;">USM Professor’s Research Documents Medically Important Mosquitoes (2022), Ivonne
                 Kawas</a></p>
-        <p class="text" style="color: #FFFFFF;"> [3] <a href="https://www.who.int/publications/i/item/9789240086173"
-                class="text" style="color: #FFFFFF;">Malaria Report (2023), WHO</a></p>
-        <p class="text" style="color: #FFFFFF;"> [4] <a
+        <p class="text" style="color: #FFFFFF;"> [3] <a target="_blank"
+                href="https://www.who.int/publications/i/item/9789240086173" class="text"
+                style="color: #FFFFFF;">Malaria Report (2023), WHO</a></p>
+        <p class="text" style="color: #FFFFFF;"> [4] <a target="_blank"
                 href="https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue#:~:text=The%20largest%20number%20of%20dengue,Viet%20Nam%20"
                 class="text" style="color: #FFFFFF;">Dengue and severe dengue (2024), WHO</a></p>
-        <p class="text" style="color: #FFFFFF;"> [5] <a href="https://opendengue.org/data.html" class="text"
-                style="color: #FFFFFF;">Dengue data base (2024),Open dengue</a></p>
-        <p class="text" style="color: #FFFFFF;"> [6] <a
+        <p class="text" style="color: #FFFFFF;"> [5] <a target="_blank" href="https://opendengue.org/data.html"
+                class="text" style="color: #FFFFFF;">Dengue data base (2024),Open dengue</a></p>
+        <p class="text" style="color: #FFFFFF;"> [6] <a target="_blank"
                 href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/number-of-indigenous-malaria-cases"
                 class="text" style="color: #FFFFFF;"> Number of indigenous malaria cases (2022), WHO</a></p>
-        <p class="text" style="color: #FFFFFF;"> [7] <a href="https://www.nature.com/articles/s41598-021-89096-5#Tab1"
-                class="text" style="color: #FFFFFF;">Wide and increasing suitability for Aedes albopictus in Europe is
+        <p class="text" style="color: #FFFFFF;"> [7] <a target="_blank"
+                href="https://www.nature.com/articles/s41598-021-89096-5#Tab1" class="text" style="color: #FFFFFF;">Wide
+                and increasing suitability for Aedes albopictus in Europe is
                 congruent across distribution models (2021), Sandra Oliveira,Jorge Rocha, Carla A. Sousa & César Capinha
             </a></p>
         <div class="float_horizontal">
             <p class="small_title" style="color: #FFFFFF; margin-top: 5vh;">Jeanne Lallemand</p>
             <p class="small_title" style="color: #FFFFFF;margin-top: 5vh;"> May 2024</p>
         </div>
-</body>
-</div>
-
-<!-- NOT MOOVING -->
-<div id="name_project">
-    <p class="indication">BZZbzz</p>
-</div>
-
-<div id="menu">
-    <div class="transform_horizontal">
-        <p class="indication">Diseases</p>
-        <p class="indication">Spread</p>
-        <p class="indication">Future</p>
-        <p class="indication">Protection</p>
     </div>
-</div>
-</div>
 
-<script>
-    // The svg
-    var svg = d3.select("svg"),
-        width = +svg.attr("width"),
-        height = +svg.attr("height");
+    <!-- NOT MOOVING -->
+    <div id="name_menu">
+        <div class="float_horizontal" style="margin-top:2vh; padding:20px; background: rgba(255, 255, 255, 0.2);
+         border-radius: 10px;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); height: 3vh;">
+            <a class="indication" href="#vector_born">Diseases</a>
+            <a class="indication" href="#spreading">Spread</a>
+            <a class="indication" href="#over_time">Timeline</a>
+            <a class="indication" href="#protection">Protection</a>
+        </div>
 
-    // Map and projection
-    var path = d3.geoPath();
-    var projection = d3.geoMercator()
-        .scale(150)
-        .center([0, 20])
-        .translate([width / 2, height / 2]);
+        <div style="width:6vw">
+            <a href="#landing_page">
+                <img src="assets/logo_defense2.svg" alt="BiteDefender" width="100%" height="100%">
+            </a>
+        </div>
+    </div>
 
-    // Data and color scale
-    var colorScale2 = d3.scaleThreshold()
-        .domain([0.1, 10, 100, 300, 1000])
-        .range(["#DCE2F5", "#C0D2FE", "#96B2F5", "#4C77E1", "#001AFF"]);
+    <!-- JAVASCRIPT -->
+    <script>
+        d3.select(".transform_horizontal")
+            .style("transform", "rotate(90deg) translateY(-30px)");
+    </script>
 
-    var colorScale1 = d3.scaleThreshold()
-        .domain([1, 10, 100, 1000, 1000])
-        .range(["#DCE2F5", "#C4C1FE", "#A08EF5", "#8660FF", "#6B46E1"]);
+    <!-- map projection -->
+    <script>
 
-    var colorScale = colorScale2;
-    var csvData = [];
-    var currentDataset = "assets/data/incidence-of-malaria.csv";
+        var width = 800;
+        var height = 500;
 
-    function loadData(dataset) {
-Promise.all([
-    d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
-    d3.csv(dataset)
-]).then(function (values) {
-    var topo = values[0];
-    var data = values[1];
-    csvData = data;
-    ready(topo);
-}).catch(function (error) {
-    throw error;
-});
-}
-    function ready(topo) {
-        // Draw the map
-        svg.selectAll("*").remove();
-        var map = svg.append("g")
-            .selectAll("path")
-            .data(topo.features)
-            .join("path")
-            .attr("d", path.projection(projection))
-            .attr("fill", "#DCE2F5");
+        // Select the SVG container by its ID
+        var svg = d3.select("#my_dataviz")
+            .append("svg") // Append an SVG element
+            .attr("viewBox", "0 0 " + width + " " + height) // Set the viewBox attribute for responsiveness
+            .attr("preserveAspectRatio", "xMidYMid meet"); // Ensure aspect ratio is maintained
 
-        function updateMap(year) {
-            var yearData = csvData.filter(function (d) {
-                return +d.Year === year;
-            });
 
-            var yearMap = new Map();
-            yearData.forEach(function (d) {
-                yearMap.set(d.code, +d.pop);
-            });
+        // Map and projection
+        var path = d3.geoPath();
+        var projection = d3.geoMercator()
+            .scale(140)
+            .center([0, 20])
+            .translate([width / 2, height / 2]);
 
-            map.attr("fill", function (d) {
-                var pop = yearMap.get(d.id) || 0;
-                return colorScale(pop);
-            });
-        }
+        // Data and color scale
+        var colorScale2 = d3.scaleThreshold()
+            .domain([0.1, 10, 100, 300, 1000])
+            .range(["#DCE2F5", "#C0D2FE", "#96B2F5", "#4C77E1", "#001AFF"]);
 
-        var slider = d3.select("#yearSlider")
-            .on("input", function () {
-                updateMap(+this.value);
-            });
+        var colorScale1 = d3.scaleThreshold()
+            .domain([1, 10, 100, 1000, 1000])
+            .range(["#DCE2F5", "#C4C1FE", "#A08EF5", "#8660FF", "#6B46E1"]);
 
-        // Initial map update with the current slider value
-        updateMap(+slider.property("value"));
-    }
+        var colorScale = colorScale2;
+        var csvData = [];
+        var currentDataset = "assets/data/incidence-of-malaria.csv";
 
-    document.getElementById("dengueButton").addEventListener("click", function () {
-        csvData = [];
-        currentDataset = "assets/data/dengue_cases2.csv";
-        loadData(currentDataset);
-        colorScale = colorScale1;
-    });
-
-    document.getElementById("malariaButton").addEventListener("click", function () {
-        csvData = [];
-        currentDataset = "assets/data/incidence-of-malaria.csv";
-        loadData(currentDataset);
-        colorScale = colorScale2;
-    });
-
-    // Load initial dataset
-    loadData(currentDataset);
-</script>
-
-<script>
-    d3.select(".transform_horizontal")
-        .style("transform", "rotate(90deg) translateY(-30px)");
-</script>
-
-<script>
-    // The svg
-    var svg = d3.select("#my_dataviz"),
-        width = 800;
-        height = 600;
-
-    // Map and projection
-    var path = d3.geoPath();
-    var projection = d3.geoMercator()
-        .scale(140)
-        .center([0, 20])
-        .translate([width / 2, height / 2]);
-
-    // Data and color scale
-    var colorScale2 = d3.scaleThreshold()
-        .domain([0.1, 10, 100, 300, 1000])
-        .range(["#DCE2F5", "#C0D2FE", "#96B2F5", "#4C77E1", "#001AFF"]);
-
-    var colorScale1 = d3.scaleThreshold()
-        .domain([1, 10, 100, 1000, 1000])
-        .range(["#DCE2F5", "#C4C1FE", "#A08EF5", "#8660FF", "#6B46E1"]);
-
-    var colorScale = colorScale2;
-    var csvData = [];
-    var currentDataset = "assets/data/incidence-of-malaria.csv";
-
-    function loadData(dataset) {
-Promise.all([
-    d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
-    d3.csv(dataset)
-]).then(function (values) {
-    var topo = values[0];
-    var data = values[1];
-    csvData = data;
-    ready(topo);
-}).catch(function (error) {
-    throw error;
-});
-}
-    function ready(topo) {
-        // Draw the map
-        svg.selectAll("*").remove();
-        var map = svg.append("g")
-            .selectAll("path")
-            .data(topo.features)
-            .join("path")
-            .attr("d", path.projection(projection))
-            .attr("fill", "#DCE2F5");
-
-        function updateMap(year) {
-            var yearData = csvData.filter(function (d) {
-                return +d.Year === year;
-            });
-
-            var yearMap = new Map();
-            yearData.forEach(function (d) {
-                yearMap.set(d.code, +d.pop);
-            });
-
-            map.attr("fill", function (d) {
-                var pop = yearMap.get(d.id) || 0;
-                return colorScale(pop);
+        function loadData(dataset) {
+            Promise.all([
+                d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
+                d3.csv(dataset)
+            ]).then(function (values) {
+                var topo = values[0];
+                var data = values[1];
+                csvData = data;
+                ready(topo);
+            }).catch(function (error) {
+                throw error;
             });
         }
+        function ready(topo) {
+            // Draw the map
+            svg.selectAll("*").remove();
+            var map = svg.append("g")
+                .selectAll("path")
+                .data(topo.features)
+                .join("path")
+                .attr("d", path.projection(projection))
+                .attr("fill", "#DCE2F5");
 
-        var slider = d3.select("#yearSlider")
-            .on("input", function () {
-                updateMap(+this.value);
-            });
+            function updateMap(year) {
+                var yearData = csvData.filter(function (d) {
+                    return +d.Year === year;
+                });
 
-        // Initial map update with the current slider value
-        updateMap(+slider.property("value"));
-    }
+                var yearMap = new Map();
+                yearData.forEach(function (d) {
+                    yearMap.set(d.code, +d.pop);
+                });
 
-    document.getElementById("dengueButton").addEventListener("click", function () {
-        csvData = [];
-        currentDataset = "assets/data/dengue_cases2.csv";
+                map.attr("fill", function (d) {
+                    var pop = yearMap.get(d.id) || 0;
+                    return colorScale(pop);
+                });
+            }
+
+            var slider = d3.select("#yearSlider")
+                .on("input", function () {
+                    updateMap(+this.value);
+                });
+
+            // Initial map update with the current slider value
+            updateMap(+slider.property("value"));
+        }
+
+        document.getElementById("dengueButton").addEventListener("click", function () {
+            csvData = [];
+            currentDataset = "assets/data/dengue_cases2.csv";
+            loadData(currentDataset);
+            colorScale = colorScale1;
+        });
+
+        document.getElementById("malariaButton").addEventListener("click", function () {
+            csvData = [];
+            currentDataset = "assets/data/incidence-of-malaria.csv";
+            loadData(currentDataset);
+            colorScale = colorScale2;
+        });
+
+        // Load initial dataset
         loadData(currentDataset);
-        colorScale = colorScale1;
-    });
+    </script>
 
-    document.getElementById("malariaButton").addEventListener("click", function () {
-        csvData = [];
-        currentDataset = "assets/data/incidence-of-malaria.csv";
-        loadData(currentDataset);
-        colorScale = colorScale2;
-    });
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function inView(id) {
+                var object = document.getElementById(id);
+                if (object) {
+                    var rect = object.getBoundingClientRect();
+                    return rect.top <= window.innerHeight && rect.bottom >= 0;
+                }
+                return false;
+            }
 
-    // Load initial dataset
-    loadData(currentDataset);
-</script>
+            function updatePosition() {
+                var diseasesExp1 = document.getElementById("diseases_exp1");
+                var malariaDeath = document.getElementById("malaria_death");
+                var dengueDeath = document.getElementById("dengue_death");
+
+                if (diseasesExp1) {
+                    var rect = diseasesExp1.getBoundingClientRect();
+                    var scrollPercentage = 1 - rect.top / window.innerHeight;
+
+                    if (inView("diseases_exp1")) {
+                        var malariaTranslateX = -50 * scrollPercentage;
+                        var dengueTranslateX = -10 * scrollPercentage;
+                        malariaDeath.style.transform = `translate(${malariaTranslateX}vw, 0)`;
+                        dengueDeath.style.transform = `translate(${dengueTranslateX}vw, 0)`;
+                    }
+                }
+
+                if (inView("step1")) {
+                    document.getElementById("sick").style.opacity = 0;
+                    document.getElementById("changing").style.opacity = 0;
+                    document.getElementById("healthy").style.opacity = 1;
+                } else if (inView("step2")) {
+                    document.getElementById("sick").style.opacity = 0;
+                    document.getElementById("changing").style.opacity = 1;
+                    document.getElementById("healthy").style.opacity = 0;
+                } else if (inView("step3")) {
+                    document.getElementById("sick").style.opacity = 1;
+                    document.getElementById("changing").style.opacity = 0;
+                    document.getElementById("healthy").style.opacity = 0;
+                    document.getElementById("mosquito2_v1").style.opacity = 1;
+                    document.getElementById("mosquito2_v2").style.opacity = 0;
+                    document.getElementById("mosquito2_v3").style.opacity = 0;
+                } else if (inView("step4")) {
+                    document.getElementById("mosquito2_v1").style.opacity = 0;
+                    document.getElementById("mosquito2_v2").style.opacity = 1;
+                    document.getElementById("mosquito2_v3").style.opacity = 0;
+                } else if (inView("step5")) {
+                    document.getElementById("sick2").style.opacity = 0;
+                    document.getElementById("healthy2").style.opacity = 1;
+                    document.getElementById("mosquito2_v1").style.opacity = 0;
+                    document.getElementById("mosquito2_v2").style.opacity = 0;
+                    document.getElementById("mosquito2_v3").style.opacity = 1;
+                } else if (inView("question1")) {
+                    document.getElementById("sick2").style.opacity = 1;
+                    document.getElementById("healthy2").style.opacity = 0;
+                }
+            }
+
+            // Initial call
+            updatePosition();
+
+            // Event listener for scrolling
+            window.addEventListener('scroll', updatePosition);
+
+        });
+    </script>
+
+    <script>
+        // JavaScript to handle the slider value display
+        var yearSlider = document.getElementById("yearSlider");
+        var selectedYear = document.getElementById("selectedYear");
+
+        // Update the selected year value when the slider is moved
+        yearSlider.addEventListener("input", function () {
+            selectedYear.textContent = this.value;
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.indication');
+
+            function activateLink() {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) { }
+
+                navLinks.forEach((link) => link.classList.remove('active'));
+
+                // Apply 'active' class only if a section is in view
+                if (window.scrollY + 50 >= sections[0].offsetTop) {
+                    navLinks[index].classList.add('active');
+                }
+            }
+
+            // Remove underline initially
+            navLinks.forEach((link) => link.classList.remove('active'));
+
+            window.addEventListener('scroll', activateLink);
+        });
+
+
+    </script>
+
 </body>
 
 </html>

@@ -203,11 +203,11 @@ body {
     height: 60vw;
     background-color: none;
     position: sticky;
-    top: 17vh;
+    top: 25vh;
     margin-left: auto; 
     margin-right: 10vw;
-    margin-top: 17vh;
-    margin-bottom: 85vh;
+    margin-top: 25vh;
+    margin-bottom: 87vh;
 }
 
 #grid{
@@ -336,7 +336,6 @@ input[type="range"]::-webkit-slider-thumb {
     color: white;
     border: none;
     padding: 1vh;
-
     cursor: pointer;
     width: 100%;
     margin: 0.5vh 0;
@@ -344,33 +343,38 @@ input[type="range"]::-webkit-slider-thumb {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-      font-size: 1.5vh;
+    font-size: 1.5vh;
+    border-radius: 40px;
 }
 
 .dengue{
     background-color: #6B46E1;
     border: 3px solid #6B46E1;
-    padding: 5px;
-    border-radius: 20px;
+    padding: 1.5vh;
+    border-radius: 5px;
+    margin:0.7vh;
 }
 
 .malaria{
     background-color: #001AFF;
     border: 3px solid #001AFF;
-    padding: 5px;
-    border-radius: 20px;
+    padding: 1.5vh;
+    border-radius: 5px;
+    margin:0.7vh;
 }
 .otherDisease{
     background-color: #A3AED0;
     border: 3px solid #A3AED0;
-    padding: 5px;
-    border-radius: 20px;
+    padding: 1.5vh;
+    border-radius: 5px;
+    margin:0.7vh;
 }
 .categories{
     background-color: white;
     border: 3px solid white;
-    padding: 5px;
-    border-radius: 20px;
+    padding: 1.5vh;
+    border-radius: 5px;
+    margin:0.7vh;
     font-style: italic;
 }
 
