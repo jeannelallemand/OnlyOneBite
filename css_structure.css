@@ -62,7 +62,7 @@ body {
     line-height: 90%;
     margin-bottom: 10px;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 2vh;
     color: blue;
 }
 
@@ -71,10 +71,13 @@ body {
     font-optical-sizing: auto;
     font-weight:400;
     line-height: 90%;
-    margin: 0px 10px;
-    margin-bottom: 7px;
-    font-size: 25px;
+    margin: 0px 20px;
+    font-size: 3vh;
     color: blue;
+}
+.indication.active {
+    border-bottom: solid blue;
+    
 }
 
 .text {
@@ -84,18 +87,10 @@ body {
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
-    font-size: 15px;
+    font-size: 1.5vh;
     color: black;
 }
 
-#name_project {
-    width: 9vw;
-    background-color: none;
-    position: fixed;
-    right: -10px;
-    top: 2px;
-
-}
 
 #container {
     position: relative; 
@@ -107,14 +102,16 @@ body {
     height: 30vw;
     position: fixed;
     right: 20px;
-    top: 20vh;
-    margin-top: 20vh;
+    top: 10vh;
+    margin-top: 10vh;
 }
+
+
 
 .transform_horizontal {
     display: flex;
-    justify-content: right;
-    width: 380px;
+    justify-content: left;
+    width: 40vh;
     border-bottom: solid blue;
     transform-origin: top left;
 }
@@ -125,7 +122,7 @@ body {
 
 #step1, #step2, #step3, #step4, #step5, #step6 {
     width: 50%;
-    font-size: 25px;
+    font-size: 3vh;
     margin-bottom: 55vh;
     color: #001AFF;
 
@@ -262,6 +259,13 @@ body {
 #sticky_5 .overlap.active {
     opacity: 1; 
 }
+#name_menu{
+    position: fixed; 
+    top:2vh; 
+    display: flex; 
+    float: right;
+    right: -2vw;
+}
 
 .float_horizontal {
     margin: none;
@@ -308,7 +312,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
-      font-size: 15px;
+      font-size: 1.5vh;
 }
 
 #dengueButton {
@@ -340,7 +344,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-      font-size: 15px;
+      font-size: 1.5vh;
 }
 
 .dengue{
