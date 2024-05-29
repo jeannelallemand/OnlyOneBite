@@ -22,34 +22,36 @@
 <body>
 
 
-        <!--  LANDING PAGE -->
-        <div class="stand" id="landing_page">
-            <p class="title" style="margin-top: 7vh; font-size: 8vh; font-weight: 200; font-style: italic;">Bzzzzzz...
-                scratch-scratch...
-                slap ! </p>
-            <p class="big_title">No one likes mosquitoes, specially when they can transmit diseases </p>
+    <!--  LANDING PAGE -->
+    <div class="stand" id="landing_page">
 
-            <div style=" display: flex; justify-content: flex-end; margin-right: 8vw;">
-                <div>
-                    <p class="small_title" style="text-align: center; color: #FFFFFF;font-weight: 600;"> How does it
-                        happen
-                        ?</p>
-                    <p class="small_title" style="text-align: center; color: #FFFFFF; font-weight: 600"> Follow the
-                        mosquito
-                        to know</p>
-                    <a style="display: flex; justify-content: center;" href="#vector_born">
-                        <img class="pulse" src="assets/mosquito.svg" alt="none" width="100px" height="100px"
-                            id="scrollImage">
-                    </a>
 
-                </div>
+        <p class="title" style="margin-top: 7vh; font-size: 8vh; font-weight: 200; font-style: italic;">Bzzzzzz...
+            scratch-scratch...
+            slap ! </p>
+        <p class="big_title">No one likes mosquitoes, specially when they can transmit diseases </p>
+
+        <div style=" display: flex; justify-content: flex-end; margin-right: 8vw;">
+            <div>
+                <p class="small_title" style="text-align: center; color: #FFFFFF;font-weight: 600;"> How does it
+                    happen
+                    ?</p>
+                <p class="small_title" style="text-align: center; color: #FFFFFF; font-weight: 600"> Follow the
+                    mosquito
+                    to know</p>
+                <a style="display: flex; justify-content: center;" href="#vector_born">
+                    <img class="pulse" src="assets/mosquito.svg" alt="none" width="100px" height="100px"
+                        id="scrollImage">
+                </a>
 
             </div>
+
         </div>
+    </div>
 
     <section id="vector_born">
         <!-- VECTOR_BORN DISEASES -->
-        <div class="lane" style="height:300vh">
+        <div class="lane" style="height:300vh" id="vector_born">
             <div id="fixed" style="margin-top: 8vh; width: 50%;">
                 <p class="text" class="description" style="margin-bottom: 5vh; width: 60%;" id="world_exp"> Mosquitoes
                     can
@@ -1072,7 +1074,8 @@
                     across various countries while also disappearing from certain regions.</p>
             </div>
             <div class="float_horizontal">
-                <div style="align-content: end; margin-top: 20vh; width: 20vw;">
+                <div style="align-content: end; margin-top: 20vh; width: 15vw;">
+                    <p class="text"> Select the disease :</p>
                     <input id="malariaButton" class="button" type="submit" value="Malaria">
                     <input id="dengueButton" class="button" type="submit" value="Dengue">
                 </div>
@@ -1080,21 +1083,56 @@
                 <div
                     style="margin-top: 20vh; width: 80vw; display: flex; flex-direction: column; align-items: center; ">
                     <div style="background: rgba(255, 255, 255);
-               border-radius: 10px; width: 60vw">
-                        <svg id="my_dataviz" width="90vw" height="65vh"></svg>
+               border-radius: 10px; width: 60vw ">
+                        <div id="my_dataviz" style="height: 62vh;"></div>
                     </div>
-                    <div style=" display: flex; justify-content: center;">
-                        <div class="slider" style="width: 400px;">
-                            <div class="slider-values">
+
+                    <div>
+                        <div class="slider" style="width: 60vw;">
+                            <div class="slider-values"
+                                style="width: 100%; float: left; justify-content: space-between;">
                                 <span id="minYear">2000</span>
-                                <span id="maxYear">2021</span>
+                                <span id="maxYear">2020</span>
                             </div>
-                            <input id="yearSlider" type="range" min="2000" max="2021" step="1">
+
+                            <input id="yearSlider" type="range" min="2000" max="2020" step="1" value="2020">
+
+                            <div class="slider-values"
+                                style="width: 100%; float: left; justify-content: left; color: #001AFF;"> <span
+                                    style="margin-right: 0.5vw;"> Selected year :</span>
+                                <div id="selectedYear"> 2020 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
+            </div>
+        </div>
+        <!-- THE FUTURE -->
+        <div class="stand">
+            <div class="sticky_fixed" style=" height: 13vw; width: 50vw;">
+                <p class="title"> What’s the future of Europe? </p>
+                <p class="text" class="description"> Multiple studies, driven by public health concerns, have predicted
+                    its
+                    future distribution across the region, with varying results.The accompanying maps synthesize these
+                    findings, identifying areas of consensus suitability and forecasting substantial expansion into
+                    northern
+                    and eastern Europe. The first map illustrates habitat suitability according to consensus
+                    predictions,
+                    while the second map forecasts potential changes by 2050, depicting different suitability
+                    trajectories.
+                </p>
+            </div>
+            <div class="float_horizontal" style="margin-top: 23vh;  justify-content: center;">
+                <div style="margin-right: 4vw;">
+                    <p class="small_title" style="padding-bottom: 1vh;font-weight: 500;">Now</p>
+                    <img src="assets/map/now3.svg" alt="map now" width="1050px">
+                </div>
+                <div>
+                    <p class="small_title" style="padding-bottom: 1vh;font-weight: 500;">2050</p>
+                    <img src="assets/map/future3.svg" alt="map futur" width="1050px">
+                </div>
             </div>
         </div>
         <!-- WHY IT SPREADS -->
@@ -1133,32 +1171,7 @@
 
             </div>
         </div>
-        <!-- THE FUTURE -->
-        <div class="stand">
-            <div class="sticky_fixed" style=" height: 13vw; width: 50vw;">
-                <p class="title"> What’s the future of Europe? </p>
-                <p class="text" class="description"> Multiple studies, driven by public health concerns, have predicted
-                    its
-                    future distribution across the region, with varying results.The accompanying maps synthesize these
-                    findings, identifying areas of consensus suitability and forecasting substantial expansion into
-                    northern
-                    and eastern Europe. The first map illustrates habitat suitability according to consensus
-                    predictions,
-                    while the second map forecasts potential changes by 2050, depicting different suitability
-                    trajectories.
-                </p>
-            </div>
-            <div class="float_horizontal" style="margin-top: 23vh;  justify-content: center;">
-                <div style="margin-right: 8vw;">
-                    <p class="indication" style="padding-bottom: 1vh;font-weight: 500;">Now</p>
-                    <img src="assets/map/now3.svg" alt="map now" width="1050px">
-                </div>
-                <div>
-                    <p class="indication" style="padding-bottom: 1vh;font-weight: 500;">2050</p>
-                    <img src="assets/map/future3.svg"alt="map futur" width="1050px">
-                </div>
-            </div>
-        </div>
+
     </section>
 
     <section id="protection">
@@ -1240,7 +1253,8 @@
         </div>
 
     </section>
-    
+
+
     </div>
 
     <!-- FOOTER -->
@@ -1273,220 +1287,235 @@
             <p class="small_title" style="color: #FFFFFF; margin-top: 5vh;">Jeanne Lallemand</p>
             <p class="small_title" style="color: #FFFFFF;margin-top: 5vh;"> May 2024</p>
         </div>
+    </div>
 
-        <!-- NOT MOOVING -->
-        <div id="name_menu">
-            <div class="float_horizontal" style="margin-top:2vh; padding:20px; background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); height: 3vh;">
-                <a class="indication" href="#vector_born">Diseases</a>
-                <a class="indication" href="#spreading">Spread</a>
-                <a class="indication" href="#over_time">Timeline</a>
-                <a class="indication" href="#protection">Protection</a>
-            </div>
+    <!-- NOT MOOVING -->
 
-            <div>
-                <a href="#landing_page">
-                    <img src="assets/logo_defense2.svg" alt="BiteDefender" width="80%" height="80%">
-                </a>
-            </div>
+    <div id="name_menu">
+        <div class="float_horizontal" style="margin-top:2vh; padding:20px; background: rgba(255, 255, 255, 0.2);
+         border-radius: 10px;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); height: 3vh;">
+            <a class="indication" href="#vector_born">Diseases</a>
+            <a class="indication" href="#spreading">Spread</a>
+            <a class="indication" href="#over_time">Timeline</a>
+            <a class="indication" href="#protection">Protection</a>
         </div>
-</body>
+
+        <div style="width:6vw">
+            <a href="#landing_page">
+                <img src="assets/logo_defense2.svg" alt="BiteDefender" width="100%" height="100%">
+            </a>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        d3.select(".transform_horizontal")
+            .style("transform", "rotate(90deg) translateY(-30px)");
+    </script>
+
+    <!-- map projection -->
+    <script>
+
+        var width = 800;
+        var height = 500;
+
+        // Select the SVG container by its ID
+        var svg = d3.select("#my_dataviz")
+            .append("svg") // Append an SVG element
+            .attr("viewBox", "0 0 " + width + " " + height) // Set the viewBox attribute for responsiveness
+            .attr("preserveAspectRatio", "xMidYMid meet"); // Ensure aspect ratio is maintained
 
 
+        // Map and projection
+        var path = d3.geoPath();
+        var projection = d3.geoMercator()
+            .scale(140)
+            .center([0, 20])
+            .translate([width / 2, height / 2]);
 
+        // Data and color scale
+        var colorScale2 = d3.scaleThreshold()
+            .domain([0.1, 10, 100, 300, 1000])
+            .range(["#DCE2F5", "#C0D2FE", "#96B2F5", "#4C77E1", "#001AFF"]);
 
+        var colorScale1 = d3.scaleThreshold()
+            .domain([1, 10, 100, 1000, 1000])
+            .range(["#DCE2F5", "#C4C1FE", "#A08EF5", "#8660FF", "#6B46E1"]);
 
-<!-- JAVASCRIPT -->
-<script>
-    d3.select(".transform_horizontal")
-        .style("transform", "rotate(90deg) translateY(-30px)");
-</script>
+        var colorScale = colorScale2;
+        var csvData = [];
+        var currentDataset = "assets/data/incidence-of-malaria.csv";
 
-<!-- map projection -->
-<script>
-    // The svg
-    var svg = d3.select("#my_dataviz"),
-        width = 800;
-    height = 600;
+        function loadData(dataset) {
+            Promise.all([
+                d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
+                d3.csv(dataset)
+            ]).then(function (values) {
+                var topo = values[0];
+                var data = values[1];
+                csvData = data;
+                ready(topo);
+            }).catch(function (error) {
+                throw error;
+            });
+        }
+        function ready(topo) {
+            // Draw the map
+            svg.selectAll("*").remove();
+            var map = svg.append("g")
+                .selectAll("path")
+                .data(topo.features)
+                .join("path")
+                .attr("d", path.projection(projection))
+                .attr("fill", "#DCE2F5");
 
-    // Map and projection
-    var path = d3.geoPath();
-    var projection = d3.geoMercator()
-        .scale(140)
-        .center([0, 20])
-        .translate([width / 2, height / 2]);
+            function updateMap(year) {
+                var yearData = csvData.filter(function (d) {
+                    return +d.Year === year;
+                });
 
-    // Data and color scale
-    var colorScale2 = d3.scaleThreshold()
-        .domain([0.1, 10, 100, 300, 1000])
-        .range(["#DCE2F5", "#C0D2FE", "#96B2F5", "#4C77E1", "#001AFF"]);
+                var yearMap = new Map();
+                yearData.forEach(function (d) {
+                    yearMap.set(d.code, +d.pop);
+                });
 
-    var colorScale1 = d3.scaleThreshold()
-        .domain([1, 10, 100, 1000, 1000])
-        .range(["#DCE2F5", "#C4C1FE", "#A08EF5", "#8660FF", "#6B46E1"]);
+                map.attr("fill", function (d) {
+                    var pop = yearMap.get(d.id) || 0;
+                    return colorScale(pop);
+                });
+            }
 
-    var colorScale = colorScale2;
-    var csvData = [];
-    var currentDataset = "assets/data/incidence-of-malaria.csv";
+            var slider = d3.select("#yearSlider")
+                .on("input", function () {
+                    updateMap(+this.value);
+                });
 
-    function loadData(dataset) {
-        Promise.all([
-            d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
-            d3.csv(dataset)
-        ]).then(function (values) {
-            var topo = values[0];
-            var data = values[1];
-            csvData = data;
-            ready(topo);
-        }).catch(function (error) {
-            throw error;
+            // Initial map update with the current slider value
+            updateMap(+slider.property("value"));
+        }
+
+        document.getElementById("dengueButton").addEventListener("click", function () {
+            csvData = [];
+            currentDataset = "assets/data/dengue_cases2.csv";
+            loadData(currentDataset);
+            colorScale = colorScale1;
         });
-    }
-    function ready(topo) {
-        // Draw the map
-        svg.selectAll("*").remove();
-        var map = svg.append("g")
-            .selectAll("path")
-            .data(topo.features)
-            .join("path")
-            .attr("d", path.projection(projection))
-            .attr("fill", "#DCE2F5");
 
-        function updateMap(year) {
-            var yearData = csvData.filter(function (d) {
-                return +d.Year === year;
-            });
+        document.getElementById("malariaButton").addEventListener("click", function () {
+            csvData = [];
+            currentDataset = "assets/data/incidence-of-malaria.csv";
+            loadData(currentDataset);
+            colorScale = colorScale2;
+        });
 
-            var yearMap = new Map();
-            yearData.forEach(function (d) {
-                yearMap.set(d.code, +d.pop);
-            });
-
-            map.attr("fill", function (d) {
-                var pop = yearMap.get(d.id) || 0;
-                return colorScale(pop);
-            });
-        }
-
-        var slider = d3.select("#yearSlider")
-            .on("input", function () {
-                updateMap(+this.value);
-            });
-
-        // Initial map update with the current slider value
-        updateMap(+slider.property("value"));
-    }
-
-    document.getElementById("dengueButton").addEventListener("click", function () {
-        csvData = [];
-        currentDataset = "assets/data/dengue_cases2.csv";
+        // Load initial dataset
         loadData(currentDataset);
-        colorScale = colorScale1;
-    });
+    </script>
 
-    document.getElementById("malariaButton").addEventListener("click", function () {
-        csvData = [];
-        currentDataset = "assets/data/incidence-of-malaria.csv";
-        loadData(currentDataset);
-        colorScale = colorScale2;
-    });
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function inView(id) {
+                var object = document.getElementById(id);
+                if (object) {
+                    var rect = object.getBoundingClientRect();
+                    return rect.top <= window.innerHeight && rect.bottom >= 0;
+                }
+                return false;
+            }
 
-    // Load initial dataset
-    loadData(currentDataset);
-</script>
+            function updatePosition() {
+                var diseasesExp1 = document.getElementById("diseases_exp1");
+                var malariaDeath = document.getElementById("malaria_death");
+                var dengueDeath = document.getElementById("dengue_death");
 
-<script>
+                if (diseasesExp1) {
+                    var rect = diseasesExp1.getBoundingClientRect();
+                    var scrollPercentage = 1 - rect.top / window.innerHeight;
+
+                    if (inView("diseases_exp1")) {
+                        var malariaTranslateX = -50 * scrollPercentage;
+                        var dengueTranslateX = -10 * scrollPercentage;
+                        malariaDeath.style.transform = `translate(${malariaTranslateX}vw, 0)`;
+                        dengueDeath.style.transform = `translate(${dengueTranslateX}vw, 0)`;
+                    }
+                }
+
+                if (inView("step1")) {
+                    document.getElementById("sick").style.opacity = 0;
+                    document.getElementById("changing").style.opacity = 0;
+                    document.getElementById("healthy").style.opacity = 1;
+                } else if (inView("step2")) {
+                    document.getElementById("sick").style.opacity = 0;
+                    document.getElementById("changing").style.opacity = 1;
+                    document.getElementById("healthy").style.opacity = 0;
+                } else if (inView("step3")) {
+                    document.getElementById("sick").style.opacity = 1;
+                    document.getElementById("changing").style.opacity = 0;
+                    document.getElementById("healthy").style.opacity = 0;
+                    document.getElementById("mosquito2_v1").style.opacity = 1;
+                    document.getElementById("mosquito2_v2").style.opacity = 0;
+                    document.getElementById("mosquito2_v3").style.opacity = 0;
+                } else if (inView("step4")) {
+                    document.getElementById("mosquito2_v1").style.opacity = 0;
+                    document.getElementById("mosquito2_v2").style.opacity = 1;
+                    document.getElementById("mosquito2_v3").style.opacity = 0;
+                } else if (inView("step5")) {
+                    document.getElementById("sick2").style.opacity = 0;
+                    document.getElementById("healthy2").style.opacity = 1;
+                    document.getElementById("mosquito2_v1").style.opacity = 0;
+                    document.getElementById("mosquito2_v2").style.opacity = 0;
+                    document.getElementById("mosquito2_v3").style.opacity = 1;
+                } else if (inView("question1")) {
+                    document.getElementById("sick2").style.opacity = 1;
+                    document.getElementById("healthy2").style.opacity = 0;
+                }
+            }
+
+            // Initial call
+            updatePosition();
+
+            // Event listener for scrolling
+            window.addEventListener('scroll', updatePosition);
+
+        });
+    </script>
+
+    <script>
+        // JavaScript to handle the slider value display
+        var yearSlider = document.getElementById("yearSlider");
+        var selectedYear = document.getElementById("selectedYear");
+
+        // Update the selected year value when the slider is moved
+        yearSlider.addEventListener("input", function () {
+            selectedYear.textContent = this.value;
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.indication');
+
+            function activateLink() {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) { }
+
+                navLinks.forEach((link) => link.classList.remove('active'));
+
+                // Apply 'active' class only if a section is in view
+                if (window.scrollY + 50 >= sections[0].offsetTop) {
+                    navLinks[index].classList.add('active');
+                }
+            }
+
+            // Remove underline initially
+            navLinks.forEach((link) => link.classList.remove('active'));
+
+            window.addEventListener('scroll', activateLink);
+        });
 
 
-    function inView(id) {
-        var object = document.getElementById(id);
-        var y = object.getBoundingClientRect().y
-        console.log(object.getBoundingClientRect().y, window.innerHeight)
-        return y <= window.innerHeight && y > 0
-    }
+    </script>
 
-    function updatePosition() {
-        var diseasesExp1 = document.getElementById("diseases_exp1");
-        var malariaDeath = document.getElementById("malaria_death");
-        var dengueDeath = document.getElementById("dengue_death");
-
-        var rect = diseasesExp1.getBoundingClientRect();
-        var scrollPercentage = 1 - rect.top / window.innerHeight;
-
-        if (inView("diseases_exp1")) {
-            var malariaTranslateX = -50 * scrollPercentage;
-            var dengueTranslateX = -10 * scrollPercentage;
-            malariaDeath.style.transform = `translate(${malariaTranslateX}vw, 0)`;
-            dengueDeath.style.transform = `translate(${dengueTranslateX}vw, 0)`;
-        }
-
-        if (inView("step1")) {
-            document.getElementById("sick").style.opacity = 0;
-            document.getElementById("changing").style.opacity = 0;
-            document.getElementById("healthy").style.opacity = 1;
-        }
-
-        if (inView("step2")) {
-            document.getElementById("sick").style.opacity = 0;
-            document.getElementById("changing").style.opacity = 1;
-            document.getElementById("healthy").style.opacity = 0;
-        }
-
-        if (inView("step3")) {
-            document.getElementById("sick").style.opacity = 1;
-            document.getElementById("changing").style.opacity = 0;
-            document.getElementById("healthy").style.opacity = 0;
-            document.getElementById("mosquito2_v1").style.opacity = 1;
-            document.getElementById("mosquito2_v2").style.opacity = 0;
-            document.getElementById("mosquito2_v3").style.opacity = 0;
-        }
-
-        if (inView("step4")) {
-
-            document.getElementById("mosquito2_v1").style.opacity = 0;
-            document.getElementById("mosquito2_v2").style.opacity = 1;
-            document.getElementById("mosquito2_v3").style.opacity = 0;
-        }
-
-        if (inView("step5")) {
-            document.getElementById("sick2").style.opacity = 0;
-            document.getElementById("healthy2").style.opacity = 1;
-            document.getElementById("mosquito2_v1").style.opacity = 0;
-            document.getElementById("mosquito2_v2").style.opacity = 0;
-            document.getElementById("mosquito2_v3").style.opacity = 1;
-
-        }
-
-        if (inView("question1")) {
-            document.getElementById("sick2").style.opacity = 1;
-            document.getElementById("healthy2").style.opacity = 0;
-        }
-
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.indication');
-
-    function activateLink() {
-        let index = sections.length;
-
-        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-
-        navLinks.forEach((link) => link.classList.remove('active'));
-
-        // Apply 'active' class only if a section is in view
-        if (window.scrollY + 50 >= sections[0].offsetTop) {
-            navLinks[index].classList.add('active');
-        }
-    }
-
-    // Remove underline initially
-    navLinks.forEach((link) => link.classList.remove('active'));
-
-    window.addEventListener('scroll', activateLink);
-});
-</script>
 </body>
 
 </html>
