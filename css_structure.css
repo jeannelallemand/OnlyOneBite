@@ -192,7 +192,7 @@ body {
 
 .sticky_fixed {
     float: left;
-    width: 40vw;
+    width: 50vw;
     height: auto;
     position: absolute;
     padding: 10px;
