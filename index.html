@@ -22,6 +22,7 @@
 <body>
 
 
+
     <!--  LANDING PAGE -->
     <div class="stand" id="landing_page">
 
@@ -96,17 +97,17 @@
                 </div>
                 <div class="text" style="text-align: center; width: 25vw; ">
                     <p class="malaria" style="color: #FFFFFF;">Malaria</p>
-                    <p class="malaria" style="background-color:transparent">Parasite</p>
+                    <p class="malaria_blurry">Parasite</p>
                     <p class="malaria" style="color: #FFFFFF;">Mosquito Anopheles</p>
                 </div>
                 <div class="text" style="text-align: center;width: 25vw; ">
                     <p class="dengue" style="color: #FFFFFF;">Dengue</p>
-                    <p class="dengue" style="background-color: transparent;">Virus</p>
+                    <p class="malaria_blurry" style=" border: 3px solid #6B46E1;">Virus</p>
                     <p class="dengue" style="color: #FFFFFF;">Mosquito Aedes</p>
                 </div>
                 <div class="text" style="text-align: center;  width: 25vw">
                     <p class="otherDisease" style="color: #FFFFFF;">Other diseases</p>
-                    <p class="otherDisease" style="background-color: transparent;">Virus, parasite, bacteria</p>
+                    <p class="malaria_blurry" style=" border: 3px solid #A3AED0;">Virus, parasite, bacteria</p>
                     <p class="otherDisease" style="color: #FFFFFF;">Other vectors</p>
                 </div>
             </div>
@@ -130,7 +131,7 @@
                 </div>
                 <div class="text" style="text-align: center; width: 40vw">
                     <p class="malaria" style="color: #FFFFFF;">Malaria</p>
-                    <p class="malaria" style="background-color:transparent">Parasite</p>
+                    <p class="malaria_blurry">Parasite</p>
                     <p class="malaria" style="color: #FFFFFF;">Mosquito Anopheles</p>
                     <div class="float_horizontal" style="text-align: left; height: 20vh;">
                         <p style="width:50%; padding: 0px 10px;" class="blurry_background">Most common symptoms :
@@ -153,7 +154,7 @@
                 </div>
                 <div class="text" style="text-align: center; width: 40vw">
                     <p class="dengue" style="color: #FFFFFF;">Dengue</p>
-                    <p class="dengue" style="background-color: transparent;">Virus</p>
+                    <p class="malaria_blurry" style=" border: 3px solid #6B46E1;">Virus</p>
                     <p class="dengue" style="color: #FFFFFF;">Mosquito Aedes</p>
                     <div class="float_horizontal" style="text-align: left; margin-left: 10px;  height: 20vh;;">
                         <p style="width:50%; padding: 0px 10px;" class="blurry_background"> Most common symptoms :
@@ -676,12 +677,15 @@
 
         </div>
     </section>
-
-    <section id="spreading">
+    
+    <section id="spreading" >
         <!-- HOW IT SPREADS -->
-        <div class="lane" class="float_horizontal" style="height:420vh; margin-bottom: 10vh;">
+        
+        <div class="lane"  style="height:420vh; margin-bottom: 10vh;"class="float_horizontal" >
+                 
             <div style="width:60vw">
-                <div id="fixed" style="margin-top: 45vh">
+
+                <div id="fixed" style="margin-top: 45vh" >
                     <p class="text" id="step1"> 1. A healthy human gets bitten by a mosquito carrying a disease.</p>
                     <p class="text" id="step2"> 2. The pathogens reproduce and multiply inside the human, and symptoms
                         appear.</p>
@@ -698,17 +702,16 @@
                         is
                         different. The mosquito reproduces the pathogen but cannot spread it.</p>
                 </div>
-                <div id="sticky" style="margin-bottom: 100vh; height: 15vh;">
+                <div id="sticky" style="margin-bottom: 100vh; height: 15vh; ">
                     <p class="title"> How does it spread? </p>
-                    <p class="text" class="description"> A disease can spread from one person to another through a
-                        mosquito
-                        bite, as the mosquito transfers pathogens into the person's blood. These pathogens multiply in
-                        both
-                        the human and the mosquito, but not directly between humans.</p>
-                </div>
+                    <p class="text" class="description" style="width: 40vw;"> A disease can spread from one person to another through a
+                        mosquitobite, as the mosquito transfers pathogens into the person's blood. These pathogens need both the human and the mosquito to multiply so it cannot spread directly between humans. Follow the spread of a disease step by step to know.</p>
+                </div>  
+                <div class="sticky-background"></div>     
             </div>
-
             <div class="column">
+
+            
                 <div class="fixed" style="margin:none; margin-top:30vh;padding: none">
                     <img src="assets/mosquito1.svg" alt="none" style=" width: 12vw; height: 12vw ">
                 </div>
@@ -1073,7 +1076,9 @@
 
                 </div>
             </div>
-
+           
+            
+            
         </div>
     </section>
 
@@ -1165,23 +1170,31 @@
                     introduced
                     to Europe in the 1970s and is capable of transmitting diseases such as dengue.</p>
             </div>
-            <div class="float_horizontal" style="margin-top: 35vh; padding: 3vw; text-align: center;">
+            <div class="float_horizontal" style="margin-top: 25vh; padding: 3vw; text-align: center;">
                 <div class="change">
-                    <img src="assets/climate_change.svg" alt="climate change" width="150px" height="150px">
+                    <div  style="width:12vw; height: 12vw;">
+<img src="assets/climate_change.svg" alt="climate change" width="100%" height="100%">
+                    </div>
+                    
                     <p class="small_title">Climate change</p>
                     <p class="text">As global temperatures rise, previously too cold regions may become suitable for
                         mosquito habitation. Additionally, increased rainfall can create more stagnant water pools for
                         mosquito breeding.</p>
                 </div>
                 <div class="change">
-                    <img src="assets/globalisation.svg" alt="climate change" width="150px" height="150px">
+                    <div  style="width:12vw; height: 12vw;"> <img src="assets/globalisation.svg" alt="climate change" width="100%" height="100%" style="width:12vw">
+                        </div>
+         
                     <p class="small_title">Globalization</p>
                     <p class="text">Global travel and trade make it easier for mosquitoes to spread. They can travel in
                         cargo, vehicles, and aircraft, reaching new places. Increased trade also means mosquito eggs or
                         larvae can be transported in goods, helping them colonize new areas.</p>
                 </div>
-                <div class="change">
-                    <img src="assets/urban_area.svg" alt="climate change" width="150px" height="150px">
+                <div class="change"> 
+                    <div  style="width:12vw; height: 12vw;"> 
+                        <img src="assets/urban_area.svg" alt="climate change" width="100%" height="100%" style="width:12vw">
+                    </div>
+                   
                     <p class="small_title">Urban area</p>
                     <p class="text">Urban areas are ideal for mosquitoes due to higher temperatures, abundant water
                         containers and irrigation systems, and a high density of human hosts.</p>
@@ -1333,6 +1346,7 @@
             </a>
         </div>
     </div>
+
 
     <!-- JAVASCRIPT -->
     <script>

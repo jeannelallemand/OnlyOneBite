@@ -11,20 +11,13 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: white;
-    background-image: url('assets/blur_circle2.png'), url('assets/blur_circle.png'), url('assets/blur_circle.png'), url('assets/blur_circle.png'),  url('assets/blur_circle.png'), url('assets/blur_circle.png'), url('assets/blur_circle2.png'),  url('assets/blur_circle.png'), url('assets/blur_circle.png'), url('assets/blur_circle2.png'), url('assets/blur_circle.png');
-    background-size: 100vh, 120vh, 140vh, 120vh, 70vw, 170vh, 100vh, 120vh, 140vh;
+    background-image: url('assets/line1.svg'), 
+    url('assets/blur_circle.png'), url('assets/blur_circle.png'), url('assets/blur_circle.png'),  url('assets/blur_circle.png'), url('assets/blur_circle.png'), url('assets/blur_circle2.png'),  url('assets/blur_circle.png'), url('assets/blur_circle.png'), url('assets/blur_circle2.png'), url('assets/blur_circle.png');
+    background-size: 61vh, 100vh, 120vh, 140vh, 120vh, 70vw, 170vh, 100vh, 120vh, 140vh;
     background-repeat: no-repeat;
     background-attachment: local;
-    background-position: -40vh -40vh , 80vh 20vh, -20vh 100vh, 80vh 200vh, 20vw 300vh, 20vh 815vh, -40vh 1028vh, 120vh 1028vh, 18vh 920vh, -40vh 1120vh, 120vh 1150vh ;
+    background-position: 45vw 80vh, -40vh -40vh , 80vh 20vh, -20vh 100vh, 80vh 200vh, 20vw 300vh, 20vh 815vh, -40vh 1028vh, 120vh 1028vh, 18vh 920vh, -40vh 1120vh, 120vh 1150vh ;
 
-}
-
-#spreading{
-    background-image: url('assets/blur_circle.png');
-    background-size: 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 80vh 0vh;
 }
 
 .big_title {
@@ -147,6 +140,7 @@ body {
     display: flex;
     padding: 3vw;
     padding-top: 3vh;
+    position: relative;
 }
 
 .column {
@@ -178,7 +172,23 @@ body {
     border-radius: 10px; 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); 
+    z-index: 1;
 }
+
+.sticky-background {
+    position:absolute;
+    top: 25vh;
+    right: 10vw;
+    width: 100%; /* Ensure it covers the entire width */
+    height: 72%; /* Ensure it covers the entire height */
+    background: url('assets/blur_circle2.png') ;
+    background-size: 62vh;
+    background-repeat:no-repeat repeat;
+    background-position:right top ;
+    z-index: -1;   
+
+}
+
 
 .blurry_background{
     position: sticky;
@@ -188,6 +198,17 @@ body {
     border-radius: 10px; 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); 
+}
+
+.malaria_blurry{
+    border: 3px solid #001AFF;
+    padding: 1.5vh;
+    border-radius: 5px;
+    margin:0.7vh;
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;  
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .sticky_fixed {
