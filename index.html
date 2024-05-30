@@ -691,7 +691,7 @@
                         appear.</p>
                     <p class="text" id="step3"> 3. A healthy mosquito bites the sick human and carries the disease.</p>
                     <p class="text" id="step4"> 4. The pathogens reproduce inside the mosquito.</p>
-                    <p class="text" id="step5"> 5. The sick mosquito bites another human and continues the transmission
+                    <p class="text" id="step5" style="margin-bottom: 45vh;"> 5. The sick mosquito bites another human and continues the transmission
                         to
                         multiple humans.</p>
                     <p class="title" style=" width: 60%;" id="question1"> What if a sick human goes in a zone with
@@ -709,21 +709,16 @@
                 </div>  
                 <div class="sticky-background"></div>     
             </div>
-            <div class="column">
-
-            
+ 
+            <div class="column">           
                 <div class="fixed" style="margin:none; margin-top:30vh;padding: none">
                     <img src="assets/mosquito1.svg" alt="none" style=" width: 12vw; height: 12vw ">
                 </div>
+
                 <div id="sticky_5">
                     <img src="assets/mosquito2_v1.svg" class="overlap" id="mosquito2_v1" alt="none">
                     <img src="assets/mosquito2_v2.svg" class="overlap" id="mosquito2_v2" alt="none">
                     <img src="assets/mosquito2_v3.svg" class="overlap" id="mosquito2_v3" alt="none">
-                </div>
-
-                <div class="fixed" style="margin:none; margin-top:100vh ;padding: none">
-                    <img src="assets/mossquito3.svg" alt="mosquito3" width="96%">
-                    <img src="assets/mosquito4.svg" alt="mosquito" width="96%">
                 </div>
             </div>
 
@@ -1076,8 +1071,22 @@
 
                 </div>
             </div>
-           
-            
+
+            <div style=" position:absolute; margin:none; margin-top:23vh; right:-3vw">
+                <img src="assets/bite2.svg" alt="none" style=" width: 40vw; height: 12vw; z-index: 1; ">      
+            </div>
+
+            <div style=" position:absolute; margin:none; margin-top:156vh; right:-3vw">
+                <img src="assets/bite3.svg" alt="none" style=" width: 40vw; height: 12vw; z-index: 1; ">      
+            </div>
+
+            <div style=" position:absolute; margin:none; margin-top:276vh; right:-3vw">
+                <img src="assets/bite2.svg" alt="none" style=" width: 40vw; height: 12vw; z-index: 1; ">      
+            </div>
+
+            <div style=" position:absolute; margin:none; margin-top:370vh; right:18vw">
+                <img src="assets/last_bite2.svg" alt="none" style=" width: 90vw; z-index: 1; ">      
+            </div>
             
         </div>
     </section>
@@ -1342,7 +1351,7 @@
 
         <div style="width:6vw">
             <a href="#landing_page">
-                <img src="assets/logo_defense2.svg" alt="BiteDefender" width="100%" height="100%">
+                <img src="assets/logo_defense.png" alt="BiteDefender" width="100%" height="100%">
             </a>
         </div>
     </div>
@@ -1491,28 +1500,34 @@
                     document.getElementById("sick").style.opacity = 0;
                     document.getElementById("changing").style.opacity = 0;
                     document.getElementById("healthy").style.opacity = 1;
-                } else if (inView("step2")) {
+                } 
+                if (inView("step2")) {
                     document.getElementById("sick").style.opacity = 0;
                     document.getElementById("changing").style.opacity = 1;
                     document.getElementById("healthy").style.opacity = 0;
-                } else if (inView("step3")) {
+                } 
+                if (inView("step3")) {
                     document.getElementById("sick").style.opacity = 1;
                     document.getElementById("changing").style.opacity = 0;
                     document.getElementById("healthy").style.opacity = 0;
                     document.getElementById("mosquito2_v1").style.opacity = 1;
                     document.getElementById("mosquito2_v2").style.opacity = 0;
                     document.getElementById("mosquito2_v3").style.opacity = 0;
-                } else if (inView("step4")) {
+                } 
+                if (inView("step4")) {
                     document.getElementById("mosquito2_v1").style.opacity = 0;
                     document.getElementById("mosquito2_v2").style.opacity = 1;
                     document.getElementById("mosquito2_v3").style.opacity = 0;
-                } else if (inView("step5")) {
+                } 
+                 if (inView("step5")) {
                     document.getElementById("sick2").style.opacity = 0;
                     document.getElementById("healthy2").style.opacity = 1;
                     document.getElementById("mosquito2_v1").style.opacity = 0;
                     document.getElementById("mosquito2_v2").style.opacity = 0;
                     document.getElementById("mosquito2_v3").style.opacity = 1;
-                } else if (inView("question1")) {
+                
+                }
+                if (inView("question1")) {
                     document.getElementById("sick2").style.opacity = 1;
                     document.getElementById("healthy2").style.opacity = 0;
                 }
