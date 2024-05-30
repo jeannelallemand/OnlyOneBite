@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Not even a bite</title>
     <link rel="stylesheet" href="css_structure.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
     <script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="icon" href="assets/logo_defense2.png" type="image/x-icon">
 </head>
 
 
@@ -54,7 +54,7 @@
         <div class="lane" style="height:300vh">
             <div id="fixed" class="float_horizontal" style="margin-top: 8vh; width: 84%;">
                 <div style="width:60%">
-                    <p class="text" class="description" style="margin-bottom: 2vh; width: 60%;" id="world_exp">
+                    <p class="text" class="description" style=" margin-bottom: 5vh; width: 60%;" id="world_exp">
                         Mosquitoes
                         can
                         transmit illnesses
@@ -66,17 +66,17 @@
                     <p class="text" style="margin-bottom: 5vh;"> Among 3,578 mosquito species, 331 species are
                         identified as
                         implicated in human
-                        transmission [2]</p>
-                    <img src="assets/map_half.svg" alt="none" width="90%" height="40%">
+                        transmission [2].</p>
+                    <img src="assets/map_half2.png" alt="none" width="80%" height="50%">
                     <p class="text"> Half of the world's population lives in a region at risk of a
                         disease
                         transmited by
-                        mosquitoes [1]</p>
+                        mosquitoes [1].</p>
                     
 
                 </div>
                 <div>
-                    <p class="text" style="margin-top: 10vh;">More than 700 000 deaths annually [1]</p>
+                    <p class="text" style="margin-top: 10vh;"> More than 700 000 deaths annually [1]</p>
                 </div>
             </div>
 
@@ -85,8 +85,7 @@
                     them,
                     mosquitoes can transmit
                     several diseases. The main one are malaria, dengue, Zika virus, chikungunya, West Nile virus,
-                    yellow
-                    fever, and Japanese encephalitis.</p>
+                    yellow fever, and Japanese encephalitis.</p>
             </div>
 
             <div id="fixed" class="float_horizontal" style="margin-top: 158vh; width: 87vw;">
@@ -114,11 +113,9 @@
 
             <div id="fixed" style="margin-top: 200vh; width: 60%;">
                 <p class="text" class="description" style="margin-top: 15vh; width: 60%;">Malaria and dengue are the
-                    most
-                    important ones. In 2022, malaria accounted for 249 million cases and caused 608,000 deaths. As of
-                    2023,
-                    more than 129 countries are at risk of dengue, with over 6 million cases and more than 6,000 deaths
-                    attributed to the disease.</p>
+                    most important ones. In 2022, malaria accounted for 249 million cases and caused 608,000 deaths [3]. As of
+                    2023, more than 129 countries are at risk of dengue, with over 6 million cases and more than 6,000 deaths
+                    attributed to this disease [4].</p>
             </div>
 
             <div id="fixed" class="float_horizontal" style="margin-top: 230vh">
@@ -1099,14 +1096,24 @@
                 <p class="text" class="description"> Malaria and dengue are among the most significant vector-borne
                     diseases,
                     transmitted by Anopheles and Aedes mosquitoes, respectively. Over time, these diseases have spread
-                    across various countries while also disappearing from certain regions.</p>
+                    across various countries while also disappearing from certain regions [5],[6].</p>
             </div>
             <div class="float_horizontal">
-                <div style="align-content: end; margin-top: 20vh; width: 15vw;">
+               
+                    
+                   <div style="align-content: end; margin-bottom: 3vh; width: 15vw;">
+                    
+                    <div style="width: 22vw; margin-bottom: 60vh; position: relative;">
+                        <img src="assets/legende_malaria.svg" id="legende_malaria" style="width: 100%; position: absolute; top: 0; left: 0;">
+                        <img src="assets/legende_dengue.svg" id="legende_dengue" style="width: 100%; position: absolute; top: 0; left: 0; opacity:0">
+                    </div>
+
                     <p class="text"> Select the disease :</p>
                     <input id="malariaButton" class="button" type="submit" value="Malaria">
-                    <input id="dengueButton" class="button" type="submit" value="Dengue">
-                </div>
+                    <input id="dengueButton" class="button" type="submit" value="Dengue">                  
+                </div> 
+               
+               
 
                 <div
                     style="margin-top: 20vh; width: 80vw; display: flex; flex-direction: column; align-items: center; ">
@@ -1141,15 +1148,7 @@
         <div class="stand">
             <div class="sticky_fixed" style=" height: 13vw; width: 60vw;">
                 <p class="title"> What’s the future of Europe? </p>
-                <p class="text" class="description"> Multiple studies, driven by public health concerns, have predicted
-                    its
-                    future distribution across the region, with varying results.The accompanying maps synthesize these
-                    findings, identifying areas of consensus suitability and forecasting substantial expansion into
-                    northern
-                    and eastern Europe. The first map illustrates habitat suitability according to consensus
-                    predictions,
-                    while the second map forecasts potential changes by 2050, depicting different suitability
-                    trajectories.
+                <p class="text" class="description"> A study has analyzed numerous reports [7] on potential scenarios for the future distribution of Aedes albopictus, the mosquito responsible for dengue transmission. These maps synthesize these findings, identifying areas of consensus suitability and forecasting substantial expansion into northern and eastern Europe. The first map illustrates habitat suitability according to consensus predictions, while the second map forecasts potential changes by 2050, depicting different suitability trajectories.
                 </p>
             </div>
             <div class="float_horizontal" style="margin-top: 23vh;  justify-content: center;">
@@ -1171,13 +1170,7 @@
         <div class="stand">
             <div class="sticky_fixed">
                 <p class="title"> What influences the spread? </p>
-                <p class="text" class="description"> Numerous studies (2), motivated by public health concerns, have
-                    examined
-                    potential scenarios for the future spread of diseases. These studies have focused on the
-                    environmental
-                    conditions favorable to the reproduction of the mosquito species Aedes Albopictus, which was
-                    introduced
-                    to Europe in the 1970s and is capable of transmitting diseases such as dengue.</p>
+                <p class="text" class="description"> These studies have focused on the environmental conditions favorable to the reproduction of the mosquito species Aedes albopictus in Europe and the factors that influence the creation of such conditions (humid and warm).</p>
             </div>
             <div class="float_horizontal" style="margin-top: 25vh; padding: 3vw; text-align: center;">
                 <div class="change">
@@ -1325,35 +1318,36 @@
         <p class="text" style="color: #FFFFFF;"> [5] <a target="_blank" href="https://opendengue.org/data.html"
                 class="text" style="color: #FFFFFF;">Dengue data base (2024),Open dengue</a></p>
         <p class="text" style="color: #FFFFFF;"> [6] <a target="_blank"
-                href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/number-of-indigenous-malaria-cases"
-                class="text" style="color: #FFFFFF;"> Number of indigenous malaria cases (2022), WHO</a></p>
+                href="https://data.worldbank.org/indicator/SH.MLR.INCD.P3?end=2022&start=2022&type=shaded&view=bar&year=2018"
+                class="text" style="color: #FFFFFF;"> Incidence of malariafor 1000 population at risk (2022), WHO</a></p>
         <p class="text" style="color: #FFFFFF;"> [7] <a target="_blank"
                 href="https://www.nature.com/articles/s41598-021-89096-5#Tab1" class="text" style="color: #FFFFFF;">Wide
                 and increasing suitability for Aedes albopictus in Europe is
                 congruent across distribution models (2021), Sandra Oliveira,Jorge Rocha, Carla A. Sousa & César Capinha
             </a></p>
         <div class="float_horizontal">
-            <p class="small_title" style="color: #FFFFFF; margin-top: 5vh;">Jeanne Lallemand</p>
-            <p class="small_title" style="color: #FFFFFF;margin-top: 5vh;"> May 2024</p>
+            <p class="small_title" style="color: #FFFFFF; margin-top: 5vh;">Jeanne Lallemand </p>
+            <p class="small_title" style="color: #FFFFFF;margin-top: 5vh;"> Aalto University - Information design studio - May 2024</p>
         </div>
     </div>
 
     <!-- NOT MOOVING -->
 
     <div id="name_menu">
-        <div class="float_horizontal" style="margin-top:2vh; padding:20px; background: rgba(255, 255, 255, 0.2);
+        <div class="float_horizontal" style="margin-top:2.5vh; padding:20px; background: rgba(255, 255, 255, 0.2);
          border-radius: 10px;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); height: 3vh;">
             <a class="indication" href="#vector_born">Diseases</a>
             <a class="indication" href="#spreading">Spread</a>
             <a class="indication" href="#over_time">Timeline</a>
             <a class="indication" href="#protection">Protection</a>
-        </div>
-
-        <div style="width:6vw">
-            <a href="#landing_page">
-                <img src="assets/logo_defense.png" alt="BiteDefender" width="100%" height="100%">
+            <div style="width:5vw; height: 5vw; margin-top: -2.5vh">
+            <a href="#landing_page" >
+                <img src="assets/logo_defense2.png" alt="BiteDefender" width="100%" height="100%">
             </a>
         </div>
+        </div>
+
+        
     </div>
 
 
@@ -1385,12 +1379,12 @@
 
         // Data and color scale
         var colorScale2 = d3.scaleThreshold()
-            .domain([0.1, 10, 100, 300, 1000])
+            .domain([0.0001, 1, 10, 100, 1000])
             .range(["#DCE2F5", "#C0D2FE", "#96B2F5", "#4C77E1", "#001AFF"]);
 
         var colorScale1 = d3.scaleThreshold()
-            .domain([1, 10, 100, 1000, 1000])
-            .range(["#DCE2F5", "#C4C1FE", "#A08EF5", "#8660FF", "#6B46E1"]);
+            .domain([0.1, 10, 100, 1000, 10000, 100000])
+            .range(["#DCE2F5", "#C4C1FE", "#A08EF5", "#6331FF", "#451BCA","#290795" ]);
 
         var colorScale = colorScale2;
         var csvData = [];
@@ -1449,6 +1443,8 @@
             currentDataset = "assets/data/dengue_cases2.csv";
             loadData(currentDataset);
             colorScale = colorScale1;
+            document.getElementById("legende_malaria").style.opacity = 0;
+            document.getElementById("legende_dengue").style.opacity = 1;
         });
 
         document.getElementById("malariaButton").addEventListener("click", function () {
@@ -1456,6 +1452,8 @@
             currentDataset = "assets/data/incidence-of-malaria.csv";
             loadData(currentDataset);
             colorScale = colorScale2;
+            document.getElementById("legende_malaria").style.opacity = 1;
+            document.getElementById("legende_dengue").style.opacity = 0;
         });
 
         // Load initial dataset
