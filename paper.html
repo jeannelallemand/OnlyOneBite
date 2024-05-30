@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not even a bite</title>
+    <link rel="stylesheet" href="css_structure.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="assets/logo_defense2.png" type="image/x-icon">
+</head>
+
+
+<body>
+
+
+
+    <!--  LANDING PAGE -->
+    <div class="stand" id="landing_page">
+
+        <p class="title" style="margin-top: 7vh; font-size: 8vh; font-weight: 200; font-style: italic;">Bzzzzzz...
+            scratch-scratch...
+            slap ! </p>
+        <p class="big_title">No one likes mosquitoes, specially when they can transmit diseases </p>
+
+        <div style=" display: flex; justify-content: flex-end; margin-right: 8vw;">
+            <div>
+                <p class="small_title" style="text-align: center; color: #FFFFFF;font-weight: 600;"> How does it
+                    happen
+                    ?</p>
+                <p class="small_title"
+                    style="text-align: center; color: #FFFFFF; font-weight: 600; padding-bottom: 2vh;"> Follow the
+                    mosquito
+                    to know</p>
+                <a style="display: flex; justify-content: center;" href="#vector_born">
+                    <img class="pulse" src="assets/mosquito.svg" alt="none" width="40%" height="40%" id="scrollImage">
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <section id="vector_born">
+        <!-- VECTOR_BORN DISEASES -->
+        <div class="lane" style="height:300vh">
+            <div id="fixed" class="float_horizontal" style="margin-top: 8vh; width: 84%;">
+                <div style="width:60%">
+                    <p class="text" class="description" style=" margin-bottom: 5vh; width: 60%;" id="world_exp">
+                        Mosquitoes
+                        can
+                        transmit illnesses
+                        to humans and other animals, known as
+                        vector-borne diseases [1]. They are part of a group of vectors, including ticks and fleas, which
+                        carry
+                        pathogens like viruses, bacteria, and parasites.</p>
+                    <img src="assets/mosquito_species.svg" alt="none" width="60%" height="20%">
+                    <p class="text" style="margin-bottom: 5vh;"> Among 3,578 mosquito species, 331 species are
+                        identified as
+                        implicated in human
+                        transmission [2].</p>
+                    <img src="assets/map_half2.png" alt="none" width="80%" height="50%">
+                    <p class="text"> Half of the world's population lives in a region at risk of a
+                        disease
+                        transmited by
+                        mosquitoes [1].</p>
+                    
+
+                </div>
+                <div>
+                    <p class="text" style="margin-top: 10vh;"> More than 700 000 deaths annually [1]</p>
+                </div>
+            </div>
+
+            <div id="fixed" class="float_horizontal" style="margin-top: 78vh; width: 87vw;">
+                <p class="text" id="diseases_exp1" class="description" style="margin-top: 20vh; width: 40%;"> Among
+                    them,
+                    mosquitoes can transmit
+                    several diseases. The main one are malaria, dengue, Zika virus, chikungunya, West Nile virus,
+                    yellow fever, and Japanese encephalitis.</p>
+            </div>
+
+            <div id="fixed" class="float_horizontal" style="margin-top: 158vh; width: 87vw;">
+                <div class="text" style=" width: 8vw;">
+                    <p class="categories">Diseases</p>
+                    <p class="categories">Pathogen</p>
+                    <p class="categories">Vector</p>
+                </div>
+                <div class="text" style="text-align: center; width: 25vw; ">
+                    <p class="malaria" style="color: #FFFFFF;">Malaria</p>
+                    <p class="malaria_blurry">Parasite</p>
+                    <p class="malaria" style="color: #FFFFFF;">Mosquito Anopheles</p>
+                </div>
+                <div class="text" style="text-align: center;width: 25vw; ">
+                    <p class="dengue" style="color: #FFFFFF;">Dengue</p>
+                    <p class="malaria_blurry" style=" border: 3px solid #6B46E1;">Virus</p>
+                    <p class="dengue" style="color: #FFFFFF;">Mosquito Aedes</p>
+                </div>
+                <div class="text" style="text-align: center;  width: 25vw">
+                    <p class="otherDisease" style="color: #FFFFFF;">Other diseases</p>
+                    <p class="malaria_blurry" style=" border: 3px solid #A3AED0;">Virus, parasite, bacteria</p>
+                    <p class="otherDisease" style="color: #FFFFFF;">Other vectors</p>
+                </div>
+            </div>
+
+            <div id="fixed" style="margin-top: 200vh; width: 60%;">
+                <p class="text" class="description" style="margin-top: 15vh; width: 60%;">Malaria and dengue are the
+                    most important ones. In 2022, malaria accounted for 249 million cases and caused 608,000 deaths [3]. As of
+                    2023, more than 129 countries are at risk of dengue, with over 6 million cases and more than 6,000 deaths
+                    attributed to this disease [4].</p>
+            </div>
+
+            <div id="fixed" class="float_horizontal" style="margin-top: 230vh">
+                <div class="text" style="margin-right: 10px;">
+                    <p class="categories">Diseases</p>
+                    <p class="categories">Pathogen</p>
+                    <p class="categories">Vector</p>
+                    <p class="categories" style="  height: 18vh;">Symptoms</p>
+                    <p class="categories">Risk zone</p>
+                </div>
+                <div class="text" style="text-align: center; width: 40vw">
+                    <p class="malaria" style="color: #FFFFFF;">Malaria</p>
+                    <p class="malaria_blurry">Parasite</p>
+                    <p class="malaria" style="color: #FFFFFF;">Mosquito Anopheles</p>
+                    <div class="float_horizontal" style="text-align: left; height: 20vh;">
+                        <p style="width:50%; padding: 0px 10px;" class="blurry_background">Most common symptoms :
+                            high fever (40°C/104°F)
+                            severe headache
+                            chills
+                            Usually starts 10-15 days after infection.
+                        </p>
+                        <p style="width:50%; padding: 0px 10px;" class="blurry_background"> Severe symptoms :
+                            extreme tiredness
+                            impaired consciousness
+                            multiple convulsions
+                            difficulty breathing
+                            dark or bloody urine
+                            jaundice
+                            abnormal bleeding</p>
+                    </div>
+                    <p class="blurry_background" style="background-color: #001aff9e; padding: 3vh;">Africa, Asia, South
+                        America</p>
+                </div>
+                <div class="text" style="text-align: center; width: 40vw">
+                    <p class="dengue" style="color: #FFFFFF;">Dengue</p>
+                    <p class="malaria_blurry" style=" border: 3px solid #6B46E1;">Virus</p>
+                    <p class="dengue" style="color: #FFFFFF;">Mosquito Aedes</p>
+                    <div class="float_horizontal" style="text-align: left; margin-left: 10px;  height: 20vh;;">
+                        <p style="width:50%; padding: 0px 10px;" class="blurry_background"> Most common symptoms :
+                            high fever (40°C/104°F)
+                            severe headache
+                            pain behind the eyes
+                            muscle and joint pains
+                            nausea
+                            vomiting
+                            swollen glands
+                            rash
+                        </p>
+                        <p style="width:50%; padding: 0px 10px;" class="blurry_background"> Usually starts 4-10 days
+                            after
+                            infection.
+                            Individuals who are infected for the second time are at greater risk of severe dengue.</p>
+                    </div>
+                    <p class="blurry_background" style="background-color: #6a46e19b; padding: 3vh;">South Europe,
+                        Africa, America, Asia, Oceania</p>
+                </div>
+            </div>
+            <div id="sticky">
+                <p class="title"> You said diseases ?</p>
+            </div>
+            <div id="sticky_2">
+
+                <div id="grid" style="margin-bottom: 5vh;">
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+    <section id="spreading" >
+        <!-- HOW IT SPREADS -->
+        
+        <div class="lane"  style="height:420vh; margin-bottom: 10vh;"class="float_horizontal" >
+                 
+            <div style="width:60vw">
+
+                <div id="fixed" style="margin-top: 45vh" >
+                    <p class="text" id="step1"> 1. A healthy human gets bitten by a mosquito carrying a disease.</p>
+                    <p class="text" id="step2"> 2. The pathogens reproduce and multiply inside the human, and symptoms
+                        appear.</p>
+                    <p class="text" id="step3"> 3. A healthy mosquito bites the sick human and carries the disease.</p>
+                    <p class="text" id="step4"> 4. The pathogens reproduce inside the mosquito.</p>
+                    <p class="text" id="step5" style="margin-bottom: 45vh;"> 5. The sick mosquito bites another human and continues the transmission
+                        to
+                        multiple humans.</p>
+                    <p class="title" style=" width: 60%;" id="question1"> What if a sick human goes in a zone with
+                        different
+                        species of
+                        mosquitoes ?</p>
+                    <p class="text" id="step6" style="margin-top: 250px;"> 6. The species of mosquitoes in this new zone
+                        is
+                        different. The mosquito reproduces the pathogen but cannot spread it.</p>
+                </div>
+                <div id="sticky" style="margin-bottom: 100vh; height: 15vh; ">
+                    <p class="title"> How does it spread? </p>
+                    <p class="text" class="description" style="width: 40vw;"> A disease can spread from one person to another through a
+                        mosquitobite, as the mosquito transfers pathogens into the person's blood. These pathogens need both the human and the mosquito to multiply so it cannot spread directly between humans. Follow the spread of a disease step by step to know.</p>
+                </div>  
+                <div class="sticky-background"></div>     
+            </div>
+ 
+            <div class="column">           
+                <div class="fixed" style="margin:none; margin-top:30vh;padding: none">
+                    <img src="assets/mosquito1.svg" alt="none" style=" width: 12vw; height: 12vw ">
+                </div>
+
+                <div id="sticky_5">
+                    <img src="assets/mosquito2_v1.svg" class="overlap" id="mosquito2_v1" alt="none">
+                    <img src="assets/mosquito2_v2.svg" class="overlap" id="mosquito2_v2" alt="none">
+                    <img src="assets/mosquito2_v3.svg" class="overlap" id="mosquito2_v3" alt="none">
+                </div>
+            </div>
+
+            <div class="column" style="margin-right: 7vw;">
+                <div id="sticky_3" style="width: 12vw;">
+                  
+                </div>
+                <div id="sticky_4" style="width: 13vw;">
+
+                </div>
+            </div>
+
+            <div style=" position:absolute; margin:none; margin-top:23vh; right:-3vw">
+                <img src="assets/bite2.svg" alt="none" style=" width: 40vw; height: 12vw; z-index: 1; ">      
+            </div>
+
+            <div style=" position:absolute; margin:none; margin-top:156vh; right:-3vw">
+                <img src="assets/bite3.svg" alt="none" style=" width: 40vw; height: 12vw; z-index: 1; ">      
+            </div>
+
+            <div style=" position:absolute; margin:none; margin-top:276vh; right:-3vw">
+                <img src="assets/bite2.svg" alt="none" style=" width: 40vw; height: 12vw; z-index: 1; ">      
+            </div>
+
+            <div style=" position:absolute; margin:none; margin-top:370vh; right:18vw">
+                <img src="assets/last_bite2.svg" alt="none" style=" width: 90vw; z-index: 1; ">      
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="over_time">
+        <!-- Spread over time -->
+        <div class="stand">
+            <div class="sticky_fixed">
+                <p class="title"> How was it in the past? </p>
+                <p class="text" class="description"> Malaria and dengue are among the most significant vector-borne
+                    diseases,
+                    transmitted by Anopheles and Aedes mosquitoes, respectively. Over time, these diseases have spread
+                    across various countries while also disappearing from certain regions [5],[6].</p>
+            </div>
+            <div class="float_horizontal">
+               
+                    
+                   <div style="align-content: end; margin-bottom: 3vh; width: 15vw;">
+                    
+                    <div style="width: 22vw; margin-bottom: 60vh; position: relative;">
+                        <img src="assets/legende_malaria.svg" id="legende_malaria" style="width: 100%; position: absolute; top: 0; left: 0;">
+                        <img src="assets/legende_dengue.svg" id="legende_dengue" style="width: 100%; position: absolute; top: 0; left: 0; opacity:0">
+                    </div>
+
+                    <p class="text"> Select the disease :</p>
+                    <input id="malariaButton" class="button" type="submit" value="Malaria">
+                    <input id="dengueButton" class="button" type="submit" value="Dengue">                  
+                </div> 
+               
+               
+
+                <div
+                    style="margin-top: 20vh; width: 80vw; display: flex; flex-direction: column; align-items: center; ">
+                    <div style="background: rgba(255, 255, 255);
+               border-radius: 10px; width: 60vw ">
+                        <div id="my_dataviz" style="height: 62vh;"></div>
+                    </div>
+
+                    <div>
+                        <div class="slider" style="width: 60vw;">
+                            <div class="slider-values"
+                                style="width: 100%; float: left; justify-content: space-between;">
+                                <span id="minYear">2000</span>
+                                <span id="maxYear">2020</span>
+                            </div>
+
+                            <input id="yearSlider" type="range" min="2000" max="2020" step="1" value="2020">
+
+                            <div class="slider-values"
+                                style="width: 100%; float: left; justify-content: left; color: #001AFF;"> <span
+                                    style="margin-right: 0.5vw;"> Selected year :</span>
+                                <div id="selectedYear"> 2020 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- THE FUTURE -->
+        <div class="stand">
+            <div class="sticky_fixed" style=" height: 13vw; width: 60vw;">
+                <p class="title"> What’s the future of Europe? </p>
+                <p class="text" class="description"> A study has analyzed numerous reports [7] on potential scenarios for the future distribution of Aedes albopictus, the mosquito responsible for dengue transmission. These maps synthesize these findings, identifying areas of consensus suitability and forecasting substantial expansion into northern and eastern Europe. The first map illustrates habitat suitability according to consensus predictions, while the second map forecasts potential changes by 2050, depicting different suitability trajectories.
+                </p>
+            </div>
+            <div class="float_horizontal" style="margin-top: 23vh;  justify-content: center;">
+                <div style="margin-right: 4vw;">
+                    <div style="width:38vw">
+                        <p class="small_title" style="padding-bottom: 1vh;font-weight: 500;">Now</p>
+                    <img src="assets/map/now3.svg" alt="map now" width="100%">
+                    </div>
+                </div>
+                <div>
+                    <div style="width:38vw">
+                    <p class="small_title" style="padding-bottom: 1vh;font-weight: 500;">2050</p>
+                    <img src="assets/map/future3.svg" alt="map futur" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- WHY IT SPREADS -->
+        <div class="stand">
+            <div class="sticky_fixed">
+                <p class="title"> What influences the spread? </p>
+                <p class="text" class="description"> These studies have focused on the environmental conditions favorable to the reproduction of the mosquito species Aedes albopictus in Europe and the factors that influence the creation of such conditions (humid and warm).</p>
+            </div>
+            <div class="float_horizontal" style="margin-top: 25vh; padding: 3vw; text-align: center;">
+                <div class="change">
+                    <div  style="width:12vw; height: 12vw;">
+<img src="assets/climate_change.svg" alt="climate change" width="100%" height="100%">
+                    </div>
+                    
+                    <p class="small_title">Climate change</p>
+                    <p class="text">As global temperatures rise, previously too cold regions may become suitable for
+                        mosquito habitation. Additionally, increased rainfall can create more stagnant water pools for
+                        mosquito breeding.</p>
+                </div>
+                <div class="change">
+                    <div  style="width:12vw; height: 12vw;"> <img src="assets/globalisation.svg" alt="climate change" width="100%" height="100%" style="width:12vw">
+                        </div>
+         
+                    <p class="small_title">Globalization</p>
+                    <p class="text">Global travel and trade make it easier for mosquitoes to spread. They can travel in
+                        cargo, vehicles, and aircraft, reaching new places. Increased trade also means mosquito eggs or
+                        larvae can be transported in goods, helping them colonize new areas.</p>
+                </div>
+                <div class="change"> 
+                    <div  style="width:12vw; height: 12vw;"> 
+                        <img src="assets/urban_area.svg" alt="climate change" width="100%" height="100%" style="width:12vw">
+                    </div>
+                   
+                    <p class="small_title">Urban area</p>
+                    <p class="text">Urban areas are ideal for mosquitoes due to higher temperatures, abundant water
+                        containers and irrigation systems, and a high density of human hosts.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="protection">
+        <!-- PROTECTION -->
+        <div class="stand">
+            <div style="width: 50vw;">
+                <p class="title"> How to protect ourselves?</p>
+                <p class="text" class="description"> Protecting ourselves from mosquitoes will become more and more
+                    important.
+                    Adopting new behaviors will help to reduce the spread of the disease by diminishing the population
+                    of
+                    mosquitoes. This will also have an impact on our community and will be the responsibility of
+                    everyone.
+                </p>
+            </div>
+
+            <div class="float_horizontal" style="margin-top: 10vh; width: 88vw;">
+                <div style="width:40vw; height:55vh; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="float_horizontal"  style=" justify-content: left;">
+                        <div style="width: 10vw">
+                            <img src="assets/repelent.svg" alt="standing water" width="80%" height="80%" style="margin:10px ;">
+                           </div> 
+                        <div>
+                            <p class="small_title">Use repellents</p>
+                            <p class="text">Apply insect repellent containing DEET, picaridin to exposed skin and
+                                clothing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="float_horizontal"  style=" justify-content: left;">
+                        <div style="width: 10vw">
+                            <img src="assets/cloth.svg" alt="standing water" width="80%" height="80%" style="margin:10px ;">
+                           </div> 
+                        <div>
+                            <p class="small_title">Wear protective clothing</p>
+                            <p class="text">Wear long sleeves, long pants, and socks to protect your skin.</p>
+                        </div>
+                    </div>
+                    <div class="float_horizontal" style=" justify-content: left;">
+                        <div style="width: 10vw">
+                            <img src="assets/mosquitonet.svg" alt="standing water" width="80%" height="80%" style="margin:10px ;">
+                           </div> 
+                        <div>
+                            <p class="small_title">Use mosquito nets</p>
+                            <p class="text">Sleep under mosquito and install panels on your windows and doors
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="width:40vw; height:55vh; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div class="float_horizontal"  style=" justify-content: left;">
+                       <div style="width: 10vw">
+                        <img src="assets/standing.svg" alt="standing water" width="80%" height="80%" style="margin:10px ;">
+                       </div> 
+                        <div>
+                            <p class="small_title">Eliminate standing water</p>
+                            <p class="text">Regularly empty or cover containers such as buckets, plant pots, and old
+                                tires.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="float_horizontal"  style=" justify-content: left;">
+                        <div style="width: 10vw">
+                            <img src="assets/water.svg" alt="standing water" width="80%" height="80%" style="margin:10px ;">
+                           </div> 
+                        <div>
+                            <p class="small_title">Treat water source</p>
+                            <p class="text">Use larvicides in standing water that can't be eliminated, like ponds and
+                                rain
+                                barrels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="float_horizontal"  style=" justify-content: left;">
+                        <div style="width: 10vw">
+                            <img src="assets/programs.svg" alt="standing water" width="80%" height="80%" style="margin:10px ;">
+                           </div> 
+                           <div>
+                            <p class="small_title">Support control programs</p>
+                            <p class="text">Participate in local mosquito control programs and spread awareness about
+                                prevention measures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="bottom" style="padding: 3vw;">
+        <p class="small_title" style="color: #FFFFFF;">Sources</p>
+        <p class="text" style="color: #FFFFFF;"> [1] <a target="_blank"
+                href="https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases" class="text"
+                style="color: #FFFFFF;">Vector-born disease(2020), WHO</a></p>
+        <p class="text" style="color: #FFFFFF;"> [2] <a target="_blank"
+                href="https://www.usm.edu/news/2022/release/mosquito-research.php" class="text"
+                style="color: #FFFFFF;">USM Professor’s Research Documents Medically Important Mosquitoes (2022), Ivonne
+                Kawas</a></p>
+        <p class="text" style="color: #FFFFFF;"> [3] <a target="_blank"
+                href="https://www.who.int/publications/i/item/9789240086173" class="text"
+                style="color: #FFFFFF;">Malaria Report (2023), WHO</a></p>
+        <p class="text" style="color: #FFFFFF;"> [4] <a target="_blank"
+                href="https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue#:~:text=The%20largest%20number%20of%20dengue,Viet%20Nam%20"
+                class="text" style="color: #FFFFFF;">Dengue and severe dengue (2024), WHO</a></p>
+        <p class="text" style="color: #FFFFFF;"> [5] <a target="_blank" href="https://opendengue.org/data.html"
+                class="text" style="color: #FFFFFF;">Dengue data base (2024),Open dengue</a></p>
+        <p class="text" style="color: #FFFFFF;"> [6] <a target="_blank"
+                href="https://data.worldbank.org/indicator/SH.MLR.INCD.P3?end=2022&start=2022&type=shaded&view=bar&year=2018"
+                class="text" style="color: #FFFFFF;"> Incidence of malariafor 1000 population at risk (2022), WHO</a></p>
+        <p class="text" style="color: #FFFFFF;"> [7] <a target="_blank"
+                href="https://www.nature.com/articles/s41598-021-89096-5#Tab1" class="text" style="color: #FFFFFF;">Wide
+                and increasing suitability for Aedes albopictus in Europe is
+                congruent across distribution models (2021), Sandra Oliveira,Jorge Rocha, Carla A. Sousa & César Capinha
+            </a></p>
+        <div class="float_horizontal">
+            <p class="small_title" style="color: #FFFFFF; margin-top: 5vh;">Jeanne Lallemand </p>
+            <p class="small_title" style="color: #FFFFFF;margin-top: 5vh;"> Aalto University - Information design studio -May 2024</p>
+        </div>
+    </div>
+
+    <!-- NOT MOOVING -->
+
+    <div id="name_menu">
+        <div class="float_horizontal" style="margin-top:2.5vh; padding:20px; background: rgba(255, 255, 255, 0.2);
+         border-radius: 10px;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); height: 3vh;">
+            <a class="indication" href="#vector_born">Diseases</a>
+            <a class="indication" href="#spreading">Spread</a>
+            <a class="indication" href="#over_time">Timeline</a>
+            <a class="indication" href="#protection">Protection</a>
+            <div style="width:5vw; height: 5vw; margin-top: -2.5vh">
+            <a href="#landing_page" >
+                <img src="assets/logo_defense2.png" alt="BiteDefender" width="100%" height="100%">
+            </a>
+        </div>
+        </div>
+
+        
+    </div>
+
+
+</body>
+
+</html>
